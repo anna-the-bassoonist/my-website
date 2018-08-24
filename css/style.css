@@ -1,12 +1,146 @@
-/*Navigation start*/
+/*helpers*/
+/*
+img{
+   max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+*/
+/*Font Styles*/
 
-#main-nav{
-    background-color: aqua;
+body {
+    font-family: Josefin, Arial, sans-serif;
+    color: #3c3b3b;
+    /*    margin: 0;*/
 }
 
-header#header{
-    background-image: linear-gradient(rgba(125, 125, 165, 0.4),rgba(125, 125, 165,0.4)),
-    url('../img/hal-gatewood-613602-unsplash.jpg');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size:
+}
+
+h2 {
+    font-size:
+}
+
+h3 {
+    font-size:
+}
+
+h4 {
+    font-size:
+}
+
+h5 {
+    font-size:
+}
+
+h6 {
+    font-size:
+}
+
+p {
+    font-family: 'Josefin Slab', Arial, serif;
+}
+
+/*Navigation Start*/
+
+nav#main-nav {
+    padding: 0;
+    background-color: transparent;
+    z-index: 100000;
+}
+
+nav#main-nav.changeColor {
+    background-color: rgba(0, 134, 0, 0.4);
+}
+
+nav#main-nav div a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 15px;
+    margin-right: 15px;
+    transition: color 0.2s ease-in;
+}
+
+nav#main-nav div a:hover {
+    color: red;
+}
+
+/*Navigation End*/
+
+/*Header Start*/
+
+header#header {
     height: 100vh;
+    background-image: url(../img/Optimized-hal-gatewood-613602-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
+
+header#header:active nav#main-nav div a{
+    color: red;
+} 
+
+header#header div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header#header div h1,
+header#header div h2 {
+    padding-bottom: 15px;
+}
+
+/*Header End*/
+
+/*Section About me Start*/
+
+section#about-me{
+    height: 100%;
+    
+}
+section#about-me div {
+    position: relative;
+}
+
+section#about-me figure{
+    margin: 0;
+}
+
+section#about-me figure img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+section#about-me figcaption.content-figcaption{
+    position: relative;
+    transform: translateY(-100%);
+}
+
+section#about-me div p,
+section#about-me div h2 {
+    color: rgb(255, 255, 255, 0.8);
+}
+
+section#about-me div p {
+    color: rgb(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    line-height: 2.4em;
+}
+/*Section About me End*/
