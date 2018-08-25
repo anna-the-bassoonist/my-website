@@ -2,6 +2,27 @@
 .mb-15{
     margin-bottom: 15px;
 }
+.m-btn{
+    border: 1px solid #fff;
+    display:inline-block;
+    outline: ;
+    border-radius: 5% ;
+    cursor:pointer;
+    text-align:center;
+    color: #fff;
+    background-color: rgb(44,73,156);
+    font-weight:bold ;
+    text-transform:uppercase;
+    transition: all 0.4s ease;
+    margin-top: 30px;
+}
+.m-btn:hover{
+    border-radius: 10%;
+    color: rgb(44,73,156);
+    background-color: #fff;
+    transform: rotate(180deg);
+    
+}
 .social-icons{
     display: flex;
     justify-content: center;
@@ -126,6 +147,9 @@ header#header div h1,
 header#header div h2 {
     padding-bottom: 15px;
 }
+header#header div h1 span{
+    color: rgb(0,134,0);
+}
 
 /*Header End*/
 
@@ -141,7 +165,7 @@ section#about-me{
     
 }
 section#about-me div.about-content {
-    padding-top: 25%;
+    padding-top: 10%;
     position: relative;
     height: 100%;
 /*    transform: translateY(50%);*/
@@ -153,10 +177,19 @@ section#about-me div h2 {
     color: rgba(255, 255, 255, 0.9);
 }
 
+section#about-me div h2 span{
+    color: rgb(0, 134, 0);
+}
 section#about-me div p {
-    margin-bottom: 30px;
+    padding-bottom: 25px;
     line-height: 2.4rem;
     padding: 10px 20px;
+}
+
+section#about-me div button{
+    line-height: 40px;
+    padding: 0 40px;
+    margin-right: 10px;
 }
 /*Section About me End*/
 /*Section Skills Start*/
