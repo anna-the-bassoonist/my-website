@@ -1,15 +1,36 @@
 /*helpers*/
-/*
-img{
-   max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
+.mb-15{
+    margin-bottom: 15px;
 }
-*/
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    color: rgb(44,73, 156);
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid rgba(44,73, 156);
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: all 0.4s ease-out;
+}
+
+.social-icons a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(44,73, 156, 0.4);
+    border: 1px solid rgb(255, 255, 255);
+    transform: rotate(360deg);
+}
+
 /*Font Styles*/
 
 body {
     font-family: Josefin, Arial, sans-serif;
+    font-size: 1rem;
     color: #3c3b3b;
     /*    margin: 0;*/
 }
@@ -111,36 +132,32 @@ header#header div h2 {
 /*Section About me Start*/
 
 section#about-me{
-    height: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(44, 73, 156, 0.4),rgba(44,73, 156, 0.4)),
+    url('../img/Optimized-b&w.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
-section#about-me div {
+section#about-me div.about-content {
+    padding-top: 25%;
     position: relative;
+    height: 100%;
+/*    transform: translateY(50%);*/
 }
 
-section#about-me figure{
-    margin: 0;
-}
-
-section#about-me figure img{
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-section#about-me figcaption.content-figcaption{
-    position: relative;
-    transform: translateY(-100%);
-}
 
 section#about-me div p,
 section#about-me div h2 {
-    color: rgb(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 section#about-me div p {
-    color: rgb(255, 255, 255, 0.8);
     margin-bottom: 30px;
-    line-height: 2.4em;
+    line-height: 2.4rem;
+    padding: 10px 20px;
 }
 /*Section About me End*/
+/*Section Skills Start*/
+/*Section Skills End*/
