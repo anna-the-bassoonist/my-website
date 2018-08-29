@@ -2,6 +2,9 @@
 .mb-15{
     margin-bottom: 15px;
 }
+.mt-10{
+    margin-top: 10px;
+}
 .m-btn{
     border: 1px solid #fff;
     display:inline-block;
@@ -65,31 +68,6 @@ h6 {
     text-transform: uppercase;
     font-weight: bold;
 }
-
-h1 {
-    font-size:
-}
-
-h2 {
-    font-size:
-}
-
-h3 {
-    font-size:
-}
-
-h4 {
-    font-size:
-}
-
-h5 {
-    font-size:
-}
-
-h6 {
-    font-size:
-}
-
 p {
     font-family: 'Josefin Slab', Arial, serif;
 }
@@ -193,4 +171,50 @@ section#about-me div button{
 }
 /*Section About me End*/
 /*Section Skills Start*/
+#skills {
+    padding: 60px 0;
+    background-color: #e2e2e2;
+    color: #000000;
+}
+#skills h2,
+#skills h3{
+        text-decoration: underline;
+    text-decoration-style:double;
+    text-decoration-color:rgb(0,134,0);
+}
+#skills h2 {
+    padding: 0 0 20px;
+}
+
+#skills h3{
+/*    border-top-style: ridge;*/
+    margin-top: 30px;
+    padding: 25px 0 15px;
+}
+
+#skills .skills-border{
+    padding-bottom: 30px;
+    border-bottom-style: ridge;
+
+}
+#skills .skills-icons figure img{
+    padding-top:10px;
+}
+#skills .skills-icons figure i,
+#skills .skills-icons p
+{
+    line-height: 6rem;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 6rem;
+    width: 6rem;
+}
+
+#skills .skills-icons p{
+
+    transform: translateY(9%);
+    height: 100%;
+    font-size: 2.5rem;
+    align-self: center;
+}
 /*Section Skills End*/
