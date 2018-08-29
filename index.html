@@ -143,17 +143,20 @@
     <!--Section Contact Start-->
     <div id="contact">
         <div class="container text-center">
-           <h3>Contact</h3>
-            <form action="" class="row form">
-                <div class="col-12 col-sm-12 col-lg-12">
-                    <label for=""><input type="text" name="name" placeholder="Your name" required></label>
-                    <label for=""><input type="email" name="email" placeholder="Your Email" required></label>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="write a message"></textarea>
-                    <label for=""><input type="submit" value="send"></label>
-                </div>
-            </form>
+
+            <h3>Contact</h3>
+            <div class="form-row contact-about">
+                <form>
+                    <div class="form-group col-12 form-about">
+                        <label for="text"><input class="form-control" type="text" name="name" placeholder="Your name" required></label>
+                        <label for="email"><input class="form-control" type="email" name="email" placeholder="Your Email" required></label>
+                        <label for="textarea"><textarea class="form-control" name="message" id="textarea" placeholder="write a message"></textarea></label>
+                        <button type="submit" class="btn btn-primary">send</button>
+
+                    </div>
+                </form>
+            </div>
         </div>
-        
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.js"></script>

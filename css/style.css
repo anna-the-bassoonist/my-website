@@ -226,4 +226,14 @@ section#about-me div button{
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover; 
+    height: 50vh;
+}
+#contact .contact-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact-about .form-about{
+    width: 100%;
+    height: 100px;
 }
