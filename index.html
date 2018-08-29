@@ -26,14 +26,14 @@
     <nav id="main-nav" class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon white"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#about-me">About me</a>
-                <a class="nav-item nav-link" href="#">Skills</a>
-                <a class="nav-item nav-link " href="#">Contact</a>
+                <a class="nav-item nav-link" href="#skills">Skills</a>
+                <a class="nav-item nav-link " href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -42,7 +42,7 @@
     <!--    Header Start-->
     <header id="header" class="text-center">
         <div>
-            <h1>Anna <span>Toeplitz</span></h1>
+            <h1>Anna<span>Toeplitz</span></h1>
             <h2>Front end Developer</h2>
             <button class="btn btn-primary btn-lg button-custom m-btn" type="submit">View more</button>
         </div>
@@ -52,7 +52,7 @@
     <section id="about-me" class="text-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-5 col-lg-4 col-12 about-content">
+                <div class="col-sm-5 col-lg-5 col-12 about-content">
                     <h2 class="mb-15">About <span>me</span></h2>
                     <p class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iusto fugiat, similique nobis minima! Aut fugit, quaerat illo eligendi, impedit, aperiam libero nostrum nam distinctio ipsa laboriosam ipsum consectetur? Aliquam.</p>
                     <div class="social-icons">
@@ -140,7 +140,21 @@
         </div>
     </section>
     <!--    /*Section Skills End*/-->
-
+    <!--Section Contact Start-->
+    <div id="contact">
+        <div class="container text-center">
+           <h3>Contact</h3>
+            <form action="" class="row form">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <label for=""><input type="text" name="name" placeholder="Your name" required></label>
+                    <label for=""><input type="email" name="email" placeholder="Your Email" required></label>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="write a message"></textarea>
+                    <label for=""><input type="submit" value="send"></label>
+                </div>
+            </form>
+        </div>
+        
+    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

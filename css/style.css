@@ -40,7 +40,7 @@
     border-radius: 50%;
     font-weight: bold;
     margin: 0 15px;
-    transition: all 0.4s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .social-icons a:hover{
@@ -105,7 +105,7 @@ nav#main-nav div a:hover {
 
 header#header {
     height: 100vh;
-    background-image: url(../img/Optimized-hal-gatewood-613602-unsplash.jpg);
+    background-image: url(../img/kazuend-25771-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,6 +124,7 @@ header#header div {
 header#header div h1,
 header#header div h2 {
     padding-bottom: 15px;
+    color: white;
 }
 header#header div h1 span{
     color: rgb(0,134,0);
@@ -139,14 +140,14 @@ section#about-me{
     url('../img/Optimized-b&w.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 section#about-me div.about-content {
     padding-top: 10%;
     position: relative;
     height: 100%;
-/*    transform: translateY(50%);*/
+    transform: translateY(35%);
+    padding-left: 30px;
 }
 
 
@@ -178,22 +179,23 @@ section#about-me div button{
 }
 #skills h2,
 #skills h3{
-        text-decoration: underline;
+    text-decoration: underline;
     text-decoration-style:double;
     text-decoration-color:rgb(0,134,0);
+    
 }
 #skills h2 {
-    padding: 0 0 20px;
+    padding: 0 0 50px;
 }
 
 #skills h3{
 /*    border-top-style: ridge;*/
     margin-top: 30px;
-    padding: 25px 0 15px;
+    padding: 25px 0;
 }
 
 #skills .skills-border{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     border-bottom-style: ridge;
 
 }
@@ -218,3 +220,10 @@ section#about-me div button{
     align-self: center;
 }
 /*Section Skills End*/
+/*Section Contact Start*/
+#contact{
+    background-image: url(../img/map-of-the-world-2401458_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
