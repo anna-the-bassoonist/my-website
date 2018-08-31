@@ -1,51 +1,56 @@
 /*helpers*/
-.mb-15{
+.mb-15 {
     margin-bottom: 15px;
 }
-.mt-10{
+
+.mt-10 {
     margin-top: 10px;
 }
-.m-btn{
+
+.m-btn {
     border: 1px solid #fff;
-    display:inline-block;
+    display: inline-block;
     outline: ;
-    border-radius: 5% ;
-    cursor:pointer;
-    text-align:center;
+    border-radius: 5%;
+    cursor: pointer;
+    text-align: center;
     color: #fff;
-    background-color: rgb(44,73,156);
-    font-weight:bold ;
-    text-transform:uppercase;
+    background-color: rgb(44, 73, 156);
+    font-weight: bold;
+    text-transform: uppercase;
     transition: all 0.3s ease;
     margin-top: 30px;
 }
-.m-btn:hover{
-    border-radius: 35%;
-    color: rgb(44,73,156);
+
+.m-btn:hover {
+    border-radius: 8%;
+    color: rgb(44, 73, 156);
     background-color: #fff;
-    
-    
+
+
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     justify-content: center;
 }
-.social-icons a{
-    color: rgb(44,73, 156);
+
+.social-icons a {
+    color: rgb(44, 73, 156);
     background-color: rgb(255, 255, 255);
     height: 50px;
     width: 50px;
     line-height: 50px;
-    border: 1px solid rgba(44,73, 156);
+    border: 1px solid rgba(44, 73, 156);
     border-radius: 50%;
     font-weight: bold;
     margin: 0 15px;
     transition: all 0.5s ease-out;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(44,73, 156, 0.4);
+    background-color: rgba(44, 73, 156, 0.4);
     border: 1px solid rgb(255, 255, 255);
     transform: rotate(360deg);
 }
@@ -68,6 +73,7 @@ h6 {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 p {
     font-family: 'Josefin Slab', Arial, serif;
 }
@@ -81,7 +87,7 @@ nav#main-nav {
 }
 
 nav#main-nav.changeColor {
-    background-color: rgba(0, 134, 0, 0.4);
+    background-color: rgba(0, 134, 0, 0.98);
 }
 
 nav#main-nav div a {
@@ -105,15 +111,15 @@ nav#main-nav div a:hover {
 
 header#header {
     height: 100vh;
-    background-image: url(../img/kazuend-25771-unsplash.jpg);
-    background-position: center;
+    background-image: url(../img/header.jpg);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header#header:active nav#main-nav div a{
+header#header:active nav#main-nav div a {
     color: red;
-} 
+}
 
 header#header div {
     position: relative;
@@ -126,28 +132,31 @@ header#header div h2 {
     padding-bottom: 15px;
     color: white;
 }
-header#header div h1 span{
-    color: rgb(0,134,0);
+
+header#header div h1 span {
+    color: rgb(0, 134, 0);
 }
 
 /*Header End*/
 
 /*Section About me Start*/
 
-section#about-me{
-    height: 100vh;
-    background-image: linear-gradient(rgba(44, 73, 156, 0.4),rgba(44,73, 156, 0.4)),
-    url('../img/Optimized-b&w.jpg');
+section#about-me {
+    height: 100%;
+    background-image: linear-gradient(rgba(44, 73, 156, 0.4), rgba(44, 73, 156, 0.4)),
+        url('../img/Optimized-b&w.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
 }
+
 section#about-me div.about-content {
-    padding-top: 10%;
+    padding: 20% 5%;
     position: relative;
     height: 100%;
-    transform: translateY(35%);
-    padding-left: 30px;
+    /*    transform: translateY(35%);*/
+    /*    padding-left: 30px;*/
+
 }
 
 
@@ -156,20 +165,22 @@ section#about-me div h2 {
     color: rgba(255, 255, 255, 0.9);
 }
 
-section#about-me div h2 span{
+section#about-me div h2 span {
     color: rgb(0, 134, 0);
 }
+
 section#about-me div p {
     padding-bottom: 25px;
     line-height: 2.4rem;
     padding: 10px 20px;
 }
 
-section#about-me div button{
+section#about-me div button {
     line-height: 40px;
     padding: 0 40px;
     margin-right: 10px;
 }
+
 /*Section About me End*/
 /*Section Skills Start*/
 #skills {
@@ -177,34 +188,37 @@ section#about-me div button{
     background-color: #e2e2e2;
     color: #000000;
 }
+
 #skills h2,
-#skills h3{
+#skills h3 {
     text-decoration: underline;
-    text-decoration-style:double;
-    text-decoration-color:rgb(0,134,0);
-    
+    text-decoration-style: double;
+    text-decoration-color: rgb(0, 134, 0);
+
 }
+
 #skills h2 {
     padding: 0 0 50px;
 }
 
-#skills h3{
-/*    border-top-style: ridge;*/
+#skills h3 {
+    /*    border-top-style: ridge;*/
     margin-top: 30px;
     padding: 25px 0;
 }
 
-#skills .skills-border{
+#skills .skills-border {
     padding-bottom: 40px;
     border-bottom-style: ridge;
 
 }
-#skills .skills-icons figure img{
-    padding-top:10px;
+
+#skills .skills-icons figure img {
+    padding-top: 10px;
 }
+
 #skills .skills-icons figure i,
-#skills .skills-icons p
-{
+#skills .skills-icons p {
     line-height: 6rem;
     font-size: 4rem;
     font-weight: bold;
@@ -212,28 +226,105 @@ section#about-me div button{
     width: 6rem;
 }
 
-#skills .skills-icons p{
-
+#skills .skills-icons p {
     transform: translateY(9%);
     height: 100%;
     font-size: 2.5rem;
     align-self: center;
 }
+
 /*Section Skills End*/
+
+
 /*Section Contact Start*/
-#contact{
+#contact {
     background-image: url(../img/map-of-the-world-2401458_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover; 
-    height: 50vh;
+    background-size: cover;
+    height: 100%;
+    padding-top: 5%;
 }
-#contact .contact-about{
+
+#contact .container h3 {
+    padding: 5% 0 0;
+    text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
+    color: #e2e2e2;
+
+
+}
+
+#contact .contact-about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    margin: 5% 5% 15%;
 }
-#contact .contact-about .form-about{
+
+#contact .contact-about form {
+/*    border: 1px ridge #1d3f5d;*/
+    background-color: transparent;
+    padding: 1%;
+    width: 75%;
+}
+
+#contact .contact-about form .form-about {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100px;
+}
+
+#contact .contact-about form .form-about input[placeholder],
+#contact .contact-about .form-about textarea[placeholder],
+#contact .contact-about .form-about button[type='submit'] {
+    text-transform: uppercase;
+    border: 1px solid #1d3f5d;
+    font-weight: 600;
+    background-color: #e2e2e2;
+
+}
+
+#contact .contact-about form .form-about textarea {
+    height: calc(100% - 15px);
+    color: #1d3f5d;
+}
+
+#contact .contact-about form .form-about button[type='submit'] {
+    background-color: #1d3f5d;
+    border: 1px solid #e2e2e2;
+    color: #e2e2e2;
+    align-self: flex-end;
+    word-spacing: normal;
+    letter-spacing: 1.2;
+    transition: all 0.3 linear;
+}
+
+#contact .contact-about form .form-about button[type='submit']:hover {
+    background-color: #e2e2e2;
+    color: #1d3f5d;
+    border: 1px solid #1d3f5d;
+}
+/*Section Contact End*/
+
+/*Section Footer Start*/
+footer #footer{
+    background-color: #e2e2e2;
+}
+
+
+#footer .icons-footer a{
+    background-color: rgb(44, 73, 156);
+    color: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+#footer .icons-footer a:hover{
+    color: rgb(44, 73, 156);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(44,73,156);
 }
