@@ -89,9 +89,11 @@ nav#main-nav {
 nav#main-nav.changeColor {
     background-color: rgba(0, 134, 0, 0.98);
 }
+/*
 nav#main-nav.addColor{
     color: red;
 }
+*/
 nav#main-nav div a {
     color: #fff;
     text-transform: uppercase;
@@ -103,7 +105,8 @@ nav#main-nav div a {
     transition: color 0.2s ease-in;
 }
 
-nav#main-nav div a:hover {
+nav#main-nav div a:hover,
+nav#main-nav div a .activeMenu{
     color: red;
 }
 
@@ -294,6 +297,10 @@ section#about-me div button {
     height: calc(100% - 15px);
     color: #1d3f5d;
 }
+#contact .contact-about form .form-about input[placeholder]:focus,
+#contact .contact-about .form-about textarea[placeholder]:focus{
+    background-color: #fff;
+}
 
 #contact .contact-about form .form-about button[type='submit'] {
     background-color: #1d3f5d;
@@ -313,7 +320,7 @@ section#about-me div button {
 /*Section Contact End*/
 
 /*Section Footer Start*/
-footer #footer{
+#footer{
     background-color: #e2e2e2;
 }
 
