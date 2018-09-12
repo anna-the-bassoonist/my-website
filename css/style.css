@@ -116,8 +116,8 @@ nav#main-nav div a .activeMenu{
 
 header#header {
     height: 100vh;
-    background-image: url(../img/header.jpg);
-    background-position: bottom;
+    background-image: url(../img/kazuend-25771-unsplash.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
