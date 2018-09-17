@@ -31,6 +31,12 @@ $(document).ready(function () {
     });
 });
 
+$(".nav-item" ).click(function () {
+    $( ".nav-item" ).removeClass('activeMenu');
+    $(this).addClass('activeMenu');
+});
+
+
 //document.addEventListener('DOMContentLoaded', function () {
 //    document.getElementById('menu-button').addEventListener('click', function () {
 ////        e.stopPropagation();
