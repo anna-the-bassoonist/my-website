@@ -106,7 +106,7 @@ nav#main-nav div a {
 }
 
 nav#main-nav div a:hover,
-nav#main-nav div a .activeMenu{
+nav#main-nav div a.activeMenu{
     color: red;
 }
 
