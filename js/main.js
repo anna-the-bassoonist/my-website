@@ -31,21 +31,6 @@ $(document).ready(function () {
     });
 });
 
-//document.addEventListener('DOMContentLoaded', function () {
-//    document.getElementById('menu-button').addEventListener('click', function () {
-////        e.stopPropagation();
-//        document.querySelector('hidenav').style.top = '110px';
-//    });
-//
-//    document.body.addEventListener('click', function () {
-//
-//        document.querySelector('hidenav').style.top = '-300px';
-//
-//    });
-//    document.querySelector('hidenav').addEventListener('click', function (e) {
-//        e.stopPropagation();
-//    })
-//})
 
 
 
