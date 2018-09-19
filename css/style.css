@@ -89,6 +89,7 @@ nav#main-nav {
 nav#main-nav.changeColor {
     background-color: rgba(0, 134, 0, 0.98);
 }
+
 /*
 nav#main-nav.addColor{
     color: red;
@@ -106,7 +107,7 @@ nav#main-nav div a {
 }
 
 nav#main-nav div a:hover,
-nav#main-nav div a.activeMenu{
+nav#main-nav div a.activeMenu {
     color: red;
 }
 
@@ -150,7 +151,8 @@ section#about-me {
     background-repeat: no-repeat;
     background-size: cover;
 }
-section#about-me:active nav#main-nav div a{
+
+section#about-me:active nav#main-nav div a {
     color: red;
 }
 
@@ -267,7 +269,7 @@ section#about-me div button {
 }
 
 #contact .contact-about form {
-/*    border: 1px ridge #1d3f5d;*/
+    /*    border: 1px ridge #1d3f5d;*/
     background-color: transparent;
     padding: 1%;
     width: 75%;
@@ -297,8 +299,9 @@ section#about-me div button {
     height: calc(100% - 15px);
     color: #1d3f5d;
 }
+
 #contact .contact-about form .form-about input[placeholder]:focus,
-#contact .contact-about .form-about textarea[placeholder]:focus{
+#contact .contact-about .form-about textarea[placeholder]:focus {
     background-color: #fff;
 }
 
@@ -317,22 +320,29 @@ section#about-me div button {
     color: #1d3f5d;
     border: 1px solid #1d3f5d;
 }
+
 /*Section Contact End*/
 
 /*Section Footer Start*/
-#footer{
+#footer {
     background-color: #e2e2e2;
 }
 
 
-#footer .icons-footer a{
+#footer .icons-footer a {
     background-color: rgb(44, 73, 156);
     color: #fff;
     border: 1px solid #e2e2e2;
 }
 
-#footer .icons-footer a:hover{
+#footer .icons-footer a:hover {
     color: rgb(44, 73, 156);
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(44,73,156);
+    border: 1px solid rgb(44, 73, 156);
+}
+
+@media (min-width:768px){
+    nav#main-nav{
+        height: 50px;
+    }
 }
