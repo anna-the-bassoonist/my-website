@@ -67,8 +67,8 @@
     </section>
     <!--Section About me End-->
     <!--    /*Section Skills Start*/-->
-    <section id="skills" class="text-center">
-        <h2>My skills</h2>
+    <section id="skills" class="text-center skills">
+        <h2 data-i18n="skills.header"></h2>
         <div class="container skills-border">
             <div class="row skills-icons">
                 <div class="col-lg-3 col-sm-6 col-12">
@@ -184,6 +184,35 @@
     <script src="js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Multi language support starts here -->
+    <script src="js/i18next.min.js" ></script>
+    <script src="js/jquery-i18next.min.js" ></script>
+    <script>
+      i18next.init({
+        lng: 'de',
+        fallbackLng: 'en',
+        resources: {
+          en: {
+            translation: {
+              skills: {
+                header: 'My skills',
+              },
+            }
+          },
+          de: {
+            translation: {
+             skills: {
+                header: 'Meine Kenntnisse',
+              }
+            }
+          }
+        }
+      }, function(err, t) {
+        jqueryI18next.init(i18next, $);
+        $('.skills').localize();
+      });
+    </script>
 </body>
 
 </html>
