@@ -90,7 +90,7 @@ nav#main-nav.changeColor {
     background-color: rgba(0, 134, 0, 0.98);
 }
 
-nav#main-nav div a {
+nav#main-nav div li a {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -101,9 +101,39 @@ nav#main-nav div a {
     transition: color 0.2s ease-in;
 }
 
-nav#main-nav div a:hover,
-nav#main-nav div a.activeMenu {
+nav#main-nav div li a:hover,
+nav#main-nav div li a.activeMenu {
     color: red;
+}
+
+nav#main-nav div ul li.dropdown-main{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+/*    transition: all 0.2 ease-in;*/
+} 
+nav#main-nav div li div.dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: -11px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav#main-nav div li div.dropdown-content a {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+nav#main-nav div li div.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
+    display: block;
 }
 
 /*Navigation End*/
@@ -336,8 +366,11 @@ section#about-me div button {
     border: 1px solid rgb(44, 73, 156);
 }
 
-@media (min-width:768px){
-    nav#main-nav{
+@media (min-width:768px) {
+    nav#main-nav {
         height: 50px;
     }
+    nav#main-nav div ul.ul-height{
+    max-height: 50px;
+}
 }
