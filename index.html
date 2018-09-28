@@ -15,12 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!--Style CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <!--    Link for Website in other languages-->
-    <!--
-    <link rel="alternate" href="#" hreflang="en">
-    <link rel="alternate" href="#" hreflang="de">
-    <link rel="alternate" href="#" hreflang="pl">
--->
+
 </head>
 
 <body>
@@ -156,7 +151,7 @@
     <div id="contact">
         <div class="container text-center">
 
-            <h3>Contact me</h3>
+            <h3 data-i18n="contact.main"></h3>
             <div class="form-row contact-about">
                 <form action="" method="post">
                     <div class="form-group col-12 form-about">
@@ -202,6 +197,7 @@
     <script src="js/jquery-i18next.min.js"></script>
     <script>
         i18next.init({
+            lng: 'pl',
             lng: 'de',
             fallbackLng: 'en',
             resources: {
@@ -210,6 +206,9 @@
                         skills: {
                             header: 'My skills',
                             header2: 'Still learning',
+                        },
+                        contact: {
+                            main: 'Contact me',
                         },
 
                     }
@@ -220,13 +219,30 @@
                             header: 'Meine Kenntnisse',
                             header2: 'ich lerne immer noch',
                         },
+                        contact: {
+                            main: 'Kontakte mich',
+                        },
 
+                    }
+                },
+                pl: {
+                    translation: {
+                        skills: {
+                            header: 'Moje umiejętności',
+                            header2: 'Nadal się uczę',
+                        },
+                        contact: {
+                            main: 'Skontaktuj się',
+                        },
                     }
                 }
             }
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
             $('.skills').localize();
+            jqueryI18next.init(i18next, $);
+            $('.contact').localize();
+            console.log('works');
         });
 
     </script>
