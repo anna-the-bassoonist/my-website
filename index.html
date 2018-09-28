@@ -16,9 +16,11 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!--    Link for Website in other languages-->
+    <!--
     <link rel="alternate" href="#" hreflang="en">
     <link rel="alternate" href="#" hreflang="de">
     <link rel="alternate" href="#" hreflang="pl">
+-->
 </head>
 
 <body>
@@ -26,20 +28,25 @@
     <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top">
         <a class="navbar-brand" href="#"></a>
         <button id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon white"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-               <select name="lang" id="language">
-                   <option title="English" value="english">english</option>
-                   <option title="Deutsch" value="deutsch">deutsch</option>
-                   <option title="Polski" value="polski">polski</option>
-               </select>
-                <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header">Home <span class="sr-only active">(current)</span></a>
-                <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me">About me</a>
-                <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#skills">Skills</a>
-                <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a>
-            </div>
+            <ul class="navbar-nav">
+
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header">Home <span class="sr-only active">(current)</span></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me">About me</a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#skills">Skills</a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a></li>
+
+                <li class="dropdown nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="dropdown-toogle nav-link" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item language-select" href="#">Action</a>
+                        <a class="dropdown-item language-select" href="#">Another action</a>
+                        <a class="dropdown-item language-select" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -124,7 +131,7 @@
             </div>
         </div>
         <div class="container">
-            <h3>Still learning</h3>
+            <h3 data-i18n="skills.header2"></h3>
             <div class="row skills-icons">
                 <div class="col-lg-4 col-sm-4 col-12">
                     <figure>
@@ -191,32 +198,37 @@
     <script src="js/main.js"></script>
 
     <!-- Multi language support starts here -->
-    <script src="js/i18next.min.js" ></script>
-    <script src="js/jquery-i18next.min.js" ></script>
+    <script src="js/i18next.min.js"></script>
+    <script src="js/jquery-i18next.min.js"></script>
     <script>
-      i18next.init({
-        lng: 'de',
-        fallbackLng: 'en',
-        resources: {
-          en: {
-            translation: {
-              skills: {
-                header: 'My skills',
-              },
+        i18next.init({
+            lng: 'de',
+            fallbackLng: 'en',
+            resources: {
+                en: {
+                    translation: {
+                        skills: {
+                            header: 'My skills',
+                            header2: 'Still learning',
+                        },
+
+                    }
+                },
+                de: {
+                    translation: {
+                        skills: {
+                            header: 'Meine Kenntnisse',
+                            header2: 'ich lerne immer noch',
+                        },
+
+                    }
+                }
             }
-          },
-          de: {
-            translation: {
-             skills: {
-                header: 'Meine Kenntnisse',
-              }
-            }
-          }
-        }
-      }, function(err, t) {
-        jqueryI18next.init(i18next, $);
-        $('.skills').localize();
-      });
+        }, function(err, t) {
+            jqueryI18next.init(i18next, $);
+            $('.skills').localize();
+        });
+
     </script>
 </body>
 

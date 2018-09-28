@@ -34,7 +34,17 @@ $(document).ready(function () {
 
 });
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function () {
     let myLanguage = document.getElementById('language').value;
     console.log('dziala');
 })
+
+//Selection of language
+
+//$(document).ready(function () {
+//    function updateText() {
+//        language = $('#language option:selected').val();
+//        console.log('dziala');
+//    }
+//
+//})
