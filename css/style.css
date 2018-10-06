@@ -87,7 +87,7 @@ nav#main-nav {
 }
 
 nav#main-nav.changeColor {
-    background-color: rgba(0, 134, 0, 0.98);
+    background-color: rgba(44, 73, 156, 0.98);
 }
 
 nav#main-nav div li a {
@@ -223,8 +223,8 @@ section#about-me div button {
 #skills h2,
 #skills h3 {
     text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: rgb(0, 134, 0);
+    text-decoration-style:solid;
+    text-decoration-color: rgb(44, 73, 156);
 
 }
 
