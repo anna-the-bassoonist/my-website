@@ -143,7 +143,7 @@ nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
 
 header#header {
     height: 100vh;
-    background-image: url(../img/kazuzend-optimized.jpg);
+    background-image: url(../img/kazuend-1600_8.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,5 +387,16 @@ section#about-me div button {
 
     nav#main-nav div ul.ul-height {
         max-height: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header#header {
+        background-image: url(../img/kazuend-1920_6.jpg);
+    }
+}
+@media (max-width: 768px){
+    header#header {
+        background-image: url(../img/kazuend-1024_6.jpg);
     }
 }
