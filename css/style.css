@@ -58,7 +58,7 @@
 /*Font Styles*/
 
 body {
-    font-family: Josefin, Arial, sans-serif;
+    font-family: 'Josefin Sans', Arial, sans-serif;
     font-size: 1rem;
     color: #3c3b3b;
     /*    margin: 0;*/
@@ -75,7 +75,7 @@ h6 {
 }
 
 p {
-    font-family: 'Josefin Slab', Arial, serif;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 /*Navigation Start*/
