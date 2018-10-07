@@ -96,22 +96,23 @@ nav#main-nav div li a {
     font-weight: bold;
     font-size: 20px;
     background-color: transparent;
-    padding: 15px;
-    margin-right: 15px;
+    padding: 10px 22px;
+    /*    margin-right: 15px;*/
     transition: color 0.2s ease-in;
 }
 
 nav#main-nav div li a:hover,
 nav#main-nav div li a.activeMenu {
-    color: red;
+    background-color: rgb(89, 106, 156);
 }
 
-nav#main-nav div ul li.dropdown-main{
+nav#main-nav div ul li.dropdown-main {
     margin: 0;
     padding: 0;
     background-color: transparent;
-/*    transition: all 0.2 ease-in;*/
-} 
+    /*    transition: all 0.2 ease-in;*/
+}
+
 nav#main-nav div li div.dropdown-content {
     display: none;
     position: absolute;
@@ -129,7 +130,7 @@ nav#main-nav div li div.dropdown-content a {
 }
 
 nav#main-nav div li div.dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: rgb(44, 73, 156);
 }
 
 nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
@@ -160,9 +161,11 @@ header#header div h2 {
     color: white;
 }
 
+/*
 header#header div h1 span {
     color: rgb(0, 134, 0);
 }
+*/
 
 /*Header End*/
 
@@ -175,10 +178,6 @@ section#about-me {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-section#about-me:active nav#main-nav div a {
-    color: red;
 }
 
 section#about-me div.about-content {
@@ -196,14 +195,18 @@ section#about-me div h2 {
     color: rgba(255, 255, 255, 0.9);
 }
 
+/*
 section#about-me div h2 span {
     color: rgb(0, 134, 0);
 }
+*/
 
 section#about-me div p {
     padding-bottom: 25px;
     line-height: 2.4rem;
-    padding: 10px 20px;
+    padding: 10px;
+    font-size: 1.4rem;
+
 }
 
 section#about-me div button {
@@ -220,22 +223,33 @@ section#about-me div button {
     color: #000000;
 }
 
+/*
 #skills h2,
 #skills h3 {
     text-decoration: underline;
-    text-decoration-style:solid;
+    text-decoration-style: solid;
     text-decoration-color: rgb(44, 73, 156);
-
 }
+*/
 
 #skills h2 {
-    padding: 0 0 50px;
+/*    padding: 0 0 50px;*/
+    padding: 0 0 10px;
 }
 
 #skills h3 {
     /*    border-top-style: ridge;*/
     margin-top: 30px;
-    padding: 25px 0;
+    padding: 0 0 8px;
+/*    padding: 25px 0;*/
+}
+#skills .line-under{
+/*    margin: 25px 0 75px;*/
+    width: 140px;
+    height: 4px;
+    background: rgb(44,73,156);
+    text-align: center;
+    margin: 0 auto 25px;
 }
 
 #skills .skills-border {
@@ -355,22 +369,23 @@ section#about-me div button {
 
 
 #footer .icons-footer a {
-    background-color: rgb(44, 73, 156);
+    background-color: rgb(44, 106, 156);
     color: #fff;
     border: 1px solid #e2e2e2;
 }
 
 #footer .icons-footer a:hover {
-    color: rgb(44, 73, 156);
+    color: rgb(44, 106, 156);
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(44, 73, 156);
+    border: 1px solid rgb(44, 106, 156);
 }
 
 @media (min-width:768px) {
     nav#main-nav {
         height: 50px;
     }
-    nav#main-nav div ul.ul-height{
-    max-height: 50px;
-}
+
+    nav#main-nav div ul.ul-height {
+        max-height: 50px;
+    }
 }
