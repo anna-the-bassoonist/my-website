@@ -215,14 +215,14 @@
                         },
 
                     },
-                    translation2: {
+                    translation: {
                         skills: {
                             header: 'My skills',
                             header2: 'Still learning',
                         },
 
                     },
-                    translation2: {
+                    translation: {
                         contact: {
                             main: 'Contact me',
                         },
@@ -236,14 +236,14 @@
                         },
 
                     },
-                    translation2: {
+                    translation: {
                         skills: {
                             header: 'Meine Kenntnisse',
                             header2: 'ich lerne immer noch',
                         },
 
                     },
-                    translation2: {
+                    translation: {
                         contact: {
                             main: 'Kontakte mich',
                         },
@@ -257,14 +257,14 @@
                         },
 
                     },
-                    translation2: {
+                    translation: {
                         skills: {
                             header: 'Moje umiejętności',
                             header2: 'Nadal się uczę',
                         },
 
                     },
-                    translation2: {
+                    translation: {
                         contact: {
                             main: 'Skontaktuj się',
                         },
@@ -273,20 +273,8 @@
             }
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
-            //            $('.skills').localize();
-            //            $('.contact').localize();
             $('.aboutme').localize();
-
-        }, function(err, t) {
-            jqueryI18next.init(i18next, $);
             $('.skills').localize();
-            //            $('.contact').localize();
-            //            $('.aboutme').localize();
-
-        }, function(err, t) {
-            jqueryI18next.init(i18next, $);
-//            $('.aboutme').localize();
-//            $('.skills').localize();
             $('.contact').localize();
 
         });
