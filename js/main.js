@@ -38,5 +38,12 @@ $(document).ready(function () {
           $('.skills').localize();
           $('.contact').localize();
         });
+        if ($("a:contains(en)")) {
+            i18next.changeLanguage('en');
+        }
     });
+    
+    $(".english").html("english");
+    $(".deutsch").html("deutsch");
+    $(".polski").html("polski");
 });
