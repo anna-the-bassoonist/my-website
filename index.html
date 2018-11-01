@@ -37,9 +37,9 @@
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
                     <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
                     <div class="dropdown-menu dropdown-content " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item language-select english" href=$('a[href*="i18next.changeLanguage('lng')"]:not([href="#"])')>en</a>
-                        <a class="dropdown-item language-select deutsch" href=$('a[href*="#"]:not([href="#"])')>de</a>
-                        <a class="dropdown-item language-select polski" href=$('a[href*="#"]:not([href="#"])')>pl</a>
+                        <a class="dropdown-item language-select english" href=$('a[href*="i18next.changeLanguage('lng')" ]:not([href="#" ])')>en</a>
+                        <a class="dropdown-item language-select deutsch" href=$('a[href*="#" ]:not([href="#" ])')>de</a>
+                        <a class="dropdown-item language-select polski" href=$('a[href*="#" ]:not([href="#" ])')>pl</a>
                     </div>
                 </li>
             </ul>
@@ -57,11 +57,11 @@
     </header>
     <!--    Header Start-->
     <!--Section About me Start-->
-    <section id="about-me" class="text-center">
+    <section id="about-me" class="text-center aboutme">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-5 col-lg-5 col-12 about-content">
-                    <h2 class="mb-15">About me</h2>
+                    <h2 class="mb-15" data-i18n="aboutme.header"></h2>
                     <p class="mb-15">The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I'm a school teacher - in all these aspects I strive for perfection.
 
                     </p>
@@ -81,7 +81,7 @@
         <h2 data-i18n="skills.header"></h2>
         <p class="skills-about">By creating a website I use different programming languages and tools: </p>
         <div class="line-under"></div>
-        
+
         <div class="container skills-border">
             <div class="row skills-icons">
                 <div class="col-lg-3 col-sm-6 col-6">
@@ -156,7 +156,7 @@
     </section>
     <!--    /*Section Skills End*/-->
     <!--Section Contact Start-->
-    <div id="contact">
+    <div id="contact" class="contact">
         <div class="container text-center">
 
             <h3 data-i18n="contact.main"></h3>
@@ -210,6 +210,12 @@
             resources: {
                 en: {
                     translation: {
+                        aboutme: {
+                            header: 'About me',
+                        },
+
+                    },
+                    translation2: {
                         skills: {
                             header: 'My skills',
                             header2: 'Still learning',
@@ -225,6 +231,12 @@
                 },
                 de: {
                     translation: {
+                        aboutme: {
+                            header: 'Über mich',
+                        },
+
+                    },
+                    translation2: {
                         skills: {
                             header: 'Meine Kenntnisse',
                             header2: 'ich lerne immer noch',
@@ -240,6 +252,12 @@
                 },
                 pl: {
                     translation: {
+                        aboutme: {
+                            header: 'O mnie',
+                        },
+
+                    },
+                    translation2: {
                         skills: {
                             header: 'Moje umiejętności',
                             header2: 'Nadal się uczę',
@@ -255,8 +273,22 @@
             }
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
+            //            $('.skills').localize();
+            //            $('.contact').localize();
+            $('.aboutme').localize();
+
+        }, function(err, t) {
+            jqueryI18next.init(i18next, $);
             $('.skills').localize();
+            //            $('.contact').localize();
+            //            $('.aboutme').localize();
+
+        }, function(err, t) {
+            jqueryI18next.init(i18next, $);
+//            $('.aboutme').localize();
+//            $('.skills').localize();
             $('.contact').localize();
+
         });
 
     </script>
