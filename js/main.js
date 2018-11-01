@@ -34,9 +34,9 @@ $(document).ready(function () {
     
 
     $(".language-select").click(function () {
-        i18next.changeLanguage(this.innerHTML, function() {
-          $('.skills').localize();
-          $('.contact').localize();
-        });
+        e.preventDefault();
+        i18next.changeLanguage = $(this).data('localize');
+        //                $(".language-select").removeClass('i18next.changeLanguage');
+        //                $(this).addClass('i18next.changeLanguage');
     });
 });
