@@ -10,20 +10,20 @@
 .m-btn {
     border: 1px solid #fff;
     display: inline-block;
-    outline: ;
-    border-radius: 5%;
+/*    outline:inherit ;*/
+    border-radius: 5px;
     cursor: pointer;
     text-align: center;
     color: #fff;
     background-color: rgb(44, 73, 156);
     font-weight: bold;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.3s linear;
     margin-top: 30px;
 }
 
 .m-btn:hover {
-    border-radius: 8%;
+/*    border-radius: 8%;*/
     color: rgb(44, 73, 156);
     background-color: #fff;
 
@@ -181,7 +181,7 @@ section#about-me {
 }
 
 section#about-me div.about-content {
-    padding: 20% 5%;
+    padding: 20% 3%;
     position: relative;
     height: 100%;
     /*    transform: translateY(35%);*/
@@ -206,6 +206,7 @@ section#about-me div p {
     line-height: 2.4rem;
     padding: 10px;
     font-size: 1.4rem;
+    text-align: justify;
 
 }
 

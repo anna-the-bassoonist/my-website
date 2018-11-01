@@ -31,6 +31,7 @@ $(document).ready(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
+    
 
     $(".language-select").click(function () {
         e.preventDefault();
