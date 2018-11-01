@@ -36,9 +36,9 @@
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
                     <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
                     <div class="dropdown-menu dropdown-content " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item language-select" href="#">English</a>
-                        <a class="dropdown-item language-select" href="#">Deutsch</a>
-                        <a class="dropdown-item language-select" href="#">Polski</a>
+                        <a class="dropdown-item language-select" href=$('a[href*="#"]:not([href="#"])')>en</a>
+                        <a class="dropdown-item language-select" href=$('a[href*="#"]:not([href="#"])')>de</a>
+                        <a class="dropdown-item language-select" href=$('a[href*="#"]:not([href="#"])')>pl</a>
                     </div>
                 </li>
             </ul>
@@ -197,7 +197,6 @@
     <script src="js/jquery-i18next.min.js"></script>
     <script>
         i18next.init({
-            lng: 'pl',
             lng: 'de',
             fallbackLng: 'en',
             resources: {
@@ -240,9 +239,7 @@
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
             $('.skills').localize();
-            jqueryI18next.init(i18next, $);
             $('.contact').localize();
-            console.log('works');
         });
 
     </script>
