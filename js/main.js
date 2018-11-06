@@ -31,21 +31,17 @@ $(document).ready(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
-    
+
 
     $(".language-select").click(function () {
-        i18next.changeLanguage(this.innerHTML, function() {
-          $('.skills').localize();
-          $('.contact').localize();
+        i18next.changeLanguage($(this).attr('id'), function () {
+            $('.aboutme').localize();
+            $('.skills').localize();
+            $('.contact').localize();
         });
-//        if ($("a:contains(en)")) {
-//            i18next.changeLanguage('en');
-//        }
+
     });
-    $(".english").click(function(){
-        i18next.changeLanguage('en');
-    });
-    
+
     $(".english").html("english");
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");

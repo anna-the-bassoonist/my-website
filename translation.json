@@ -1,0 +1,65 @@
+ i18next.init({
+            lng: 'de',
+            fallbackLng: 'en',
+            resources: {
+                en: {
+                    translation: {
+                        about: {
+                            header: 'About me',
+                            text: 'The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I am a school teacher - in all these aspects I strive for perfection.'
+                        },
+                        skills: {
+                            header: 'My skills',
+                            text: 'By creating a website I use different programming languages and tools:',
+                            subHeader: 'Still learning',
+                        },
+                        contact: {
+                            main: 'Contact me',
+                        },
+
+                    },
+
+                },
+                de: {
+                    translation: {
+                        about: {
+                            header: 'Über mich',
+                            text: '',
+                        },
+                        skills: {
+                            header: 'Meine Kenntnisse',
+                            text:'',
+                            subHeader: 'ich lerne immer noch',
+                        },
+                        contact: {
+                            main: 'Kontakte mich',
+                        },
+
+                    },
+
+                },
+                pl: {
+                    translation: {
+                        about: {
+                            header: 'O mnie',
+                            text: 'Uważam, że najciekawsze i najlepsze rzeczy powstają dzięki nietypowym połączeniom. Specjalizacja może dać nam dokładność. Specjalizacja połączona z interdyscyplinarnością – może zapewnić precyzyjność i kreatywność. Sama jestem artystką z matematycznym umysłem. Dodatkowo jeżeli coś robię – staram się robić to najlepiej jak potrafię. Wykształcenie muzyczne i praca w tym zawodzie nauczyło mnie skrupulatności: jestem twórcza, ale też dokładna. Tworzę strony internetowe, gram na fagocie, uczę w szkole – we wszystkich tych aspektach dążę do perfekcji.',
+                        },
+                        skills: {
+                            header: 'Moje umiejętności',
+                            text: 'Tworząc stronę internetową używam różnych języków programowania i narzędzi:',
+                            subHeader: 'Nadal się uczę',
+                        },
+                        contact: {
+                            main: 'Skontaktuj się',
+                        },
+
+                    },
+                }
+            }
+        }, function(err, t) {
+            jqueryI18next.init(i18next, $);
+            $('.aboutme').localize();
+            $('.skills').localize();
+            $('.contact').localize();
+
+        });
