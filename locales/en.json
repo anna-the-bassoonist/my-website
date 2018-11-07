@@ -1,0 +1,39 @@
+ i18next.init({
+            lng: 'de',
+            fallbackLng: 'en',
+            resources: {
+                en: {
+                    translation: {
+                        menu: {
+                            home: 'home',
+                            aboutMe: 'about me',
+                            skills: 'skills',
+                            contact: 'contact',
+                            language: 'language',
+                        },
+                        about: {
+                            header: 'About me',
+                            text: 'The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I am a school teacher - in all these aspects I strive for perfection.'
+                        },
+                        skills: {
+                            header: 'My skills',
+                            text: 'By creating a website I use different programming languages and tools:',
+                            subHeader: 'Still learning',
+                        },
+                        contact: {
+                            main: 'Contact me',
+                        },
+
+                    },
+
+                },
+               
+            }
+        }, function(err, t) {
+            jqueryI18next.init(i18next, $);
+            $('.menu-lng').localize();
+            $('.aboutme').localize();
+            $('.skills').localize();
+            $('.contact').localize();
+
+        });

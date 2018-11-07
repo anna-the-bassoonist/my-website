@@ -1,0 +1,37 @@
+i18next.init({
+    lng: 'de',
+    fallbackLng: 'en',
+    resources: {
+        de: {
+            translation: {
+                menu: {
+                    home: 'home',
+                    aboutMe: 'über mich',
+                    skills: 'fähigkeiten',
+                    contact: 'kontakt',
+                    language: 'sprachen',
+                },
+                about: {
+                    header: 'Über mich',
+                    text: '',
+                },
+                skills: {
+                    header: 'Meine Kenntnisse',
+                    text: '',
+                    subHeader: 'ich lerne immer noch',
+                },
+                contact: {
+                    main: 'Kontakte mich',
+                },
+
+            },
+
+        },
+    }
+}, function (err, t) {
+    jqueryI18next.init(i18next, $);
+    $('.menu-lng').localize();
+    $('.aboutme').localize();
+    $('.skills').localize();
+    $('.contact').localize();
+});

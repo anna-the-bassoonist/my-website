@@ -21,7 +21,7 @@
 
 <body>
     <!--   Navigation Start-->
-    <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top menu-lng">
         <a class="navbar-brand" href="#"></a>
         <button id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,13 +29,13 @@
         <div class="collapse navbar-collapse justify-content-end max-height-100" id="navbarNavAltMarkup">
             <ul class="navbar-nav ul-height main-navbar">
 
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header">Home <span class="sr-only active">(current)</span></a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me">About me</a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#skills">Skills</a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact</a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header" data-i18n="menu.home"><span class="sr-only active">(current)</span></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me" data-i18n="menu.aboutMe"></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact" data-i18n="menu.contact"></a></li>
 
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                    <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="menu.language"></a>
                     <div class="dropdown-menu dropdown-content border-0" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item language-select english" id="en" href="#language">en</a>
                         <a class="dropdown-item language-select deutsch" id="de" href="#language">de</a>
@@ -176,13 +176,13 @@
             <div class="row text-center footer-about">
                 <div class="col-sm-6 col-12 py-1">
                     <div class="flex-center social-icons icons-footer">
-                        <a href="">
+                        <a href="https://www.facebook.com/anna.toeplitz" target="_blank">
                             <i class="fab fa-facebook-f"> </i>
                         </a>
-                        <a href="">
+                        <a href="mailto:anna.toeplitz@gmail.com">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/anna-toeplitz/" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -201,74 +201,10 @@
     <!-- Multi language support starts here -->
     <script src="js/i18next.min.js"></script>
     <script src="js/jquery-i18next.min.js"></script>
-    <script src="translation.json">
-        //        i18next.init({
-        //            lng: 'de',
-        //            fallbackLng: 'en',
-        //            resources: {
-        //                en: {
-        //                    translation: {
-        //                        about: {
-        //                            header: 'About me',
-        //                            text: 'The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I am a school teacher - in all these aspects I strive for perfection.'
-        //                        },
-        //                        skills: {
-        //                            header: 'My skills',
-        //                            text: 'By creating a website I use different programming languages and tools:',
-        //                            subHeader: 'Still learning',
-        //                        },
-        //                        contact: {
-        //                            main: 'Contact me',
-        //                        },
-        //
-        //                    },
-        //
-        //                },
-        //                de: {
-        //                    translation: {
-        //                        about: {
-        //                            header: 'Über mich',
-        //                            text: '',
-        //                        },
-        //                        skills: {
-        //                            header: 'Meine Kenntnisse',
-        //                            text:'',
-        //                            subHeader: 'ich lerne immer noch',
-        //                        },
-        //                        contact: {
-        //                            main: 'Kontakte mich',
-        //                        },
-        //
-        //                    },
-        //
-        //                },
-        //                pl: {
-        //                    translation: {
-        //                        about: {
-        //                            header: 'O mnie',
-        //                            text: 'Uważam, że najciekawsze i najlepsze rzeczy powstają dzięki nietypowym połączeniom. Specjalizacja może dać nam dokładność. Specjalizacja połączona z interdyscyplinarnością – może zapewnić precyzyjność i kreatywność. Sama jestem artystką z matematycznym umysłem. Dodatkowo jeżeli coś robię – staram się robić to najlepiej jak potrafię. Wykształcenie muzyczne i praca w tym zawodzie nauczyło mnie skrupulatności: jestem twórcza, ale też dokładna. Tworzę strony internetowe, gram na fagocie, uczę w szkole – we wszystkich tych aspektach dążę do perfekcji.',
-        //                        },
-        //                        skills: {
-        //                            header: 'Moje umiejętności',
-        //                            text: 'Tworząc stronę internetową używam różnych języków programowania i narzędzi:',
-        //                            subHeader: 'Nadal się uczę',
-        //                        },
-        //                        contact: {
-        //                            main: 'Skontaktuj się',
-        //                        },
-        //
-        //                    },
-        //                }
-        //            }
-        //        }, function(err, t) {
-        //            jqueryI18next.init(i18next, $);
-        //            $('.aboutme').localize();
-        //            $('.skills').localize();
-        //            $('.contact').localize();
-        //
-        //        });
+    <script src="locales/pl.json"></script>
+    <script src="locales/en.json"></script>
+    <script src="locales/de.json"></script>
 
-    </script>
 </body>
 
 </html>
