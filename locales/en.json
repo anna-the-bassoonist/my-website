@@ -1,6 +1,9 @@
- i18next.init({
+ i18next.use(window.i18nextXHRBackend).init({
             lng: 'de',
             fallbackLng: 'en',
+            backend: {
+                loadPath:  'langs/{{lng}}.json'
+            },
             resources: {
                 en: {
                     translation: {
@@ -13,7 +16,7 @@
                         },
                         about: {
                             header: 'About me',
-                            text: 'The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I am a school teacher - in all these aspects I strive for perfection.'
+                            text: 'The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I am a bassoon school teacher - in all these aspects I strive for perfection.'
                         },
                         skills: {
                             header: 'My skills',

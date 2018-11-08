@@ -1,4 +1,4 @@
-i18next.init({
+i18next.use(window.i18nextXHRBackend).init({
     lng: 'de',
     fallbackLng: 'en',
     resources: {
@@ -17,8 +17,8 @@ i18next.init({
                 },
                 skills: {
                     header: 'Meine Kenntnisse',
-                    text: '',
-                    subHeader: 'ich lerne immer noch',
+                    text: 'Beim Erstellen von Webseiten gebrauche ich untershiedliche  Programmsprachen und Werkzeuge.',
+                    subHeader: 'ich lerne weiterhin',
                 },
                 contact: {
                     main: 'Kontakte mich',

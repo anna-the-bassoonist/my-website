@@ -308,6 +308,7 @@ section#about-me div button {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+/*    when i live margin bei firefox its a white-space: */
     margin: 5% 5% 15%;
 }
 

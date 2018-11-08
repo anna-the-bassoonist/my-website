@@ -1,4 +1,4 @@
-i18next.init({
+i18next.use(window.i18nextXHRBackend).init({
     lng: 'de',
     fallbackLng: 'en',
     resources: {
