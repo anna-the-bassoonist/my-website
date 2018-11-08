@@ -2,8 +2,8 @@ i18next.use(window.i18nextXHRBackend).init({
     lng: 'de',
     fallbackLng: 'en',
     backend: {
-        loadPath: 'locales/pl.json'
-    },
+                loadPath:  'locales/pl.json'
+            },
     resources: {
 
         pl: {
