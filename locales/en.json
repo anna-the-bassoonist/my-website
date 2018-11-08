@@ -2,7 +2,7 @@
             lng: 'de',
             fallbackLng: 'en',
             backend: {
-                loadPath:  'langs/{{lng}}.json'
+                loadPath: 'locales/en.json'
             },
             resources: {
                 en: {
