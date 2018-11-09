@@ -205,6 +205,25 @@
     <script src="locales/pl.json"></script>
     <script src="locales/en.json"></script>
     <script src="locales/de.json"></script>
+    
+    <script>
+    i18next.use(window.i18nextXHRBackend).init({
+    lng: 'de',
+    fallbackLng: 'en',
+    backend: {
+        loadPath: 'locales/{{lng}}.json'
+    },
+//    resources: {
+//    }
+}, function (err, t) {
+    jqueryI18next.init(i18next, $);
+    $('.menu-lng').localize();
+    $('.aboutme').localize();
+    $('.skills').localize();
+    $('.contact').localize();
+});
+
+    </script>
 
 </body>
 

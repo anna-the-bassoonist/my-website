@@ -1,40 +1,26 @@
-i18next.use(window.i18nextXHRBackend).init({
-    lng: 'de',
-    fallbackLng: 'en',
-    backend: {
-                loadPath:  'locales/pl.json'
+{
+    "pl": {
+        "translation": {
+            "menu": {
+                "home": "home",
+                "aboutMe": "o mnie",
+                "skills": "umiejętności",
+                "contact": "kontakt",
+                "language": "język",
             },
-    resources: {
-
-        pl: {
-            translation: {
-                menu: {
-                    home: 'home',
-                    aboutMe: 'o mnie',
-                    skills: 'umiejętności',
-                    contact: 'kontakt',
-                    language: 'język',
-                },
-                about: {
-                    header: 'O mnie',
-                    text: 'Uważam, że najciekawsze i najlepsze rzeczy powstają dzięki nietypowym połączeniom. Specjalizacja może dać nam dokładność. Specjalizacja połączona z interdyscyplinarnością – może zapewnić precyzyjność i kreatywność. Sama jestem artystką z matematycznym umysłem. Dodatkowo jeżeli coś robię – staram się robić to najlepiej jak potrafię. Wykształcenie muzyczne i praca w tym zawodzie nauczyło mnie skrupulatności: jestem twórcza, ale też dokładna. Tworzę strony internetowe, gram na fagocie, uczę w szkole – we wszystkich tych aspektach dążę do perfekcji.',
-                },
-                skills: {
-                    header: 'Moje umiejętności',
-                    text: 'Tworząc stronę internetową używam różnych języków programowania i narzędzi:',
-                    subHeader: 'Nadal się uczę',
-                },
-                contact: {
-                    main: 'Skontaktuj się',
-                },
-
+            "about": {
+                "header": "O mnie",
+                "text": "Uważam, że najciekawsze i najlepsze rzeczy powstają dzięki nietypowym połączeniom. Specjalizacja może dać nam dokładność. Specjalizacja połączona z interdyscyplinarnością – może zapewnić precyzyjność i kreatywność. Sama jestem artystką z matematycznym umysłem. Dodatkowo jeżeli coś robię – staram się robić to najlepiej jak potrafię. Wykształcenie muzyczne i praca w tym zawodzie nauczyło mnie skrupulatności: jestem twórcza, ale też dokładna. Tworzę strony internetowe, gram na fagocie, uczę w szkole – we wszystkich tych aspektach dążę do perfekcji.",
             },
-        }
-    }
-}, function (err, t) {
-    jqueryI18next.init(i18next, $);
-    $('.menu-lng').localize();
-    $('.aboutme').localize();
-    $('.skills').localize();
-    $('.contact').localize();
-});
+            "skills": {
+                "header": "Moje umiejętności",
+                "text": "Tworząc stronę internetową używam różnych języków programowania i narzędzi:',
+                "subHeader": 'Nadal się uczę",
+            },
+            "contact": {
+                "main": "Skontaktuj się",
+            },
+
+        },
+    },
+}

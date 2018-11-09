@@ -35,7 +35,6 @@ $(document).ready(function () {
 
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
-            
             $('.menu-lng').localize();
             $('.aboutme').localize();
             $('.skills').localize();
