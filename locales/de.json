@@ -16,12 +16,12 @@ i18next.use(window.i18nextXHRBackend).init({
                 },
                 about: {
                     header: 'Über mich',
-                    text: 'The best and most interesting things are created thanks to unusual connections. Specialization can give us accuracy. Specialization combined with interdisciplinary can ensure precision and creativity. I am an artist with an analytical mind. When I do something - I try to do it the best I can. Musical education and work in this profession have taught me to be scrupulous: I am creative, but also precise. I create websites, I play the bassoon, I am a bassoon school teacher - in all these aspects I strive for perfection.',
+                    text: ' "Die interessantesten  Zusammenhänge entstehen dank untypischen Verbindungen. Unterschiedliche Ausbildungen können uns viel an Genauigkeit und Präzision geben. Die Spezialisierung zusammen mit vielen Verknüpfungen erschafft Kreativität." Ich selbst bin eine Künstlerin/ Webdesignerin mit einem mathematisch ausgeprägten Geist.Dabei bemühe ich mich in jedem Bereich mein Bestes zu geben und es mit meinem Sinn für Perfektion zu schmücken.Meine Ausbildung zur Musikerin hat mich zur Genauigkeit beigebracht: ich bin kreativ aber auch präzise.So erschaffe ich Webseiten,spiele Fagott und unterrichte dieses Instrument in einer Schule.–auf all diesen Gebieten strebe ich nach Perfektion.'
                 },
                 skills: {
                     header: 'Meine Kenntnisse',
                     text: 'Beim Erstellen von Webseiten gebrauche ich untershiedliche  Programmsprachen und Werkzeuge.',
-                    subHeader: 'ich lerne weiterhin',
+                    subHeader: 'ständige Weiterbildung/ich lerne weiterhin',
                 },
                 contact: {
                     main: 'Kontakte mich',
