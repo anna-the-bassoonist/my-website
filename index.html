@@ -194,34 +194,38 @@
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.js"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js"></script>-->
+        <script src="js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Multi language support starts here -->
     <script src="js/i18next.min.js"></script>
     <script src="js/jquery-i18next.min.js"></script>
-    <script src="js/i18nextXHRBackent.min.js"></script>
-    <script src="locales/pl.json"></script>
-    <script src="locales/en.json"></script>
-    <script src="locales/de.json"></script>
+    <script src="js/i18nextXHRBackend.min.js"></script>
+    <!--
+    <script src="js/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="js/i18nextLocalStorageCache.min.js"></script>
+-->
 
     <script>
         i18next.use(window.i18nextXHRBackend).init({
+            debug: true,
             lng: 'de',
             fallbackLng: 'en',
-            backend: {
-                loadPath: '/locales/{{lng}}.json'
-            },
-            //    resources: {
-            //    }
+            resources: {
+                backend: {
+                    loadPath: '/locales/{{lng}}/.json'
+                },
+            }
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
+            //            $(document).localize();
             $('.menu-lng').localize();
             $('.aboutme').localize();
             $('.skills').localize();
             $('.contact').localize();
-            console.log('dziala');
+            console.log('works');
         });
 
     </script>
