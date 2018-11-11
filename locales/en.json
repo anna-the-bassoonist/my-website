@@ -4,7 +4,7 @@
         "aboutMe": "about me",
         "skills": "skills",
         "contact": "contact",
-        "language": "language",
+        "language": "language"
     },
     "about": {
         "header": "About me",
@@ -13,10 +13,10 @@
     "skills": {
         "header": "My skills",
         "text": "By creating a website I use different programming languages and tools:",
-        "subHeader": "Still learning",
+        "subHeader": "Still learning"
     },
     "contact": {
-        "main": "Contact me",
-    },
+        "main": "Contact me"
+    }
 
 }

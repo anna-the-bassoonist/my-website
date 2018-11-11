@@ -194,8 +194,8 @@
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js"></script>-->
-        <script src="js/popper.js"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js"></script>-->
+    <script src="js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
@@ -213,11 +213,10 @@
             debug: true,
             lng: 'de',
             fallbackLng: 'en',
-            resources: {
-                backend: {
-                    loadPath: '/locales/{{lng}}/.json'
-                },
+            backend: {
+                loadPath: 'locales/{{lng}}.json'
             }
+
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
             //            $(document).localize();

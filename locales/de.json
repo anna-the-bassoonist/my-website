@@ -4,7 +4,7 @@
         "aboutMe": "über mich",
         "skills": "fähigkeiten",
         "contact": "kontakt",
-        "language": "sprachen",
+        "language": "sprachen"
     },
     "about": {
         "header": "Über mich",
@@ -13,10 +13,10 @@
     "skills": {
         "header": "Meine Kenntnisse",
         "text": "Beim Erstellen von Webseiten gebrauche ich untershiedliche  Programmsprachen und Werkzeuge.",
-        "subHeader": "Stets in Fortbildung",
+        "subHeader": "Stets in Fortbildung"
     },
     "contact": {
-        "main": "Kontakte mich",
-    },
+        "main": "Kontakte mich"
+    }
 
 }
