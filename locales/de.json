@@ -1,40 +1,22 @@
-i18next.use(window.i18nextXHRBackend).init({
-    lng: 'de',
-    fallbackLng: 'en',
-    backend: {
-        loadPath: 'locales/de.json'
+{
+    "menu": {
+        "home": "home",
+        "aboutMe": "über mich",
+        "skills": "fähigkeiten",
+        "contact": "kontakt",
+        "language": "sprachen"
     },
-    resources: {
-        de: {
-            translation: {
-                menu: {
-                    home: 'home',
-                    aboutMe: 'über mich',
-                    skills: 'fähigkeiten',
-                    contact: 'kontakt',
-                    language: 'sprachen',
-                },
-                about: {
-                    header: 'Über mich',
-                    text: ' "Die interessantesten  Zusammenhänge entstehen dank untypischen Verbindungen. Unterschiedliche Ausbildungen können uns viel an Genauigkeit und Präzision geben. Die Spezialisierung zusammen mit vielen Verknüpfungen erschafft Kreativität." Ich selbst bin eine Künstlerin/ Webdesignerin mit einem mathematisch ausgeprägten Geist. Dabei bemühe ich mich in jedem Bereich mein Bestes zu geben und es mit meinem Sinn für Perfektion zu schmücken. Meine Ausbildung zur Musikerin hat mich zur Genauigkeit beigebracht: ich bin kreativ aber auch präzise. So erschaffe ich Webseiten, spiele Fagott und unterrichte dieses Instrument in einer Schule.–auf all diesen Gebieten strebe ich nach Perfektion.'
-                },
-                skills: {
-                    header: 'Meine Kenntnisse',
-                    text: 'Beim Erstellen von Webseiten gebrauche ich untershiedliche  Programmsprachen und Werkzeuge.',
-                    subHeader: 'ständige Weiterbildung/ich lerne weiterhin',
-                },
-                contact: {
-                    main: 'Kontakte mich',
-                },
-
-            },
-
-        },
+    "about": {
+        "header": "Über mich",
+        "text": " ´´Die interessantesten  Zusammenhänge entstehen dank untypischen Verbindungen. Unterschiedliche Ausbildungen können uns viel an Genauigkeit und Präzision geben. Die Spezialisierung zusammen mit vielen Verknüpfungen erschafft Kreativität.`` Ich selbst bin eine Künstlerin/ Webdesignerin mit einem mathematisch ausgeprägten Geist. Dabei bemühe ich mich in jedem Bereich mein Bestes zu geben und es mit meinem Sinn für Perfektion zu schmücken. Meine Ausbildung zur Musikerin hat mich zur Genauigkeit beigebracht: ich bin kreativ aber auch präzise. So erschaffe ich Webseiten, spiele Fagott und unterrichte dieses Instrument in einer Schule.–auf all diesen Gebieten strebe ich nach Perfektion."
+    },
+    "skills": {
+        "header": "Meine Kenntnisse",
+        "text": "Beim Erstellen von Webseiten gebrauche ich untershiedliche  Programmsprachen und Werkzeuge.",
+        "subHeader": "Stets in Fortbildung"
+    },
+    "contact": {
+        "main": "Kontakte mich"
     }
-}, function (err, t) {
-    jqueryI18next.init(i18next, $);
-    $('.menu-lng').localize();
-    $('.aboutme').localize();
-    $('.skills').localize();
-    $('.contact').localize();
-});
+
+}
