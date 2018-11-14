@@ -10,7 +10,7 @@
 .m-btn {
     border: 1px solid #fff;
     display: inline-block;
-/*    outline:inherit ;*/
+    /*    outline:inherit ;*/
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
@@ -23,7 +23,7 @@
 }
 
 .m-btn:hover {
-/*    border-radius: 8%;*/
+    /*    border-radius: 8%;*/
     color: rgb(44, 73, 156);
     background-color: #fff;
 
@@ -237,7 +237,7 @@ section#about-me div button {
 */
 
 #skills h2 {
-/*    padding: 0 0 50px;*/
+    /*    padding: 0 0 50px;*/
     padding: 0 0 10px;
 }
 
@@ -245,13 +245,14 @@ section#about-me div button {
     /*    border-top-style: ridge;*/
     margin-top: 30px;
     padding: 0 0 8px;
-/*    padding: 25px 0;*/
+    /*    padding: 25px 0;*/
 }
-#skills .line-under{
-/*    margin: 25px 0 75px;*/
+
+#skills .line-under {
+    /*    margin: 25px 0 75px;*/
     width: 140px;
     height: 4px;
-    background: rgb(44,73,156);
+    background: rgb(44, 73, 156);
     text-align: center;
     margin: 0 auto 25px;
 }
@@ -299,8 +300,13 @@ section#about-me div button {
     padding: 5% 0 0;
     text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
     color: #e2e2e2;
+}
 
-
+#contact .container p {
+    color: #e2e2e2;
+    margin: 0;
+    text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
+    color: #e2e2e2;
 }
 
 #contact .contact-about {
@@ -308,7 +314,7 @@ section#about-me div button {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-/*    when i live margin bei firefox its a white-space: */
+    /*    when i live margin bei firefox its a white-space: */
     margin: 5% 5% 15%;
 }
 
@@ -329,15 +335,32 @@ section#about-me div button {
     width: 100%;
 }
 
-#contact .contact-about form .form-about input[placeholder],
-#contact .contact-about .form-about textarea[placeholder],
-#contact .contact-about .form-about button[type='submit'] {
+#contact .contact-about form .form-about input[type='text'],
+#contact .contact-about form .form-about input[type='email'],
+#contact .contact-about .form-about textarea[name='message'],
+#contact .contact-about .form-about button[type='submit'],
+#contact .contact-about form .form-about label {
     text-transform: uppercase;
     font-size: 0.95rem;
-    border: 1px solid #1d3f5d;
     font-weight: 600;
-    background-color: #e2e2e2;
+}
 
+#contact .contact-about form .form-about input[type='text'],
+#contact .contact-about form .form-about input[type='email'],
+#contact .contact-about .form-about textarea[name='message'],
+#contact .contact-about .form-about button[type='submit'] {
+    background-color: #e2e2e2;
+    border: 1px solid #1d3f5d;
+}
+
+#contact .contact-about form .form-about label {
+    text-align: left;
+    color: #1d3f5d;
+    margin: 15px 0 0;
+    text-shadow: -1px -1px 0 #e2e2e2,
+        1px -1px 0 #e2e2e2,
+        -1px 1px 0 #e2e2e2,
+        1px 1px 0 #e2e2e2;
 }
 
 #contact .contact-about form .form-about textarea {
@@ -345,8 +368,9 @@ section#about-me div button {
     color: #1d3f5d;
 }
 
-#contact .contact-about form .form-about input[placeholder]:focus,
-#contact .contact-about .form-about textarea[placeholder]:focus {
+#contact .contact-about form .form-about input[type="text"]:focus,
+#contact .contact-about form .form-about input[type="email"]:focus,
+#contact .contact-about .form-about textarea[name="message"]:focus {
     background-color: #fff;
 }
 
@@ -358,6 +382,8 @@ section#about-me div button {
     word-spacing: normal;
     letter-spacing: 1.2;
     transition: all 0.3 linear;
+    margin: 10px 0;
+    line-height: 1.4rem;
 }
 
 #contact .contact-about form .form-about button[type='submit']:hover {
@@ -401,7 +427,8 @@ section#about-me div button {
         background-image: url(../img/kazuend-1920_6.jpg);
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     header#header {
         background-image: url(../img/kazuend-1024_6.jpg);
     }

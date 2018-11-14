@@ -16,7 +16,11 @@
         "subHeader": "Nadal się uczę"
     },
     "contact": {
-        "main": "Skontaktuj się"
+        "main": "Skontaktuj się",
+        "name": "Imię:",
+        "email": "Email:",
+        "textarea": "wiadomość:",
+        "send": "wyślij"
     }
 
 }

@@ -16,7 +16,11 @@
         "subHeader": "Still learning"
     },
     "contact": {
-        "main": "Contact me"
+        "main": "Contact me",
+        "name": "name:",
+        "email": "Email Address:",
+        "textarea": "message:",
+        "send": "Send message"
     }
 
 }

@@ -16,7 +16,11 @@
         "subHeader": "Stets in Fortbildung"
     },
     "contact": {
-        "main": "Kontakte mich"
+        "main": "Kontakte mich",
+        "name": "Name:",
+        "email": "E-Mail:",
+        "textarea": "deine Nachricht:",
+        "send": "Send"
     }
 
 }
