@@ -17,9 +17,9 @@
     },
     "contact": {
         "main": "Skontaktuj się",
-        "name": "Imię:",
-        "email": "Email:",
-        "textarea": "wiadomość:",
+        "name": "Imię*",
+        "email": "Email*",
+        "textarea": "wiadomość*",
         "send": "wyślij"
     }
 
