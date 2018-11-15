@@ -309,7 +309,8 @@ section#about-me div button {
     justify-content: center;
     align-content: center;
     /*    when i live margin bei firefox its a white-space: */
-    margin: 5% 5% 15%;
+/*    margin: 5% 5% 15%;*/
+    margin: 5% 5% 0;
 }
 
 #contact .contact-about form {
@@ -423,6 +424,9 @@ section#about-me div button {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
     header#header {
         background-image: url(../img/kazuend-1024_6.jpg);
     }
@@ -435,14 +439,16 @@ section#about-me div button {
     nav#main-nav div li a {
         background-color: rgba(44, 73, 156, 0.98);
         text-align: center;
+        font-size: 18px;
     }
 
     nav#main-nav div li div.dropdown-content {
-        /*        max-width: 100%;*/
+        width: 100%;
     }
 
     nav#main-nav div li div.dropdown-content a {
         text-align: center;
+        font-size: 16px;
 
     }
 
