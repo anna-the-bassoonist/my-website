@@ -18,9 +18,9 @@
     "contact": {
         "main": "Contact me",
         "name": "name*",
-        "email": "Email Address*",
+        "email": "Email*",
         "textarea": "message*",
-        "send": "Send message"
+        "send": "Submit"
     }
 
 }

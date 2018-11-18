@@ -19,7 +19,7 @@
         "main": "Kontakte mich",
         "name": "Name*",
         "email": "E-Mail*",
-        "textarea": "deine Nachricht*",
+        "textarea": "Nachricht*",
         "send": "Send"
     }
 

@@ -159,7 +159,8 @@ header#header div {
 }
 
 header#header div h1,
-header#header div h2 {
+header#header div h2,
+header#header div p{
     padding-bottom: 15px;
     color: white;
 }
@@ -309,7 +310,7 @@ section#about-me div button {
     justify-content: center;
     align-content: center;
     /*    when i live margin bei firefox its a white-space: */
-/*    margin: 5% 5% 15%;*/
+    /*    margin: 5% 5% 15%;*/
     margin: 5% 5% 0;
 }
 
@@ -333,19 +334,16 @@ section#about-me div button {
 #contact .contact-about form .form-about input[type='text'],
 #contact .contact-about form .form-about input[type='email'],
 #contact .contact-about .form-about textarea[name='message'],
-#contact .contact-about .form-about button[type='submit'],
-#contact .contact-about form .form-about label {
-    text-transform: uppercase;
+#contact .contact-about .form-about button[type='submit'] {
+    text-transform: capitalize;
     font-size: 0.95rem;
     font-weight: 600;
-}
-
-#contact .contact-about form .form-about input[type='text'],
-#contact .contact-about form .form-about input[type='email'],
-#contact .contact-about .form-about textarea[name='message'],
-#contact .contact-about .form-about button[type='submit'] {
     background-color: #e2e2e2;
     border: 1px solid #1d3f5d;
+}
+
+#contact .contact-about .form-about button[type='submit'] {
+    text-transform: uppercase;
 }
 
 #contact .contact-about form .form-about label {
@@ -407,7 +405,19 @@ section#about-me div button {
     border: 1px solid rgb(44, 106, 156);
 }
 
+
+
+@media (min-width: 1200px) {
+    header#header {
+        background-image: url(../img/kazuend-1920_6.jpg);
+    }
+}
+
 @media (min-width:768px) {
+    html {
+        font-size: 16px;
+    }
+
     nav#main-nav {
         height: 50px;
     }
@@ -417,16 +427,11 @@ section#about-me div button {
     }
 }
 
-@media (min-width: 1200px) {
-    header#header {
-        background-image: url(../img/kazuend-1920_6.jpg);
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     html {
         font-size: 12px;
     }
+
     header#header {
         background-image: url(../img/kazuend-1024_6.jpg);
     }
