@@ -48,11 +48,11 @@
 
     <!--   Navigation End-->
     <!--    Header Start-->
-    <header id="header" class="text-center">
+    <header id="header" class="text-center header-lng">
         <div>
-            <h1>Hi, I'm Anna</h1>
+            <h1 data-i18n="header.h1"></h1>
             <h2>Front end developer</h2>
-            <p>I create responsive websites</p>
+            <p data-i18n="header.p"></p>
             <button class="btn btn-primary btn-lg button-custom m-btn btn-viewmore" type="submit">view more</button>
         </div>
     </header>
@@ -211,7 +211,6 @@
 
     <script>
         i18next.use(window.i18nextXHRBackend).init({
-            debug: true,
             lng: 'de',
             fallbackLng: 'en',
             backend: {
@@ -221,6 +220,7 @@
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
             $('.menu-lng').localize();
+            $('.header-lng').localize();
             $('.aboutme').localize();
             $('.skills').localize();
             $('.contact').localize();

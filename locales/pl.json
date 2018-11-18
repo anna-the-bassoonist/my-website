@@ -6,20 +6,24 @@
         "contact": "kontakt",
         "language": "języki"
     },
+     "header":{
+        "h1": "Anna Toeplitz",
+        "p": "Tworzę responsywne strony internetowe"
+    },
     "about": {
         "header": "O mnie",
         "text": "Uważam, że najciekawsze i najlepsze rzeczy powstają dzięki nietypowym połączeniom. Specjalizacja może dać nam dokładność. Specjalizacja połączona z interdyscyplinarnością – może zapewnić precyzyjność i kreatywność. Sama jestem artystką z matematycznym umysłem. Dodatkowo jeżeli coś robię – staram się robić to najlepiej jak potrafię. Wykształcenie muzyczne i praca w tym zawodzie nauczyło mnie skrupulatności: jestem twórcza, ale też dokładna. Tworzę strony internetowe, gram na fagocie, uczę w szkole – we wszystkich tych aspektach dążę do perfekcji."
     },
     "skills": {
         "header": "Moje umiejętności",
-        "text": "Tworząc stronę internetową używam różnych języków programowania i narzędzi",
+        "text": "Do tworzenia stron internetowych używam różnych języków programowania i narzędzi:",
         "subHeader": "Nadal się uczę"
     },
     "contact": {
         "main": "Skontaktuj się",
         "name": "Imię*",
         "email": "Email*",
-        "textarea": "wiadomość*",
+        "textarea": "wpisz wiadomość*",
         "send": "wyślij"
     }
 

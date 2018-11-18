@@ -335,7 +335,7 @@ section#about-me div button {
 #contact .contact-about form .form-about input[type='email'],
 #contact .contact-about .form-about textarea[name='message'],
 #contact .contact-about .form-about button[type='submit'] {
-    text-transform: capitalize;
+    text-transform: inherit;
     font-size: 0.95rem;
     font-weight: 600;
     background-color: #e2e2e2;
