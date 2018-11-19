@@ -6,9 +6,10 @@
         "contact": "kontakt",
         "language": "języki"
     },
-     "header":{
+    "header": {
         "h1": "Anna Toeplitz",
-        "p": "Tworzę responsywne strony internetowe"
+        "h2": "Front end developer",
+        "p": "Tworzę responsywne strony internetowe."
     },
     "about": {
         "header": "O mnie",

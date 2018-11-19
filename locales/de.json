@@ -6,9 +6,10 @@
         "contact": "kontakt",
         "language": "sprachen"
     },
-     "header":{
+    "header": {
         "h1": "Anna Toeplitz",
-        "p": "Ich erstelle responsive Webseiten"
+        "h2": "Front end developer",
+        "p": "Ich erstelle responsive Webseiten."
     },
     "about": {
         "header": "Über mich",

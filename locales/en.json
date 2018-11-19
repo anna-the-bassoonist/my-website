@@ -7,8 +7,9 @@
         "language": "language"
     },
     "header":{
-        "h1": "Hi, I'm Anna",
-        "p": "building responsive websites"
+        "h1": "Hi, I'm Anna,",
+        "h2": "a Front end developer,",
+        "p": "building responsive websites."
     },
     "about": {
         "header": "About me",
