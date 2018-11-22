@@ -287,12 +287,10 @@ section#about-me div button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-/*    padding-top: 5%;*/
 }
 
 #contact .container h3 {
-    padding: 10% 0 0;
+    padding: 15% 0 0;
     text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
     color: #e2e2e2;
 }
@@ -312,6 +310,7 @@ section#about-me div button {
     /*    when i live margin bei firefox its a white-space: */
     /*    margin: 5% 5% 15%;*/
     margin: 5% 5% 0;
+    padding-bottom: 12%;
 }
 
 #contact .contact-about form {
@@ -342,10 +341,6 @@ section#about-me div button {
     border: 1px solid #1d3f5d;
 }
 
-#contact .contact-about .form-about button[type='submit'] {
-    text-transform: uppercase;
-}
-
 #contact .contact-about form .form-about label {
     text-align: left;
     color: #1d3f5d;
@@ -357,8 +352,10 @@ section#about-me div button {
 }
 
 #contact .contact-about form .form-about textarea {
-    height: calc(100% - 15px);
+/*    height: calc(100% - 15px);*/
     color: #1d3f5d;
+    min-height: 170px;
+    margin-bottom: 5px;
 }
 
 #contact .contact-about form .form-about input[type="text"]:focus,
@@ -375,8 +372,11 @@ section#about-me div button {
     word-spacing: normal;
     letter-spacing: 1.2;
     transition: all 0.3 linear;
-    margin: 10px 0;
+    margin: 5px 0 0 0;
+    padding: 10px 30px;
     line-height: 1.4rem;
+    text-transform: uppercase;
+    width: 33%;
 }
 
 #contact .contact-about form .form-about button[type='submit']:hover {
@@ -461,4 +461,6 @@ section#about-me div button {
         background-color: rgb(89, 106, 156);
 
     }
+    #contact .contact-about form .form-about button[type='submit'] {
+    padding: 5px 15px;
 }

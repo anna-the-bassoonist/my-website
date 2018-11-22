@@ -30,18 +30,21 @@ $(document).ready(function () {
 
 
     $(window).scroll(function () {
-        var scrollDistance = $(window).scrollTop();
+        var topMenuHeight = $("#main-nav").outerHeight() + 15;
+        var scrollDistance = $(window).scrollTop() + topMenuHeight;
 
         $(".page-section").each(function (i) {
             if ($(this).position().top <= scrollDistance && $(this).position().top + $(this).height() > scrollDistance) {
                 $('#main-nav li a').removeClass('activeMenu');
                 $('#main-nav li a').eq(i).addClass('activeMenu');
-            }
-            else {
+            } if ($('#contact').position().bottom) {
+                $('main-nav li a').removeClass('activeMenu');
+                $('main-nav li a').addClass('activeMenu');
+            } else {
                 $('main-nav li a').removeClass('activeMenu');
             }
         });
-    }).scroll();
+    });
 
     //        probe 1:
     //        $(".nav-item").each(function () {
@@ -54,26 +57,13 @@ $(document).ready(function () {
     //                $("#main-nav ul li a[href=#]").addClass('activeMenu');
     //            }
     //        });
-    //        probe 2:
-    //        var Scroll = $(document).scrollTop();
-    //        $("#main-nav li a").each(function () {
-    //            var currentLink = $(this);
-    //            var refElement = $(currentLink.attr("href"));
-    //            if (refElement.position().top  <= Scroll && refElement.position().top + refElement.height() > Scroll) {
-    //                $(".nav-item").removeClass('activeMenu');
-    //                currentLink.addClass('activeMenu');
-    //            } else {
-    //                currentLink.removeClass('activeMenu');
-    //                console.log('works');
-    //            }
-    //
-    //        });
 
-//
-//    $(".nav-item").click(function () {
-//        $(".nav-item").removeClass('activeMenu');
-//        $(this).addClass('activeMenu');
-//    });
+
+
+    $(".nav-item").click(function () {
+        $(".nav-item").removeClass('activeMenu');
+        $(this).addClass('activeMenu');
+    });
 
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
