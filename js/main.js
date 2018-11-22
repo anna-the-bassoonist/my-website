@@ -17,7 +17,7 @@ $(document).ready(function () {
         if (target.length) {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: target.offset().top - 30
+                scrollTop: target.offset().top
             }, 800);
         }
     });
@@ -28,11 +28,52 @@ $(document).ready(function () {
         });
     });
 
-    $(".nav-item").click(function () {
-        $(".nav-item").removeClass('activeMenu');
-        $(this).addClass('activeMenu');
-    });
 
+    $(window).scroll(function () {
+        var scrollDistance = $(window).scrollTop();
+
+        $(".page-section").each(function (i) {
+            if ($(this).position().top <= scrollDistance && $(this).position().top + $(this).height() > scrollDistance) {
+                $('#main-nav li a').removeClass('activeMenu');
+                $('#main-nav li a').eq(i).addClass('activeMenu');
+            }
+            else {
+                $('main-nav li a').removeClass('activeMenu');
+            }
+        });
+    }).scroll();
+
+    //        probe 1:
+    //        $(".nav-item").each(function () {
+    //            var target = $(this).offset().top;
+    //            var id = $(this).attr('id');
+    //
+    //            if (position >= target) {
+    //                $("#main-nav ul li a").removeClass('activeMenu');
+    //
+    //                $("#main-nav ul li a[href=#]").addClass('activeMenu');
+    //            }
+    //        });
+    //        probe 2:
+    //        var Scroll = $(document).scrollTop();
+    //        $("#main-nav li a").each(function () {
+    //            var currentLink = $(this);
+    //            var refElement = $(currentLink.attr("href"));
+    //            if (refElement.position().top  <= Scroll && refElement.position().top + refElement.height() > Scroll) {
+    //                $(".nav-item").removeClass('activeMenu');
+    //                currentLink.addClass('activeMenu');
+    //            } else {
+    //                currentLink.removeClass('activeMenu');
+    //                console.log('works');
+    //            }
+    //
+    //        });
+
+//
+//    $(".nav-item").click(function () {
+//        $(".nav-item").removeClass('activeMenu');
+//        $(this).addClass('activeMenu');
+//    });
 
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {

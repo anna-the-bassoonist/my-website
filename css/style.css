@@ -217,7 +217,7 @@ section#about-me div button {
 /*Section About me End*/
 /*Section Skills Start*/
 #skills {
-    padding: 60px 0;
+/*    padding: 60px 0;*/
     background-color: #e2e2e2;
     color: #000000;
 }
@@ -233,7 +233,7 @@ section#about-me div button {
 
 #skills h2 {
     /*    padding: 0 0 50px;*/
-    padding: 0 0 10px;
+    padding: 60px 0 10px;
 }
 
 #skills h3 {
@@ -288,11 +288,11 @@ section#about-me div button {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    padding-top: 5%;
+/*    padding-top: 5%;*/
 }
 
 #contact .container h3 {
-    padding: 5% 0 0;
+    padding: 10% 0 0;
     text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
     color: #e2e2e2;
 }
@@ -317,7 +317,7 @@ section#about-me div button {
 #contact .contact-about form {
     /*    border: 1px ridge #1d3f5d;*/
     background-color: transparent;
-    padding: 1%;
+    padding: 1% 1% 5%;
     width: 75%;
 }
 

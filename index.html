@@ -48,7 +48,7 @@
 
     <!--   Navigation End-->
     <!--    Header Start-->
-    <header id="header" class="text-center header-lng">
+    <header id="header" class="text-center header-lng page-section">
         <div>
             <h1 data-i18n="header.h1"></h1>
             <h2 data-i18n="header.h2"></h2>
@@ -58,7 +58,7 @@
     </header>
     <!--    Header Start-->
     <!--Section About me Start-->
-    <section id="about-me" class="text-center aboutme">
+    <section id="about-me" class="text-center aboutme page-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-5 col-lg-5 col-12 about-content">
@@ -76,7 +76,7 @@
     </section>
     <!--Section About me End-->
     <!--    /*Section Skills Start*/-->
-    <section id="skills" class="text-center skills">
+    <section id="skills" class="text-center skills page-section">
         <h2 data-i18n="skills.header"></h2>
         <p class="skills-about" data-i18n="skills.text"></p>
         <div class="line-under"></div>
@@ -155,7 +155,7 @@
     </section>
     <!--    /*Section Skills End*/-->
     <!--Section Contact Start-->
-    <div id="contact" class="contact">
+    <div id="contact" class="contact page-section">
         <div class="container text-center">
 
             <h3 data-i18n="contact.main"></h3>
@@ -166,9 +166,9 @@
             <div class="form-row contact-about">
                 <form action="https://formspree.io/anna.toeplitz@gmail.com" method="POST">
                     <div class="form-group col-12 form-about">
-                        <label for="text"><input data-i18n="[placeholder]contact.name" class="form-control" type="text" name="name" required></label>
-                        <label for="email"><input data-i18n="[placeholder]contact.email" class="form-control" type="email" name="email" required data-i18n="contact.email"></label>
-                        <label for="textarea"><textarea data-i18n="[placeholder]contact.textarea" class="form-control" name="message" id="textarea" rows="4" required data-i18n="contact.textarea"></textarea></label>
+                        <label for="text"><input data-i18n="[placeholder]contact.name" id="text" class="form-control" type="text" name="name" required></label>
+                        <label for="email"><input data-i18n="[placeholder]contact.email" id="email" class="form-control" type="email" name="email" required></label>
+                        <label for="textarea"><textarea data-i18n="[placeholder]contact.textarea" class="form-control" name="message" id="textarea" rows="4" required></textarea></label>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.send"></button>
 
                     </div>
