@@ -76,14 +76,15 @@ $(document).ready(function () {
     $(".polski").html("polski");
     
     $("#skills-click").click(function(){
-        $("#html").fadeTo(1600,1,"swing");
-        $("#css").fadeTo(2000,1,"swing");
-        $("#js").fadeTo(2400,1,"swing");
-        $("#jquery").fadeTo(2800,1,"swing");
-        $("#sass").fadeTo(3200,1,"swing");
-        $("#gulp").fadeTo(3600,1,"swing");
-        $("#git").fadeTo(4000,1,"swing");
-        $("#rwd").fadeTo(4400,1,"swing");
+        $(".skills-about").fadeIn(800,"swing")
+        $("#html").fadeIn(1600,"swing");
+        $("#css").fadeIn(2000,"swing");
+        $("#js").fadeIn(2400,"swing");
+        $("#jquery").fadeIn(2800,"swing");
+        $("#sass").fadeIn(3200,"swing");
+        $("#gulp").fadeIn(3600,"swing");
+        $("#git").fadeIn(4000,"swing");
+        $("#rwd").fadeIn(4400,"swing");
         console.log('dziala');
     });
 });

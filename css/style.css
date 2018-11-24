@@ -277,14 +277,25 @@ section#about-me div button {
     font-size: 2.5rem;
     align-self: center;
 }
-
-#html,#css,#js,#jquery,
-#sass,#gulp,#git,#rwd,#react,#ajax,#wordpress{
-opacity: 0;
+.skills-about,
+#html,
+#css,
+#js,
+#jquery,
+#sass,
+#gulp,
+#git,
+#rwd,
+#react,
+#ajax,
+#wordpress {
+    display: none;
 }
 
 #fadein {
-opacity: 0;}
+    opacity: 0;
+}
+
 /*Section Skills End*/
 
 
