@@ -160,7 +160,7 @@ header#header div {
 
 header#header div h1,
 header#header div h2,
-header#header div p{
+header#header div p {
     padding-bottom: 15px;
     color: white;
 }
@@ -217,7 +217,7 @@ section#about-me div button {
 /*Section About me End*/
 /*Section Skills Start*/
 #skills {
-/*    padding: 60px 0;*/
+    /*    padding: 60px 0;*/
     background-color: #e2e2e2;
     color: #000000;
 }
@@ -278,6 +278,13 @@ section#about-me div button {
     align-self: center;
 }
 
+#html,#css,#js,#jquery,
+#sass,#gulp,#git,#rwd,#react,#ajax,#wordpress{
+opacity: 0;
+}
+
+#fadein {
+opacity: 0;}
 /*Section Skills End*/
 
 
@@ -352,7 +359,7 @@ section#about-me div button {
 }
 
 #contact .contact-about form .form-about textarea {
-/*    height: calc(100% - 15px);*/
+    /*    height: calc(100% - 15px);*/
     color: #1d3f5d;
     min-height: 170px;
     margin-bottom: 5px;
@@ -461,6 +468,7 @@ section#about-me div button {
         background-color: rgb(89, 106, 156);
 
     }
+
     #contact .contact-about form .form-about button[type='submit'] {
-    padding: 5px 15px;
-}
+        padding: 5px 15px;
+    }

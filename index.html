@@ -31,7 +31,7 @@
 
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header" data-i18n="menu.home"><span class="sr-only active">(current)</span></a></li>
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me" data-i18n="menu.aboutMe"></a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
+                <li><a class="nav-item nav-link" id="skills-click" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact" data-i18n="menu.contact"></a></li>
 
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,10 +50,10 @@
     <!--    Header Start-->
     <header id="header" class="text-center header-lng page-section">
         <div>
-            <h1 data-i18n="header.h1"></h1>
+            <h1 id="fadein" data-i18n="header.h1"></h1>
             <h2 data-i18n="header.h2"></h2>
             <p data-i18n="header.p"></p>
-            <button class="btn btn-primary btn-lg button-custom m-btn btn-viewmore" type="submit">view more</button>
+            <button class="btn btn-primary btn-lg button-custom m-btn btn-viewmore show-icons" id="show-icons" type="submit">view more</button>
         </div>
     </header>
     <!--    Header Start-->
@@ -80,52 +80,52 @@
         <h2 data-i18n="skills.header"></h2>
         <p class="skills-about" data-i18n="skills.text"></p>
         <div class="line-under"></div>
-
+<!--<button id="click">click</button>-->
         <div class="container skills-border">
             <div class="row skills-icons">
-                <div class="col-lg-3 col-sm-6 col-6">
-                    <figure>
-                        <img src="icons/html5.png" alt="html5">
+                <div class="col-lg-3 col-sm-6 col-6" id="html">
+                    <figure >
+                        <img src="icons/html5.png" alt="html5" >
                         <figcaption class="mt-10">HTML5</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="css">
                     <figure>
                         <img src="icons/css3.png" alt="CSS3">
                         <figcaption class="mt-10">CSS3</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="js">
                     <figure>
                         <img src="icons/js.png" alt="JavaScript">
                         <figcaption class="mt-10">JavaScript</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="jquery">
                     <figure>
                         <img src="icons/jquery.png" alt="jQuery">
                         <figcaption class="mt-10">jQuery</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="sass">
                     <figure>
                         <i class="fab fa-sass"></i>
                         <figcaption>SASS</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="gulp">
                     <figure>
                         <i class="fab fa-gulp"></i>
                         <figcaption>Gulp</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="git">
                     <figure>
                         <i class="fab fa-git-square"></i>
                         <figcaption>Git</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6" id="rwd">
                     <p class="m-auto">Rwd</p>
                 </div>
             </div>
@@ -135,16 +135,16 @@
             <div class="line-under"></div>
 
             <div class="row skills-icons">
-                <div class="col-lg-4 col-sm-4 col-12">
+                <div class="col-lg-4 col-sm-4 col-12" id="react">
                     <figure>
                         <i class="fab fa-react"></i>
                         <figcaption>React</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-12">
+                <div class="col-lg-4 col-sm-4 col-12" id="ajax">
                     <p class="m-auto">Ajax</p>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-12">
+                <div class="col-lg-4 col-sm-4 col-12" id="wordpress">
                     <figure>
                         <i class="fab fa-wordpress"></i>
                         <figcaption>Wordpress</figcaption>

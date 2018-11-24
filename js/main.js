@@ -74,4 +74,21 @@ $(document).ready(function () {
     $(".english").html("english");
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
+    
+    $("#skills-click").click(function(){
+        $("#html").fadeTo(1600,1,"swing");
+        $("#css").fadeTo(2000,1,"swing");
+        $("#js").fadeTo(2400,1,"swing");
+        $("#jquery").fadeTo(2800,1,"swing");
+        $("#sass").fadeTo(3200,1,"swing");
+        $("#gulp").fadeTo(3600,1,"swing");
+        $("#git").fadeTo(4000,1,"swing");
+        $("#rwd").fadeTo(4400,1,"swing");
+        console.log('dziala');
+    });
 });
+//$(document).ready(function(){
+//    $("#show-icons").click(function(){
+//        $("#fadein").fadeTo(800,1);
+//    })
+//})
