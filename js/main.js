@@ -75,7 +75,11 @@ $(document).ready(function () {
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
 
+
     $("#skills-click").click(function () {
+        $("#skills-header").fadeTo(600, 1);
+        $(".line-under").fadeTo(600, 1);
+
         $(".skills-about").fadeIn(800, "swing")
         $("#html").fadeIn(1600, "swing");
         $("#css").fadeIn(2000, "swing");
@@ -85,13 +89,18 @@ $(document).ready(function () {
         $("#gulp").fadeIn(3600, "swing");
         $("#git").fadeIn(4000, "swing");
         $("#rwd").fadeIn(4400, "swing");
+        $("#skills-subheader").fadeTo(600, 1);
+        $("#react").fadeIn(4200, "swing");
+        $("#ajax").fadeIn(4300, "swing");
+        $("#wordpress").fadeIn(4400, "swing");
+
         console.log('dziala');
     });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-//        var title = document.getElementById("headerh1");
-        var title = "kjd";
+    //        var title = document.getElementById("headerh1");
+    var title = "kjd";
 
     function showPageTitle(title) {
 
@@ -101,6 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return result;
     }
     console.log(showPageTitle(title));
-    
-        document.getElementById("show-header").addEventListener('click', showPageTitle);
+
+    document.getElementById("show-header").addEventListener('click', showPageTitle);
 });

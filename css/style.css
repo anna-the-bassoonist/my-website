@@ -277,6 +277,11 @@ section#about-me div button {
     font-size: 2.5rem;
     align-self: center;
 }
+#skills-header,
+#skills-subheader,
+.line-under{
+    opacity: 0;
+}
 .skills-about,
 #html,
 #css,
@@ -291,6 +296,7 @@ section#about-me div button {
 #wordpress {
     display: none;
 }
+
 
 #header-h1 {
     opacity: 0;
