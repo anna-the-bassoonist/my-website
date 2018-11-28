@@ -76,26 +76,26 @@ $(document).ready(function () {
     $(".polski").html("polski");
 
 
-    $("#skills-click").click(function () {
-        $("#skills-header").fadeTo(600, 1);
-        $(".line-under").fadeTo(600, 1);
-
-        $(".skills-about").fadeIn(800, "swing")
-        $("#html").fadeIn(1600, "swing");
-        $("#css").fadeIn(2000, "swing");
-        $("#js").fadeIn(2400, "swing");
-        $("#jquery").fadeIn(2800, "swing");
-        $("#sass").fadeIn(3200, "swing");
-        $("#gulp").fadeIn(3600, "swing");
-        $("#git").fadeIn(4000, "swing");
-        $("#rwd").fadeIn(4400, "swing");
-        $("#skills-subheader").fadeTo(600, 1);
-        $("#react").fadeIn(4200, "swing");
-        $("#ajax").fadeIn(4300, "swing");
-        $("#wordpress").fadeIn(4400, "swing");
-
-        console.log('dziala');
-    });
+//    $("#skills-click").click(function () {
+////        $("#skills-header").fadeTo(600, 1);
+////        $(".line-under").fadeTo(600, 1);
+//
+//        $(".skills-about").fadeIn(800, "swing")
+//        $("#html").fadeIn(1600, "swing");
+//        $("#css").fadeIn(2000, "swing");
+//        $("#js").fadeIn(2400, "swing");
+//        $("#jquery").fadeIn(2800, "swing");
+//        $("#sass").fadeIn(3200, "swing");
+//        $("#gulp").fadeIn(3600, "swing");
+//        $("#git").fadeIn(4000, "swing");
+//        $("#rwd").fadeIn(4400, "swing");
+//        $("#skills-subheader").fadeTo(600, 1);
+//        $("#react").fadeIn(4200, "swing");
+//        $("#ajax").fadeIn(4300, "swing");
+//        $("#wordpress").fadeIn(4400, "swing");
+//
+//        console.log('dziala');
+//    });
 });
 
 document.addEventListener("DOMContentLoaded", function () {

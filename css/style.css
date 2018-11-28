@@ -277,12 +277,86 @@ section#about-me div button {
     font-size: 2.5rem;
     align-self: center;
 }
-#skills-header,
-#skills-subheader,
-.line-under{
-    opacity: 0;
+
+/*Animation Skills Start*/
+.animate {
+
+    animation-duration: 0.8s;
 }
-.skills-about,
+
+#skills-header {
+
+    animation-delay: 0.4s;
+}
+
+.line-1 {
+
+    animation-delay: 0.8s;
+}
+
+#skills-subheader {
+
+    animation-delay: 1.2s;
+}
+
+.line-2 {
+
+    animation-delay: 1.6s;
+}
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(200%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+.skills-about {
+    animation-delay: 1s;
+    animation-duration: 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+
+    animation-name: fadeIn;
+}
+
 #html,
 #css,
 #js,
@@ -290,17 +364,58 @@ section#about-me div button {
 #sass,
 #gulp,
 #git,
-#rwd,
+#rwd {
+    animation-delay: 1.9s;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+
 #react,
 #ajax,
 #wordpress {
-    display: none;
+    animation-delay: 2.3s;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60%, 0);
+    }
 
-#header-h1 {
-    opacity: 0;
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/*Animation Skills End*/
 
 /*Section Skills End*/
 
@@ -408,9 +523,11 @@ section#about-me div button {
     color: #1d3f5d;
     border: 1px solid #1d3f5d;
 }
+
 ::placeholder {
     text-transform: uppercase;
 }
+
 /*Section Contact End*/
 
 /*Section Footer Start*/
