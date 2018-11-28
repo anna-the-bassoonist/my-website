@@ -38,28 +38,44 @@ $(document).ready(function () {
                 $('#main-nav li a').removeClass('activeMenu');
                 $('#main-nav li a').eq(i).addClass('activeMenu');
 
-            } else {
+            }
+//            if ($(this).position().top + $(this).outerHeight()) {
+//                $('#main-nav li a').removeClass('activeMenu');
+//                $('#main-nav li a').eq(i).addClass('activeMenu');
+//            }
+            else {
                 $('main-nav li a').removeClass('activeMenu');
             }
         });
     });
-    //        probe 1:
-    //        $(".nav-item").each(function () {
-    //            var target = $(this).offset().top;
-    //            var id = $(this).attr('id');
-    //
-    //            if (position >= target) {
-    //                $("#main-nav ul li a").removeClass('activeMenu');
-    //
-    //                $("#main-nav ul li a[href=#]").addClass('activeMenu');
-    //            }
-    //        });
-
+ 
     $(".nav-item").click(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
 
+    $(window).scroll(function(){
+        $('.animate').each(function(i){
+            var bottomOfObject = $(this).position().top + $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+            
+            if (bottomOfWindow > bottomOfObject) {
+                $(this).addClass('fadeInLeft');
+            } 
+//            if (bottomOfWindow > bottomOfObject) {
+//                $(this).addClass('fadeInRight');
+//            }
+//            if (bottomOfWindow > bottomOfObject) {
+//                $(this).addClass('fadeIn');
+//            } if (bottomOfWindow > bottomOfObject) {
+//                $(this).addClass('fadeInDown');
+//            } if (bottomOfWindow > bottomOfObject) {
+//                $(this).addClass('fadeInUp');
+//            }
+        });
+        
+    });
+    
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
             $('.menu-lng').localize();
@@ -76,26 +92,26 @@ $(document).ready(function () {
     $(".polski").html("polski");
 
 
-//    $("#skills-click").click(function () {
-////        $("#skills-header").fadeTo(600, 1);
-////        $(".line-under").fadeTo(600, 1);
-//
-//        $(".skills-about").fadeIn(800, "swing")
-//        $("#html").fadeIn(1600, "swing");
-//        $("#css").fadeIn(2000, "swing");
-//        $("#js").fadeIn(2400, "swing");
-//        $("#jquery").fadeIn(2800, "swing");
-//        $("#sass").fadeIn(3200, "swing");
-//        $("#gulp").fadeIn(3600, "swing");
-//        $("#git").fadeIn(4000, "swing");
-//        $("#rwd").fadeIn(4400, "swing");
-//        $("#skills-subheader").fadeTo(600, 1);
-//        $("#react").fadeIn(4200, "swing");
-//        $("#ajax").fadeIn(4300, "swing");
-//        $("#wordpress").fadeIn(4400, "swing");
-//
-//        console.log('dziala');
-//    });
+    //    $("#skills-click").click(function () {
+    ////        $("#skills-header").fadeTo(600, 1);
+    ////        $(".line-under").fadeTo(600, 1);
+    //
+    //        $(".skills-about").fadeIn(800, "swing")
+    //        $("#html").fadeIn(1600, "swing");
+    //        $("#css").fadeIn(2000, "swing");
+    //        $("#js").fadeIn(2400, "swing");
+    //        $("#jquery").fadeIn(2800, "swing");
+    //        $("#sass").fadeIn(3200, "swing");
+    //        $("#gulp").fadeIn(3600, "swing");
+    //        $("#git").fadeIn(4000, "swing");
+    //        $("#rwd").fadeIn(4400, "swing");
+    //        $("#skills-subheader").fadeTo(600, 1);
+    //        $("#react").fadeIn(4200, "swing");
+    //        $("#ajax").fadeIn(4300, "swing");
+    //        $("#wordpress").fadeIn(4400, "swing");
+    //
+    //        console.log('dziala');
+    //    });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
