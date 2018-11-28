@@ -408,7 +408,9 @@ section#about-me div button {
     color: #1d3f5d;
     border: 1px solid #1d3f5d;
 }
-
+::placeholder {
+    text-transform: uppercase;
+}
 /*Section Contact End*/
 
 /*Section Footer Start*/
