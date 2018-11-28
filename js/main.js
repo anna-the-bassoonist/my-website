@@ -64,13 +64,12 @@ $(document).ready(function () {
             } 
 //            if (bottomOfWindow > bottomOfObject) {
 //                $(this).addClass('fadeInRight');
-//            }
-//            if (bottomOfWindow > bottomOfObject) {
+//            } if (bottomOfWindow > bottomOfObject) {
 //                $(this).addClass('fadeIn');
 //            } if (bottomOfWindow > bottomOfObject) {
 //                $(this).addClass('fadeInDown');
 //            } if (bottomOfWindow > bottomOfObject) {
-//                $(this).addClass('fadeInUp');
+//                $(this).addClass('fadeIn');
 //            }
         });
         
