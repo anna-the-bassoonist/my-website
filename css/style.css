@@ -222,15 +222,6 @@ section#about-me div button {
     color: #000000;
 }
 
-/*
-#skills h2,
-#skills h3 {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: rgb(44, 73, 156);
-}
-*/
-
 #skills h2 {
     /*    padding: 0 0 50px;*/
     padding: 60px 0 10px;
@@ -279,6 +270,8 @@ section#about-me div button {
 }
 
 /*Animation Skills Start*/
+
+
 .animate {
 
     animation-duration: 0.8s;
@@ -286,29 +279,57 @@ section#about-me div button {
 
 #skills-header {
 
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 
 .line-1 {
 
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
+}
+.skills-about {
+    animation-delay: 0.4s;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
 }
 
+#html,
+#css,
+#js,
+#jquery,
+#sass,
+#gulp,
+#git,
+#rwd {
+    animation-delay: 0.9s;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+
+}
 #skills-subheader {
 
-    animation-delay: 1.2s;
+    animation-delay: 1.5s;
 }
 
 .line-2 {
 
-    animation-delay: 1.6s;
+    animation-delay: 1.5s;
 }
 
+
+#react,
+#ajax,
+#wordpress {
+    animation-delay: 1.9s;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
 
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-25%, 0, 0);
     }
 
     to {
@@ -337,10 +358,7 @@ section#about-me div button {
     animation-name: fadeInRight;
 }
 
-.skills-about {
-    animation-delay: 1s;
-    animation-duration: 2.5s;
-}
+
 
 @keyframes fadeIn {
     from {
@@ -357,20 +375,7 @@ section#about-me div button {
     animation-name: fadeIn;
 }
 
-#html,
-#css,
-#js,
-#jquery,
-#sass,
-#gulp,
-#git,
-#rwd {
-    animation-delay: 1.9s;
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-out;
 
-}
 
 
 @keyframes fadeInDown {
@@ -389,15 +394,6 @@ section#about-me div button {
     animation-name: fadeInDown;
 }
 
-
-#react,
-#ajax,
-#wordpress {
-    animation-delay: 2.3s;
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-out;
-}
 
 @keyframes fadeInUp {
     from {

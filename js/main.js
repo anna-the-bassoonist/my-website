@@ -39,41 +39,81 @@ $(document).ready(function () {
                 $('#main-nav li a').eq(i).addClass('activeMenu');
 
             }
-//            if ($(this).position().top + $(this).outerHeight()) {
-//                $('#main-nav li a').removeClass('activeMenu');
-//                $('#main-nav li a').eq(i).addClass('activeMenu');
-//            }
+            //            if ($(this).position().top + $(this).outerHeight()) {
+            //                $('#main-nav li a').removeClass('activeMenu');
+            //                $('#main-nav li a').eq(i).addClass('activeMenu');
+            //            }
             else {
                 $('main-nav li a').removeClass('activeMenu');
             }
         });
     });
- 
+
     $(".nav-item").click(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
 
-    $(window).scroll(function(){
-        $('.animate').each(function(i){
+    $(window).scroll(function () {
+        $('.fadeLeft').each(function (i) {
             var bottomOfObject = $(this).position().top + $(this).outerHeight();
             var bottomOfWindow = $(window).scrollTop() + $(window).height();
-            
+
             if (bottomOfWindow > bottomOfObject) {
                 $(this).addClass('fadeInLeft');
-            } 
-//            if (bottomOfWindow > bottomOfObject) {
-//                $(this).addClass('fadeInRight');
-//            } if (bottomOfWindow > bottomOfObject) {
-//                $(this).addClass('fadeIn');
-//            } if (bottomOfWindow > bottomOfObject) {
-//                $(this).addClass('fadeInDown');
-//            } if (bottomOfWindow > bottomOfObject) {
-//                $(this).addClass('fadeIn');
-//            }
+            }
         });
-        
+
     });
+
+    $(window).scroll(function () {
+        $('.fadeRight').each(function (i) {
+            var bottomOfObject = $(this).position().top + $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+            if (bottomOfWindow > bottomOfObject) {
+                $(this).addClass('fadeInRight');
+            }
+        });
+
+    });
+    
+    $(window).scroll(function () {
+        $('.fade-in').each(function (i) {
+            var bottomOfObject = $(this).position().top + $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+            if (bottomOfWindow > bottomOfObject) {
+                $(this).addClass('fadeIn');
+            }
+        });
+
+    });
+
+       $(window).scroll(function () {
+        $('.fadeDown').each(function (i) {
+            var bottomOfObject = $(this).position().top + $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+            if (bottomOfWindow > bottomOfObject) {
+                $(this).addClass('fadeInDown');
+            }
+        });
+
+    });
+    
+     $(window).scroll(function () {
+        $('.fadeUp').each(function (i) {
+            var bottomOfObject = $(this).position().top + $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+            if (bottomOfWindow > bottomOfObject) {
+                $(this).addClass('fadeInUp');
+            }
+        });
+
+    });
+    
     
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
