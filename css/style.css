@@ -165,11 +165,40 @@ header#header div p {
     color: white;
 }
 
-/*
-header#header div h1 span {
-    color: rgb(0, 134, 0);
+/*Header animation*/
+header#header .animation-header {
+    animation-name: showHeader;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
 }
-*/
+
+header#header h1:first-of-type{
+    animation-delay: 0.1s;
+}
+header#header h1:nth-of-type(2){
+    animation-delay: 0.3s;
+}
+
+header#header .animation-subheader {
+    animation-name: showHeader;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes showHeader {
+    0% {
+        opacity: 0;
+        transform: scale(0.5,0.5);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.02,1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
 
 /*Header End*/
 
@@ -286,6 +315,7 @@ section#about-me div button {
 
     animation-delay: 0.4s;
 }
+
 .skills-about {
     animation-delay: 0.4s;
     animation-duration: 2.5s;
@@ -306,6 +336,7 @@ section#about-me div button {
     animation-timing-function: ease-out;
 
 }
+
 #skills-subheader {
 
     animation-delay: 1.5s;
