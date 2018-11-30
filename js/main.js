@@ -43,18 +43,7 @@ $(document).ready(function () {
             }
         });
     });
-    //        probe 1:
-    //        $(".nav-item").each(function () {
-    //            var target = $(this).offset().top;
-    //            var id = $(this).attr('id');
-    //
-    //            if (position >= target) {
-    //                $("#main-nav ul li a").removeClass('activeMenu');
-    //
-    //                $("#main-nav ul li a[href=#]").addClass('activeMenu');
-    //            }
-    //        });
-
+  
     $(".nav-item").click(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
@@ -98,18 +87,3 @@ $(document).ready(function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    //        var title = document.getElementById("headerh1");
-    var title = "kjd";
-
-    function showPageTitle(title) {
-
-        var result = title.split("");
-        console.log('works');
-
-        return result;
-    }
-    console.log(showPageTitle(title));
-
-    document.getElementById("show-header").addEventListener('click', showPageTitle);
-});
