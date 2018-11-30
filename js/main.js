@@ -136,7 +136,15 @@ $(document).ready(function () {
         console.log(mainHeaderSplit);
         $('#headerh1').html();
         $(mainHeaderSplit).each(function(index, element){
-            
+//            $(this).fadeTo(1000,1);
+            $(this).animate({
+                
+                fontSize: "30px",
+                opacity: 1,
+                height: "toogle",
+                width: "toogle"   
+            }, 1000);
+            console.log('works');
         })
     })
 });
