@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 
     $(window).scroll(function () {
-        var topMenuHeight = $("#main-nav").outerHeight() + 15;
+        var topMenuHeight = $("#main-nav").outerHeight() + 50;
         var scrollDistance = $(window).scrollTop() + topMenuHeight;
 
         $(".page-section").each(function (i) {
@@ -38,12 +38,7 @@ $(document).ready(function () {
                 $('#main-nav li a').removeClass('activeMenu');
                 $('#main-nav li a').eq(i).addClass('activeMenu');
 
-            }
-            //            if ($(this).position().top + $(this).outerHeight()) {
-            //                $('#main-nav li a').removeClass('activeMenu');
-            //                $('#main-nav li a').eq(i).addClass('activeMenu');
-            //            }
-            else {
+            } else {
                 $('main-nav li a').removeClass('activeMenu');
             }
         });
@@ -77,7 +72,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
     $(window).scroll(function () {
         $('.fade-in').each(function (i) {
             var bottomOfObject = $(this).position().top + $(this).outerHeight();
@@ -90,7 +85,7 @@ $(document).ready(function () {
 
     });
 
-       $(window).scroll(function () {
+    $(window).scroll(function () {
         $('.fadeDown').each(function (i) {
             var bottomOfObject = $(this).position().top + $(this).outerHeight();
             var bottomOfWindow = $(window).scrollTop() + $(window).height();
@@ -101,8 +96,8 @@ $(document).ready(function () {
         });
 
     });
-    
-     $(window).scroll(function () {
+
+    $(window).scroll(function () {
         $('.fadeUp').each(function (i) {
             var bottomOfObject = $(this).position().top + $(this).outerHeight();
             var bottomOfWindow = $(window).scrollTop() + $(window).height();
@@ -113,8 +108,8 @@ $(document).ready(function () {
         });
 
     });
-    
-    
+
+
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
             $('.menu-lng').localize();
@@ -129,23 +124,22 @@ $(document).ready(function () {
     $(".english").html("english");
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
-    
-    $(function() {
+
+    $(function () {
         var mainHeader = $('#headerh1');
         var mainHeaderSplit = $('#headerh1').html().split("");
         console.log(mainHeaderSplit);
         $('#headerh1').html();
-        $(mainHeaderSplit).each(function(index, element){
-//            $(this).fadeTo(1000,1);
+        $(mainHeaderSplit).each(function (index, element) {
+            //            $(this).fadeTo(1000,1);
             $(this).animate({
-                
+
                 fontSize: "30px",
                 opacity: 1,
                 height: "toogle",
-                width: "toogle"   
+                width: "toogle"
             }, 1000);
             console.log('works');
         })
     })
 });
-
