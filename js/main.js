@@ -27,15 +27,15 @@ $(document).ready(function () {
             $(this).slideDown("slow");
         });
     });
-$('.btn-header').click(function(event){
-    var target = $('#contact');
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: target.offset().top
-    },800);
-    
-    
-})
+    $('.btn-header').click(function (event) {
+        var target = $('#contact');
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 800);
+
+
+    })
 
     $(window).scroll(function () {
         var topMenuHeight = $("#main-nav").outerHeight() + 50;
@@ -133,19 +133,31 @@ $('.btn-header').click(function(event){
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
 
-//    $(function () {
-//        var mainHeader = $('#headerh1');
-//        var mainHeaderSplit = $('#headerh1').html().split("");
-//        console.log(mainHeaderSplit);
-//        $('#headerh1').html();
-//        $(mainHeaderSplit).each(function (index, element) {
-//            //            $(this).fadeTo(1000,1);
-//            $(this).animate({
-//
-//                fontSize: "10px",
-//                opacity: 1,
-//            }, 1000);
-//            console.log('works');
-//        });
-//    });
+    $(function () {
+        var mainHeader = $('#headerh1');
+        var mainHeaderSplit = $('#headerh1').html().split("");
+        $({
+            s: 0
+        }).animate({
+            s: 1
+        }, {
+            duration: 500,
+            step: function (now) {
+                mainHeader.css('transform', 'scale(' + now + ',' + now + ')');
+                console.log('dziala');
+            }
+        });
+        
+        
+        
+        
+        
+        //var mainHeaderSplit = $('#headerh1').html().split("");
+        //        console.log(mainHeaderSplit);
+        //        $('#headerh1').html();
+        //        $(mainHeaderSplit).each(function (index, element) {
+        //                $(mainHeaderSplit).fadeIn(2000);
+        //            console.log('works');
+        //        });
+    });
 });
