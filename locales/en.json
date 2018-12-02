@@ -6,10 +6,12 @@
         "contact": "contact",
         "language": "language"
     },
-    "header":{
+    "header": {
         "h1": "Hi, I'm Anna,",
         "h2": "a Front end developer,",
-        "p": "building responsive websites."
+        "p": "building responsive websites.",
+        "button": "say hello"
+
     },
     "about": {
         "header": "About me",

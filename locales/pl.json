@@ -9,7 +9,9 @@
     "header": {
         "h1": "Anna Toeplitz",
         "h2": "Front end developer",
-        "p": "Tworzę responsywne strony internetowe."
+        "p": "Tworzę responsywne strony internetowe.",
+        "button" : "przywitaj się"
+
     },
     "about": {
         "header": "O mnie",
