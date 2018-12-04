@@ -31,7 +31,7 @@ $(document).ready(function () {
         var target = $('#contact');
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top + 10
         }, 800);
 
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
 
         $(".page-section").each(function (i) {
             if ($(this).hasClass("contact")) {
-                topMenuHeight = outerHight + 300;
+                topMenuHeight = outerHight + 200;
                 
             }
             var scrollDistance = $(window).scrollTop() + topMenuHeight;
