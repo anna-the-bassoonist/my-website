@@ -133,31 +133,45 @@ $(document).ready(function () {
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
 
-    $(function () {
-        var mainHeader = $('#headerh1');
-        var mainHeaderSplit = $('#headerh1').html().split("");
-        $({
-            s: 0
-        }).animate({
-            s: 1
-        }, {
-            duration: 500,
-            step: function (now) {
-                mainHeader.css('transform', 'scale(' + now + ',' + now + ')');
-                console.log('dziala');
-            }
-        });
-        
-        
-        
-        
-        
-        //var mainHeaderSplit = $('#headerh1').html().split("");
-        //        console.log(mainHeaderSplit);
-        //        $('#headerh1').html();
-        //        $(mainHeaderSplit).each(function (index, element) {
-        //                $(mainHeaderSplit).fadeIn(2000);
-        //            console.log('works');
-        //        });
+    //    $(function () {
+    //        var mainHeader = $('#headerh1');
+    //        var mainHeaderSplit = $('#headerh1').html().split("");
+    //        $({
+    //            s: 0
+    //        }).animate({
+    //            s: 1
+    //        }, {
+    //            duration: 500,
+    //            step: function (now) {
+    //                mainHeader.css('transform', 'scale(' + now + ',' + now + ')');
+    //                console.log('dziala');
+    //            }
+    //        });
+    //        
+
+    //        var mainHeaderSplit = $('#headerh1').html().split("");
+    //        console.log(mainHeaderSplit);
+    //        for (var i = 0; i < mainHeaderSplit.length; i++) {
+    //            console.log('works')
+    //    
+    ////            $(this).fadeIn('slow');
+    //        }
+
+
+    //    $('#headerh1').html();
+
+
+    var mainHeaderSplit = $('#headerh1').html().split("");
+    console.log(mainHeaderSplit);
+    jQuery.each(mainHeaderSplit, function (index, element) {
+        $('#headerh1' + element).delay(100).fadeTo(1000, 1);
+//        $('#headerh1' + index).delay(1000);
+
+
+        console.log(index + ' ' + element);
+        //
+
     });
+
 });
+//})
