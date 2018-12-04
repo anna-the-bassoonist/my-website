@@ -40,13 +40,14 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var outerHight = $("#main-nav").outerHeight();
         var topMenuHeight = outerHight + 30;
-        var scrollDistance = $(window).scrollTop() + topMenuHeight;
+        
 
         $(".page-section").each(function (i) {
             if ($(this).hasClass("contact")) {
                 topMenuHeight = outerHight + 300;
-                scrollDistance = $(window).scrollTop() + topMenuHeight;
+                
             }
+            var scrollDistance = $(window).scrollTop() + topMenuHeight;
             if ($(this).position().top <= scrollDistance && $(this).position().top + $(this).height() > scrollDistance) {
                 $('#main-nav li a').removeClass('activeMenu');
                 $('#main-nav li a').eq(i).addClass('activeMenu');
@@ -143,8 +144,6 @@ $(document).ready(function () {
     var mainHeaderSplit = $('#headerh1').html().split("");
     console.log(mainHeaderSplit);
     jQuery.each(mainHeaderSplit, function (index, element) {
-        $('#headerh1' + element).delay(100).fadeTo(1000, 1);
-//        $('#headerh1' + index).delay(1000);
 
 
         console.log(index + ' ' + element);
