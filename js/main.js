@@ -17,7 +17,7 @@ $(document).ready(function () {
         if (target.length) {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - 30
             }, 800);
         }
     });
@@ -31,7 +31,7 @@ $(document).ready(function () {
         var target = $('#contact');
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: target.offset().top + 10
+            scrollTop: target.offset().top
         }, 800);
 
 
@@ -39,13 +39,13 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var outerHight = $("#main-nav").outerHeight();
-        var topMenuHeight = outerHight + 30;
-        
+        var topMenuHeight = outerHight + 15;
+
 
         $(".page-section").each(function (i) {
             if ($(this).hasClass("contact")) {
-                topMenuHeight = outerHight + 200;
-                
+                topMenuHeight = outerHight + 150;
+
             }
             var scrollDistance = $(window).scrollTop() + topMenuHeight;
             if ($(this).position().top <= scrollDistance && $(this).position().top + $(this).height() > scrollDistance) {
@@ -140,16 +140,20 @@ $(document).ready(function () {
     $(".polski").html("polski");
 
 
-
+    var mainHeader = $('#headerh1');
     var mainHeaderSplit = $('#headerh1').html().split("");
-    console.log(mainHeaderSplit);
+    $('#headerh1').text("");
     jQuery.each(mainHeaderSplit, function (index, element) {
-
-
-        console.log(index + ' ' + element);
-        //
-
+        
+        var newEl = $("<span />").text(element).css({
+            opacity: 0
+        });
+        newEl.appendTo($('#headerh1'));
+        newEl.delay(index * 100);
+        newEl.animate({
+            opacity: 1
+        }, 1000);
+        console.log('works');
     });
 
 });
-//})
