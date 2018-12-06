@@ -7,6 +7,14 @@
     margin-top: 10px;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
 .m-btn {
     border: 1px solid #fff;
     display: inline-block;
@@ -164,6 +172,7 @@ header#header div p {
     padding-bottom: 15px;
     color: white;
 }
+
 /*
 header#header #headerh1{
     opacity: 0;
@@ -309,24 +318,28 @@ section#about-me div button {
 
 
 .animate {
-
+    opacity: 0;
     animation-duration: 0.8s;
 }
 
 #skills-header {
-
     animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 .line-1 {
 
     animation-delay: 0.4s;
+    animation-fill-mode: both;
+
 }
 
 .skills-about {
     animation-delay: 0.4s;
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
+    animation-fill-mode: both;
+
 }
 
 #html,
@@ -338,7 +351,7 @@ section#about-me div button {
 #git,
 #rwd {
     animation-delay: 0.9s;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
 
@@ -346,31 +359,38 @@ section#about-me div button {
 
 #skills-subheader {
 
-    animation-delay: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
 }
 
 .line-2 {
 
-    animation-delay: 1.5s;
+    animation-delay: 1.1s;
+    animation-fill-mode: both;
+
 }
 
 
 #react,
 #ajax,
 #wordpress {
-    animation-delay: 1.9s;
-    animation-duration: 0.8s;
+    animation-delay: 1.3s;
+    animation-duration: 0.6s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
 }
 
 @keyframes fadeInLeft {
-    from {
+    0% {
         opacity: 0;
         transform: translate3d(-25%, 0, 0);
     }
+    20% {
+        opacity: 0;
+    }
 
-    to {
+    100% {
         opacity: 1;
         transform: none;
     }
@@ -381,12 +401,14 @@ section#about-me div button {
 }
 
 @keyframes fadeInRight {
-    from {
+    0% {
         opacity: 0;
         transform: translate3d(200%, 0, 0);
     }
-
-    to {
+    20% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
         transform: none;
     }
@@ -417,35 +439,42 @@ section#about-me div button {
 
 
 @keyframes fadeInDown {
-    from {
+    0% {
         opacity: 0;
         transform: translate3d(0, -60%, 0);
     }
+    40% {
+        opacity: 0;
+    }
 
-    to {
+    100% {
         opacity: 1;
         transform: none;
     }
 }
 
 .fadeInDown {
+    opacity: 0;
     animation-name: fadeInDown;
 }
 
 
 @keyframes fadeInUp {
-    from {
+    0% {
         opacity: 0;
         transform: translate3d(0, 60%, 0);
     }
-
-    to {
+    40% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
         transform: none;
     }
 }
 
 .fadeInUp {
+    opacity: 0;
     animation-name: fadeInUp;
 }
 

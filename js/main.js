@@ -63,15 +63,36 @@ $(document).ready(function () {
         $(this).addClass('activeMenu');
     });
 
+    var mainHeader = $('#headerh1');
+    var mainHeaderSplit = $('#headerh1').html().split("");
+    $('#headerh1').text("");
+    jQuery.each(mainHeaderSplit, function (index, element) {
+
+        var newEl = $("<span />").text(element).css({
+            opacity: 0
+        });
+        newEl.appendTo($('#headerh1'));
+        newEl.delay(index * 100);
+        newEl.animate({
+            opacity: 1
+        }, 1000);
+        console.log('works');
+    });
+
     $(window).scroll(function () {
         $('.fadeLeft').each(function (i) {
+
             var bottomOfObject = $(this).position().top + $(this).outerHeight();
             var bottomOfWindow = $(window).scrollTop() + $(window).height();
 
             if (bottomOfWindow > bottomOfObject) {
                 $(this).addClass('fadeInLeft');
+                $('#skills-header').addClass('opacity-1');
+//                $(this).addClass('opacity-1');
+
             }
         });
+    
 
     });
 
@@ -140,20 +161,6 @@ $(document).ready(function () {
     $(".polski").html("polski");
 
 
-    var mainHeader = $('#headerh1');
-    var mainHeaderSplit = $('#headerh1').html().split("");
-    $('#headerh1').text("");
-    jQuery.each(mainHeaderSplit, function (index, element) {
-        
-        var newEl = $("<span />").text(element).css({
-            opacity: 0
-        });
-        newEl.appendTo($('#headerh1'));
-        newEl.delay(index * 100);
-        newEl.animate({
-            opacity: 1
-        }, 1000);
-        console.log('works');
-    });
+
 
 });
