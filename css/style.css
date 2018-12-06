@@ -173,45 +173,26 @@ header#header div p {
     color: white;
 }
 
-/*
-header#header #headerh1{
-    opacity: 0;
+.width-0{
+    width: 0;
 }
-*/
-
 /*Header animation*/
 /*
-header#header .animation-header {
-    animation-name: showHeader;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in;
+.typingHeader {
+    animation: typingHeader 1s steps(12, end),
+    blinking 0.82s step-end infinite;
+
 }
 
-header#header h1:first-of-type{
-    animation-delay: 0.1s;
-}
-header#header h1:nth-of-type(2){
-    animation-delay: 0.3s;
-}
-
-header#header .animation-subheader {
-    animation-name: showHeader;
-    animation-duration: 1.2s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-}
-@keyframes showHeader {
-    0% {
+@keyframes typingHeader {
+    from {
         opacity: 0;
-        transform: scale(0.5,0.5);
+        width: 0;
     }
-    50% {
-        opacity: 0.8;
-        transform: scale(1.02,1.02);
-    }
-    100% {
+
+    to {
         opacity: 1;
-        transform: none;
+        width: 100%;
     }
 }
 */
@@ -386,6 +367,7 @@ section#about-me div button {
         opacity: 0;
         transform: translate3d(-25%, 0, 0);
     }
+
     20% {
         opacity: 0;
     }
@@ -405,9 +387,11 @@ section#about-me div button {
         opacity: 0;
         transform: translate3d(200%, 0, 0);
     }
+
     20% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
         transform: none;
@@ -443,6 +427,7 @@ section#about-me div button {
         opacity: 0;
         transform: translate3d(0, -60%, 0);
     }
+
     40% {
         opacity: 0;
     }
@@ -464,9 +449,11 @@ section#about-me div button {
         opacity: 0;
         transform: translate3d(0, 60%, 0);
     }
+
     40% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
         transform: none;
