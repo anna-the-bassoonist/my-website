@@ -247,6 +247,7 @@ section#about-me div button {
     /*    padding: 60px 0;*/
     background-color: #e2e2e2;
     color: #000000;
+    padding-bottom: 20px;
 }
 
 #skills h2 {
@@ -281,18 +282,18 @@ section#about-me div button {
 }
 
 .hover-icons figure,
-.hover-icons icons-p{
-/*    opacity: 0;*/
+.hover-icons icons-p {
+    /*    opacity: 0;*/
     transition: all 0.3s ease-in;
 }
 
 .hover-icons:hover figure,
-.hover-icons:hover .icons-p{
+.hover-icons:hover .icons-p {
     opacity: 0.08;
 }
 
 #skills .skills-icons .hover-icons:hover {
-    background: rgba(44, 73, 156, 0.99);
+    background: rgba(44, 73, 156, 0.89);
 
 }
 
@@ -310,21 +311,26 @@ section#about-me div button {
 }
 
 #skills .skills-icons p {
-/*    transform: translateY(9%);*/
+    /*    transform: translateY(9%);*/
     height: 100%;
     font-size: 2.5rem;
     align-self: center;
 }
-#skills .skills-icons .hover-icons p.icons-info{
-    font-size: 5px;
-    line-height: 15px;
+
+#skills .skills-icons .hover-icons p.icons-info {
+    font-size: 0.7rem;
+    line-height: 1rem;
     position: absolute;
     margin: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: 100%;
     padding: 10%;
     transform: translateY(-100%);
-    
+
 }
+
 /*Animation Skills Start*/
 
 
@@ -683,6 +689,9 @@ section#about-me div button {
     nav#main-nav div li div.dropdown-content a:hover {
         background-color: rgb(89, 106, 156);
 
+    }
+    div#ajax {
+        padding-bottom: 10px;
     }
 
     #contact .contact-about form .form-about button[type='submit'] {
