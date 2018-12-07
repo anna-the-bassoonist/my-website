@@ -68,12 +68,14 @@ $(document).ready(function () {
     $('#headerh1').text("");
     jQuery.each(mainHeaderSplit, function (index, element) {
 
-        var newEl = $("<span />").text(element).addClass('opacity-0 width-0');
+        var newEl = $("<span />").text(element).addClass('opacity-0');
         newEl.appendTo($('#headerh1'));
-        newEl.delay(index * 200);
+        newEl.delay(index * 100);
+//        newEl.delay(index * 100).addClass('typingHeader');
+        
         newEl.animate({
-            width: '24em',
-            opacity: 1
+            "width": '100%',
+            "opacity": 1
         }, 1000);
         console.log('works');
     });

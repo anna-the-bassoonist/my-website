@@ -177,25 +177,23 @@ header#header div p {
     width: 0;
 }
 /*Header animation*/
-/*
 .typingHeader {
-    animation: typingHeader 1s steps(12, end),
-    blinking 0.82s step-end infinite;
+    animation: typingHeader 1s steps(12) normal both,
 
 }
 
 @keyframes typingHeader {
     from {
-        opacity: 0;
+/*        opacity: 0;*/
         width: 0;
     }
 
     to {
         opacity: 1;
-        width: 100%;
+        width: 24em;
     }
 }
-*/
+
 
 /*Header End*/
 
