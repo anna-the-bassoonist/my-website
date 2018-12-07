@@ -173,9 +173,10 @@ header#header div p {
     color: white;
 }
 
-.width-0{
+.width-0 {
     width: 0;
 }
+
 /*Header animation*/
 .typingHeader {
     animation: typingHeader 1s steps(12) normal both,
@@ -184,7 +185,7 @@ header#header div p {
 
 @keyframes typingHeader {
     from {
-/*        opacity: 0;*/
+        /*        opacity: 0;*/
         width: 0;
     }
 
@@ -239,6 +240,8 @@ section#about-me div button {
 }
 
 /*Section About me End*/
+
+
 /*Section Skills Start*/
 #skills {
     /*    padding: 60px 0;*/
@@ -273,6 +276,26 @@ section#about-me div button {
 
 }
 
+#skills .skills-icons .hover-icons {
+    transition: all 0.4s ease-in-out;
+}
+
+.hover-icons figure,
+.hover-icons icons-p{
+/*    opacity: 0;*/
+    transition: all 0.3s ease-in;
+}
+
+.hover-icons:hover figure,
+.hover-icons:hover .icons-p{
+    opacity: 0.08;
+}
+
+#skills .skills-icons .hover-icons:hover {
+    background: rgba(44, 73, 156, 0.99);
+
+}
+
 #skills .skills-icons figure img {
     padding-top: 10px;
 }
@@ -287,12 +310,21 @@ section#about-me div button {
 }
 
 #skills .skills-icons p {
-    transform: translateY(9%);
+/*    transform: translateY(9%);*/
     height: 100%;
     font-size: 2.5rem;
     align-self: center;
 }
-
+#skills .skills-icons .hover-icons p.icons-info{
+    font-size: 5px;
+    line-height: 15px;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    padding: 10%;
+    transform: translateY(-100%);
+    
+}
 /*Animation Skills Start*/
 
 
