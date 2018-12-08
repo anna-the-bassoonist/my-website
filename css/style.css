@@ -295,10 +295,7 @@ section#about-me div button {
 
 #skills .skills-icons .hover-icons {
     transition: all 0.4s ease-in-out;
-        border: 1px solid transparent;
-
-/*            background: rgba(44, 73, 156, 0.89);*/
-
+    border: 1px solid transparent;
 }
 
 .hover-icons figure,
@@ -310,7 +307,8 @@ section#about-me div button {
 .hover-icons:hover figure,
 .hover-icons:hover .icons-p {
     opacity: 0;
-    transform: rotate(180deg);
+    transform: scale(1.3);
+/*    transform: rotate(180deg);*/
 }
 
 #skills .skills-icons .hover-icons:hover {
@@ -340,7 +338,7 @@ section#about-me div button {
     padding: 10%;
     transition: all 0.4s ease-in-out;
     transform: none;
-    color: #e2e2e2;
+    color: transparent;
 
 }
 
@@ -348,6 +346,7 @@ section#about-me div button {
     opacity: 1;
     transform: scale(1.9);
     transform: translateY(-100%);
+    color: #e2e2e2;
 }
 
 /*Animation Skills Start*/
