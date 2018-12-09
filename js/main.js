@@ -63,21 +63,18 @@ $(document).ready(function () {
         $(this).addClass('activeMenu');
     });
 
-    var mainHeader = $('#headerh1');
-    var mainHeaderSplit = $('#headerh1').html().split("");
-    $('#headerh1').text("");
-    jQuery.each(mainHeaderSplit, function (index, element) {
+    var $h2 = $('#headerh2');
+    var $h2Split = $('#headerh2').html().split("");
+    $('#headerh2').text("");
+    jQuery.each($h2Split, function (index, element) {
 
         var newEl = $("<span />").text(element).addClass('opacity-0');
-        newEl.appendTo($('#headerh1'));
+        newEl.appendTo($h2);
         newEl.delay(index * 100);
-//        newEl.delay(index * 100).addClass('typingHeader');
         
         newEl.animate({
-            "width": '100%',
             "opacity": 1
         }, 1000);
-        console.log('works');
     });
 
     $(window).scroll(function () {
