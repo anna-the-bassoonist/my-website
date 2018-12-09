@@ -6,17 +6,27 @@
         "contact": "kontakt",
         "language": "sprachen"
     },
+    "header": {
+        "h1": "Anna Toeplitz",
+        "h2": "Front end developer",
+        "p": "Ich erstelle responsive Webseiten.",
+        "button" : "sag Hallo"
+    },
     "about": {
         "header": "Über mich",
-        "text": " ´´Die interessantesten  Zusammenhänge entstehen dank untypischen Verbindungen. Unterschiedliche Ausbildungen können uns viel an Genauigkeit und Präzision geben. Die Spezialisierung zusammen mit vielen Verknüpfungen erschafft Kreativität.`` Ich selbst bin eine Künstlerin/ Webdesignerin mit einem mathematisch ausgeprägten Geist. Dabei bemühe ich mich in jedem Bereich mein Bestes zu geben und es mit meinem Sinn für Perfektion zu schmücken. Meine Ausbildung zur Musikerin hat mich zur Genauigkeit beigebracht: ich bin kreativ aber auch präzise. So erschaffe ich Webseiten, spiele Fagott und unterrichte dieses Instrument in einer Schule.–auf all diesen Gebieten strebe ich nach Perfektion."
+        "text": " Die interessantesten  Zusammenhänge entstehen dank untypischen Verbindungen. Unterschiedliche Ausbildungen können uns viel an Genauigkeit und Präzision geben. Die Spezialisierung zusammen mit vielen Verknüpfungen erschafft Kreativität. Ich selbst bin eine Künstlerin/ Webdesignerin mit einem mathematisch ausgeprägten Geist. Dabei bemühe ich mich in jedem Bereich mein Bestes zu geben und es mit meinem Sinn für Perfektion zu schmücken. Meine Ausbildung zur Musikerin hat mich zur Genauigkeit beigebracht: ich bin kreativ aber auch präzise. So erschaffe ich Webseiten, spiele Fagott und unterrichte dieses Instrument in einer Schule – auf all diesen Gebieten strebe ich nach Perfektion."
     },
     "skills": {
         "header": "Meine Kenntnisse",
-        "text": "Beim Erstellen von Webseiten gebrauche ich untershiedliche  Programmsprachen und Werkzeuge.",
+        "text": "Beim Erstellen von Webseiten verwende ich unterschiedliche Programmsprachen und Werkzeuge:",
         "subHeader": "Stets in Fortbildung"
     },
     "contact": {
-        "main": "Kontakte mich"
+        "main": "Kontaktiere mich",
+        "name": "Name*",
+        "email": "E-Mail*",
+        "textarea": "Nachricht*",
+        "send": "Senden"
     }
 
 }

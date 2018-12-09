@@ -4,7 +4,14 @@
         "aboutMe": "o mnie",
         "skills": "umiejętności",
         "contact": "kontakt",
-        "language": "język"
+        "language": "języki"
+    },
+    "header": {
+        "h1": "Anna Toeplitz",
+        "h2": "Front end developer",
+        "p": "Tworzę responsywne strony internetowe.",
+        "button" : "przywitaj się"
+
     },
     "about": {
         "header": "O mnie",
@@ -12,11 +19,15 @@
     },
     "skills": {
         "header": "Moje umiejętności",
-        "text": "Tworząc stronę internetową używam różnych języków programowania i narzędzi:",
+        "text": "Do tworzenia stron internetowych używam różnych języków programowania i narzędzi:",
         "subHeader": "Nadal się uczę"
     },
     "contact": {
-        "main": "Skontaktuj się"
+        "main": "Skontaktuj się",
+        "name": "Imię*",
+        "email": "Email*",
+        "textarea": "wpisz wiadomość*",
+        "send": "wyślij"
     }
 
 }

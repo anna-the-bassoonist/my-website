@@ -7,10 +7,18 @@
     margin-top: 10px;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
 .m-btn {
     border: 1px solid #fff;
     display: inline-block;
-/*    outline:inherit ;*/
+    /*    outline:inherit ;*/
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
@@ -23,7 +31,7 @@
 }
 
 .m-btn:hover {
-/*    border-radius: 8%;*/
+    /*    border-radius: 8%;*/
     color: rgb(44, 73, 156);
     background-color: #fff;
 
@@ -159,16 +167,33 @@ header#header div {
 }
 
 header#header div h1,
-header#header div h2 {
+header#header div h2,
+header#header div p {
     padding-bottom: 15px;
     color: white;
 }
 
-/*
-header#header div h1 span {
-    color: rgb(0, 134, 0);
+.width-0{
+    width: 0;
 }
-*/
+/*Header animation*/
+.typingHeader {
+    animation: typingHeader 1s steps(12) normal both,
+
+}
+
+@keyframes typingHeader {
+    from {
+/*        opacity: 0;*/
+        width: 0;
+    }
+
+    to {
+        opacity: 1;
+        width: 24em;
+    }
+}
+
 
 /*Header End*/
 
@@ -198,12 +223,6 @@ section#about-me div h2 {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/*
-section#about-me div h2 span {
-    color: rgb(0, 134, 0);
-}
-*/
-
 section#about-me div p {
     padding-bottom: 25px;
     line-height: 2.4rem;
@@ -222,36 +241,28 @@ section#about-me div button {
 /*Section About me End*/
 /*Section Skills Start*/
 #skills {
-    padding: 60px 0;
+    /*    padding: 60px 0;*/
     background-color: #e2e2e2;
     color: #000000;
 }
 
-/*
-#skills h2,
-#skills h3 {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: rgb(44, 73, 156);
-}
-*/
-
 #skills h2 {
-/*    padding: 0 0 50px;*/
-    padding: 0 0 10px;
+    /*    padding: 0 0 50px;*/
+    padding: 60px 0 10px;
 }
 
 #skills h3 {
     /*    border-top-style: ridge;*/
     margin-top: 30px;
     padding: 0 0 8px;
-/*    padding: 25px 0;*/
+    /*    padding: 25px 0;*/
 }
-#skills .line-under{
-/*    margin: 25px 0 75px;*/
+
+#skills .line-under {
+    /*    margin: 25px 0 75px;*/
     width: 140px;
     height: 4px;
-    background: rgb(44,73,156);
+    background: rgb(44, 73, 156);
     text-align: center;
     margin: 0 auto 25px;
 }
@@ -282,6 +293,178 @@ section#about-me div button {
     align-self: center;
 }
 
+/*Animation Skills Start*/
+
+
+.animate {
+    opacity: 0;
+    animation-duration: 0.8s;
+}
+
+#skills-header {
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.line-1 {
+
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+
+}
+
+.skills-about {
+    animation-delay: 0.4s;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+
+}
+
+#html,
+#css,
+#js,
+#jquery,
+#sass,
+#gulp,
+#git,
+#rwd {
+    animation-delay: 0.9s;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+
+}
+
+#skills-subheader {
+
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+}
+
+.line-2 {
+
+    animation-delay: 1.1s;
+    animation-fill-mode: both;
+
+}
+
+
+#react,
+#ajax,
+#wordpress {
+    animation-delay: 1.3s;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-25%, 0, 0);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(200%, 0, 0);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+
+    animation-name: fadeIn;
+}
+
+
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -60%, 0);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    opacity: 0;
+    animation-name: fadeInDown;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 60%, 0);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+/*Animation Skills End*/
+
 /*Section Skills End*/
 
 
@@ -291,16 +474,19 @@ section#about-me div button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    padding-top: 5%;
 }
 
 #contact .container h3 {
-    padding: 5% 0 0;
+    padding: 15% 0 0;
     text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
     color: #e2e2e2;
+}
 
-
+#contact .container p {
+    color: #e2e2e2;
+    margin: 0;
+    text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
+    color: #e2e2e2;
 }
 
 #contact .contact-about {
@@ -308,14 +494,16 @@ section#about-me div button {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-/*    when i live margin bei firefox its a white-space: */
-    margin: 5% 5% 15%;
+    /*    when i live margin bei firefox its a white-space: */
+    /*    margin: 5% 5% 15%;*/
+    margin: 5% 5% 0;
+    padding-bottom: 12%;
 }
 
 #contact .contact-about form {
     /*    border: 1px ridge #1d3f5d;*/
     background-color: transparent;
-    padding: 1%;
+    padding: 1% 1% 5%;
     width: 75%;
 }
 
@@ -329,24 +517,37 @@ section#about-me div button {
     width: 100%;
 }
 
-#contact .contact-about form .form-about input[placeholder],
-#contact .contact-about .form-about textarea[placeholder],
+#contact .contact-about form .form-about input[type='text'],
+#contact .contact-about form .form-about input[type='email'],
+#contact .contact-about .form-about textarea[name='message'],
 #contact .contact-about .form-about button[type='submit'] {
-    text-transform: uppercase;
+    text-transform: inherit;
     font-size: 0.95rem;
-    border: 1px solid #1d3f5d;
     font-weight: 600;
     background-color: #e2e2e2;
+    border: 1px solid #1d3f5d;
+}
 
+#contact .contact-about form .form-about label {
+    text-align: left;
+    color: #1d3f5d;
+    margin: 15px 0 0;
+    text-shadow: -1px -1px 0 #e2e2e2,
+        1px -1px 0 #e2e2e2,
+        -1px 1px 0 #e2e2e2,
+        1px 1px 0 #e2e2e2;
 }
 
 #contact .contact-about form .form-about textarea {
-    height: calc(100% - 15px);
+    /*    height: calc(100% - 15px);*/
     color: #1d3f5d;
+    min-height: 170px;
+    margin-bottom: 5px;
 }
 
-#contact .contact-about form .form-about input[placeholder]:focus,
-#contact .contact-about .form-about textarea[placeholder]:focus {
+#contact .contact-about form .form-about input[type="text"]:focus,
+#contact .contact-about form .form-about input[type="email"]:focus,
+#contact .contact-about .form-about textarea[name="message"]:focus {
     background-color: #fff;
 }
 
@@ -358,12 +559,21 @@ section#about-me div button {
     word-spacing: normal;
     letter-spacing: 1.2;
     transition: all 0.3 linear;
+    margin: 5px 0 0 0;
+    padding: 10px 30px;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    width: 33%;
 }
 
 #contact .contact-about form .form-about button[type='submit']:hover {
     background-color: #e2e2e2;
     color: #1d3f5d;
     border: 1px solid #1d3f5d;
+}
+
+::placeholder {
+    text-transform: uppercase;
 }
 
 /*Section Contact End*/
@@ -386,7 +596,19 @@ section#about-me div button {
     border: 1px solid rgb(44, 106, 156);
 }
 
+
+
+@media (min-width: 1200px) {
+    header#header {
+        background-image: url(../img/kazuend-1920_6.jpg);
+    }
+}
+
 @media (min-width:768px) {
+    html {
+        font-size: 16px;
+    }
+
     nav#main-nav {
         height: 50px;
     }
@@ -396,13 +618,41 @@ section#about-me div button {
     }
 }
 
-@media (min-width: 1200px) {
-    header#header {
-        background-image: url(../img/kazuend-1920_6.jpg);
+@media (max-width: 767px) {
+    html {
+        font-size: 12px;
     }
-}
-@media (max-width: 768px){
+
     header#header {
         background-image: url(../img/kazuend-1024_6.jpg);
     }
-}
+
+    nav#main-nav:hover {
+        background-color: rgba(44, 73, 156, 0.98);
+
+    }
+
+    nav#main-nav div li a {
+        background-color: rgba(44, 73, 156, 0.98);
+        text-align: center;
+        font-size: 18px;
+    }
+
+    nav#main-nav div li div.dropdown-content {
+        width: 100%;
+    }
+
+    nav#main-nav div li div.dropdown-content a {
+        text-align: center;
+        font-size: 16px;
+
+    }
+
+    nav#main-nav div li div.dropdown-content a:hover {
+        background-color: rgb(89, 106, 156);
+
+    }
+
+    #contact .contact-about form .form-about button[type='submit'] {
+        padding: 5px 15px;
+    }

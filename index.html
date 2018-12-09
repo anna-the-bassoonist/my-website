@@ -23,7 +23,7 @@
     <!--   Navigation Start-->
     <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top menu-lng">
         <a class="navbar-brand" href="#"></a>
-        <button id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="menu-button" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end max-height-100" id="navbarNavAltMarkup">
@@ -31,7 +31,7 @@
 
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header" data-i18n="menu.home"><span class="sr-only active">(current)</span></a></li>
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me" data-i18n="menu.aboutMe"></a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
+                <li><a class="nav-item nav-link" id="skills-click" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact" data-i18n="menu.contact"></a></li>
 
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,16 +48,17 @@
 
     <!--   Navigation End-->
     <!--    Header Start-->
-    <header id="header" class="text-center">
+    <header id="header" class="text-center header-lng page-section">
         <div>
-            <h1>Anna Toeplitz</h1>
-            <h2>Front end Developer</h2>
-            <button class="btn btn-primary btn-lg button-custom m-btn btn-viewmore" type="submit">view more</button>
+            <h1 id="headerh1" data-i18n="header.h1"></h1>
+            <h2 data-i18n="header.h2" ></h2>
+            <p data-i18n="header.p"></p>
+            <button class="btn btn-primary btn-lg button-custom m-btn btn-viewmore btn-header" type="submit" data-i18n="header.button"></button>
         </div>
     </header>
     <!--    Header Start-->
     <!--Section About me Start-->
-    <section id="about-me" class="text-center aboutme">
+    <section id="about-me" class="text-center aboutme page-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-5 col-lg-5 col-12 about-content">
@@ -68,82 +69,81 @@
                         <a href="https://www.linkedin.com/in/anna-toeplitz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a href="img/AnnaToeplitz_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
                     </div>
-                    <!--                    <button class="m-btn">download cv</button>-->
                 </div>
             </div>
         </div>
     </section>
     <!--Section About me End-->
     <!--    /*Section Skills Start*/-->
-    <section id="skills" class="text-center skills">
-        <h2 data-i18n="skills.header"></h2>
-        <p class="skills-about" data-i18n="skills.text"></p>
-        <div class="line-under"></div>
-
+    <section id="skills" class="text-center skills page-section">
+        <h2 data-i18n="skills.header" id="skills-header" class="animate fadeLeft"></h2>
+        <p class="skills-about animate fade-in" data-i18n="skills.text"></p>
+        <div class="line-under animate line-1 fadeRight"></div>
+        <!--<button id="click">click</button>-->
         <div class="container skills-border">
-            <div class="row skills-icons">
-                <div class="col-lg-3 col-sm-6 col-6">
+            <div class="row skills-icons ">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="html">
                     <figure>
                         <img src="icons/html5.png" alt="html5">
                         <figcaption class="mt-10">HTML5</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="css">
                     <figure>
                         <img src="icons/css3.png" alt="CSS3">
                         <figcaption class="mt-10">CSS3</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="js">
                     <figure>
                         <img src="icons/js.png" alt="JavaScript">
                         <figcaption class="mt-10">JavaScript</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="jquery">
                     <figure>
                         <img src="icons/jquery.png" alt="jQuery">
                         <figcaption class="mt-10">jQuery</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="sass">
                     <figure>
                         <i class="fab fa-sass"></i>
                         <figcaption>SASS</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="gulp">
                     <figure>
                         <i class="fab fa-gulp"></i>
                         <figcaption>Gulp</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="git">
                     <figure>
                         <i class="fab fa-git-square"></i>
                         <figcaption>Git</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0" id="rwd">
                     <p class="m-auto">Rwd</p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h3 data-i18n="skills.subHeader"></h3>
-            <div class="line-under"></div>
+            <h3 data-i18n="skills.subHeader" id="skills-subheader" class="animate fadeLeft"></h3>
+            <div class="line-under animate line-2 fadeRight"></div>
 
             <div class="row skills-icons">
-                <div class="col-lg-4 col-sm-4 col-12">
+                <div class="col-lg-4 col-sm-4 col-12 fadeUp opacity-0" id="react">
                     <figure>
                         <i class="fab fa-react"></i>
                         <figcaption>React</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-12">
+                <div class="col-lg-4 col-sm-4 col-12 fadeUp opacity-0" id="ajax">
                     <p class="m-auto">Ajax</p>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-12">
+                <div class="col-lg-4 col-sm-4 col-12 fadeUp opacity-0" id="wordpress">
                     <figure>
                         <i class="fab fa-wordpress"></i>
                         <figcaption>Wordpress</figcaption>
@@ -154,17 +154,21 @@
     </section>
     <!--    /*Section Skills End*/-->
     <!--Section Contact Start-->
-    <div id="contact" class="contact">
+    <div id="contact" class="contact page-section">
         <div class="container text-center">
 
             <h3 data-i18n="contact.main"></h3>
+            <!--
+
+            <p>Have a question or want to work together?</p>
+-->
             <div class="form-row contact-about">
                 <form action="https://formspree.io/anna.toeplitz@gmail.com" method="POST">
                     <div class="form-group col-12 form-about">
-                        <label for="text"><input class="form-control" type="text" name="name" placeholder="Your name*" required></label>
-                        <label for="email"><input class="form-control" type="email" name="email" placeholder="Your Email*" required></label>
-                        <label for="textarea"><textarea class="form-control" name="message" id="textarea" placeholder="write a message*" rows="4"></textarea></label>
-                        <button type="submit" class="btn btn-primary">send</button>
+                        <label for="text"><input data-i18n="[placeholder]contact.name" id="text" class="form-control" type="text" name="name" required></label>
+                        <label for="email"><input data-i18n="[placeholder]contact.email" id="email" class="form-control" type="email" name="email" required></label>
+                        <label for="textarea"><textarea data-i18n="[placeholder]contact.textarea" class="form-control" name="message" id="textarea" rows="4" required></textarea></label>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.send"></button>
 
                     </div>
                 </form>
@@ -215,6 +219,7 @@
         }, function(err, t) {
             jqueryI18next.init(i18next, $);
             $('.menu-lng').localize();
+            $('.header-lng').localize();
             $('.aboutme').localize();
             $('.skills').localize();
             $('.contact').localize();
