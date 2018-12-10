@@ -161,6 +161,7 @@ header#header {
 }
 
 header#header div {
+    color: white;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -169,8 +170,17 @@ header#header div {
 header#header div h1,
 header#header div h2,
 header#header div p {
-    padding-bottom: 15px;
-    color: white;
+    margin-bottom: 15px;
+}
+
+header#header div h1,
+header#header div h2 {
+    width: auto;
+    white-space: nowrap;
+}
+
+header#header div h1 {
+    display: inline-block;
 }
 
 .width-0 {
@@ -179,24 +189,26 @@ header#header div p {
 
 /*Header animation*/
 .typingHeader {
-    animation: typingHeader 1s steps(12) normal both,
-
+    animation: typing 7s steps(40, end),
+    blink-caret 1.2s step-end infinite;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    margin: 0 auto;
+    letter-spacing: .1em;
 }
 
-@keyframes typingHeader {
-    from {
-        /*        opacity: 0;*/
-        width: 0;
-    }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: orange; }
+  }
 
-    to {
-        opacity: 1;
-        width: 24em;
-    }
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
 }
-
 
 /*Header End*/
+
 
 /*Section About me Start*/
 
