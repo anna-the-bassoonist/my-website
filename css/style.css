@@ -228,7 +228,7 @@ header#header div h1
     animation-name: typing2;
     animation-duration:  10.2s;
     animation-delay:  2s;
-     
+     animation-timing-function: linear;
     animation-fill-mode: both;
     overflow: hidden;
     border-right: .15em solid #e2e2e2;
