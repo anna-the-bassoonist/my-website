@@ -179,18 +179,20 @@ header#header div h2 {
     white-space: nowrap;
 }
 
-header#header div h1 {
+header#header div h1,
+header#header div h2{
     display: inline-block;
 }
-
-.width-0 {
-    width: 0;
+/*
+header#header div h2 {
+    animation-delay: 1.2s;
 }
+*/
 
 /*Header animation*/
 .typingHeader {
-    animation: typing 7s steps(40, end),
-    blink-caret 1.2s step-end infinite;
+    animation: typing 4s steps(40, end),
+    blink-caret 1.2s step-end;
     overflow: hidden;
     border-right: .15em solid orange;
     margin: 0 auto;
@@ -207,6 +209,11 @@ header#header div h1 {
     to { max-width: 100% }
 }
 
+.typingHeader2{
+    animation: typing 1.3s 1s steps(19, end),
+    blink-caret 1.2s step-end infinite;
+    overflow: hidden;
+}
 /*Header End*/
 
 
