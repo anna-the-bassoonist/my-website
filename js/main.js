@@ -63,19 +63,6 @@ $(document).ready(function () {
         $(this).addClass('activeMenu');
     });
 
-    var $h2 = $('#headerh2');
-    var $h2Split = $('#headerh2').html().split("");
-    $('#headerh2').text("");
-    jQuery.each($h2Split, function (index, element) {
-
-        var newEl = $("<span />").text(element).addClass('opacity-0');
-        newEl.appendTo($h2);
-        newEl.delay(index * 100);
-        
-        newEl.animate({
-            "opacity": 1
-        }, 1000);
-    });
 
     $(window).scroll(function () {
         $('.fadeLeft').each(function (i) {
@@ -86,11 +73,11 @@ $(document).ready(function () {
             if (bottomOfWindow > bottomOfObject) {
                 $(this).addClass('fadeInLeft');
                 $('#skills-header').addClass('opacity-1');
-//                $(this).addClass('opacity-1');
+                
 
             }
         });
-    
+
 
     });
 
