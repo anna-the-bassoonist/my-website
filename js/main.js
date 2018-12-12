@@ -73,6 +73,7 @@ $(document).ready(function () {
             if (bottomOfWindow > bottomOfObject) {
                 $(this).addClass('fadeInLeft');
                 $('#skills-header').addClass('opacity-1');
+                $(this).addClass('opacity-1');
                 
 
             }

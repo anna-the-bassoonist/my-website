@@ -184,15 +184,12 @@ header#header div h2 {
     display: inline-block;
 }
 
-.width-0{
-    width: 0;
-}
 /*Header animation*/
 
 @media screen and (min-width:801px) {
     .typingHeader {
         -webkit-animation: typing 6s steps(40, end),
-        blink-caret 1s step-end;
+            blink-caret 1s step-end;
         animation: typing 6s steps(40, end),
             blink-caret 1s step-end;
         animation-fill-mode: forwards;
@@ -203,9 +200,9 @@ header#header div h2 {
     }
 
     .typingHeader2 {
-        -webkit-animation: typing2 6s steps(40, end), 
-        blink-caret 1s step-end infinite;
-        animation: typing2 6s steps(40, end), 
+        -webkit-animation: typing2 6s steps(40, end),
+            blink-caret 1s step-end infinite;
+        animation: typing2 6s steps(40, end),
             blink-caret 1s step-end infinite;
         -webkit-animation-delay: 2s;
         animation-delay: 2s;
@@ -221,7 +218,7 @@ header#header div h2 {
 @media screen and (min-width: 501px) and (max-width: 800px) {
     .typingHeader {
         -webkit-animation: typing 3s steps(40, end),
-        blink-caret 1s step-end;
+            blink-caret 1s step-end;
         animation: typing 3s steps(40, end),
             blink-caret 1s step-end;
         animation-fill-mode: forwards;
@@ -230,11 +227,11 @@ header#header div h2 {
         margin: 0 auto;
         letter-spacing: .1em;
     }
-    
+
     .typingHeader2 {
-        -webkit-animation: typing2 3s steps(40, end), 
-        blink-caret 1s step-end infinite;
-        animation: typing2 3s steps(40, end), 
+        -webkit-animation: typing2 3s steps(40, end),
+            blink-caret 1s step-end infinite;
+        animation: typing2 3s steps(40, end),
             blink-caret 1s step-end infinite;
         -webkit-animation-delay: 32s;
         animation-delay: 3s;
@@ -244,13 +241,14 @@ header#header div h2 {
         margin: 0 auto;
         letter-spacing: .1em;
         opacity: 0;
+
     }
 }
 
 @media screen and (max-width:500px) {
     .typingHeader {
         -webkit-animation: typing 2s steps(40, end),
-        blink-caret 1s step-end;
+            blink-caret 1s step-end;
         animation: typing 2s steps(40, end),
             blink-caret 1s step-end;
         animation-fill-mode: forwards;
@@ -259,11 +257,11 @@ header#header div h2 {
         margin: 0 auto;
         letter-spacing: .1em;
     }
-    
+
     .typingHeader2 {
-        -webkit-animation: typing2 2s steps(40, end), 
-        blink-caret 1s step-end infinite;
-        animation: typing2 2s steps(40, end), 
+        -webkit-animation: typing2 2s steps(40, end),
+            blink-caret 1s step-end infinite;
+        animation: typing2 2s steps(40, end),
             blink-caret 1s step-end infinite;
         -webkit-animation-delay: 2s;
         animation-delay: 2s;
@@ -275,24 +273,45 @@ header#header div h2 {
         opacity: 0;
     }
 }
-    
+
 @keyframes typing {
-    from { max-width: 0 }
-    to { max-width: 100% }
+    from {
+        max-width: 0
+    }
+
+    to {
+        max-width: 100%
+    }
 }
+
+
 
 @keyframes typing2 {
     1% {
         opacity: 1;
     }
-    from { max-width: 0 }
-    to { max-width: 100%; opacity: 1}
+
+    from {
+        max-width: 0
+    }
+
+    to {
+        max-width: 100%;
+        opacity: 1
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    40% { border-color:rgba(226, 226, 226, 0.7); }
-  }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    40% {
+        border-color: rgba(226, 226, 226, 0.7);
+    }
+}
 
 
 /*Header End*/
@@ -340,11 +359,14 @@ section#about-me div button {
 }
 
 /*Section About me End*/
+
+
 /*Section Skills Start*/
 #skills {
     /*    padding: 60px 0;*/
     background-color: #e2e2e2;
     color: #000000;
+    padding-bottom: 20px;
 }
 
 #skills h2 {
@@ -374,7 +396,10 @@ section#about-me div button {
 
 }
 
-#skills .skills-icons figure img {
+
+
+#skills .skills-icons figure img,
+#skills .skills-icons .icons-p {
     padding-top: 10px;
 }
 
@@ -387,11 +412,60 @@ section#about-me div button {
     width: 6rem;
 }
 
+#skills .skills-icons .hover-icons {
+    transition: all 0.4s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.hover-icons figure,
+.hover-icons icons-p {
+    transition: all 0.4s ease-in-out;
+    transform: none;
+}
+
+.hover-icons:hover figure,
+.hover-icons:hover .icons-p {
+    opacity: 0;
+    transform: scale(1.3);
+    /*    transform: rotate(180deg);*/
+}
+
+#skills .skills-icons .hover-icons:hover {
+    background: rgba(44, 73, 156, 0.89);
+    border: 1px solid rgb(67, 70, 116);
+    border-radius: 0.30rem;
+}
+
+
 #skills .skills-icons p {
-    transform: translateY(9%);
+    /*    transform: translateY(9%);*/
     height: 100%;
     font-size: 2.5rem;
     align-self: center;
+}
+
+#skills .skills-icons .hover-icons p.icons-info {
+    opacity: 0;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    transition: all 0.4s ease-in-out;
+    transform: none;
+    color: transparent;
+
+}
+
+#skills .skills-icons .hover-icons:hover p.icons-info {
+    opacity: 1;
+    transform: scale(1.9);
+    transform: translateY(-100%);
+    color: #e2e2e2;
 }
 
 /*Animation Skills Start*/
@@ -408,10 +482,8 @@ section#about-me div button {
 }
 
 .line-1 {
-
     animation-delay: 0.4s;
     animation-fill-mode: both;
-
 }
 
 .skills-about {
@@ -419,7 +491,6 @@ section#about-me div button {
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
-
 }
 
 #html,
@@ -430,32 +501,28 @@ section#about-me div button {
 #gulp,
 #git,
 #rwd {
-    animation-delay: 0.9s;
+    animation-delay: 0.2s;
     animation-duration: 0.6s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
-
 }
 
 #skills-subheader {
 
     animation-delay: 1s;
     animation-fill-mode: both;
-
 }
 
 .line-2 {
-
     animation-delay: 1.1s;
     animation-fill-mode: both;
-
 }
 
 
 #react,
 #ajax,
 #wordpress {
-    animation-delay: 1.3s;
+    animation-delay: 0.4s;
     animation-duration: 0.6s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
@@ -595,14 +662,11 @@ section#about-me div button {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    /*    when i live margin bei firefox its a white-space: */
-    /*    margin: 5% 5% 15%;*/
     margin: 5% 5% 0;
     padding-bottom: 12%;
 }
 
 #contact .contact-about form {
-    /*    border: 1px ridge #1d3f5d;*/
     background-color: transparent;
     padding: 1% 1% 5%;
     width: 75%;
@@ -640,7 +704,6 @@ section#about-me div button {
 }
 
 #contact .contact-about form .form-about textarea {
-    /*    height: calc(100% - 15px);*/
     color: #1d3f5d;
     min-height: 170px;
     margin-bottom: 5px;
@@ -659,7 +722,7 @@ section#about-me div button {
     align-self: flex-end;
     word-spacing: normal;
     letter-spacing: 1.2;
-    transition: all 0.3 linear;
+    transition: all 0.5 ease-in-out;
     margin: 5px 0 0 0;
     padding: 10px 30px;
     line-height: 1.4rem;
@@ -753,19 +816,12 @@ section#about-me div button {
         background-color: rgb(89, 106, 156);
 
     }
-<<<<<<< Updated upstream
+
+    div#ajax {
+        padding-bottom: 10px;
+    }
 
     #contact .contact-about form .form-about button[type='submit'] {
-        padding: 5px 15px;
+        padding: 5px;
     }
-=======
 }
-
-div#ajax {
-    padding-bottom: 10px;
-}
-
-#contact .contact-about form .form-about button[type='submit'] {
-    padding: 5px;
-}
->>>>>>> Stashed changes
