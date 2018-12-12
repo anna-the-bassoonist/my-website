@@ -296,7 +296,9 @@ section#about-me div button {
 
 }
 
-
+#skills .skills-icons figure {
+    margin: 1rem auto;
+}
 
 #skills .skills-icons figure img,
 #skills .skills-icons .icons-p {
@@ -345,7 +347,7 @@ section#about-me div button {
 }
 
 #skills .skills-icons .hover-icons p.icons-info {
-    opacity: 0;
+/*    opacity: 0;*/
     font-size: 0.7rem;
     line-height: 1rem;
     position: absolute;
@@ -354,10 +356,14 @@ section#about-me div button {
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 10%;
+    padding: 15% 10%;
     transition: all 0.4s ease-in-out;
     transform: none;
     color: transparent;
+/*
+    display: flex;
+    align-items: baseline;
+*/
 
 }
 
