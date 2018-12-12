@@ -204,8 +204,8 @@ header#header div h2 {
             blink-caret 1s step-end infinite;
         animation: typing2 6s steps(40, end),
             blink-caret 1s step-end infinite;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         border-right: .15em solid rgba(226, 226, 226, 0.7);
@@ -213,6 +213,18 @@ header#header div h2 {
         letter-spacing: .1em;
         opacity: 0;
     }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 0.2s;
+        animation: fadeIn 0.2s;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
@@ -233,8 +245,8 @@ header#header div h2 {
             blink-caret 1s step-end infinite;
         animation: typing2 3s steps(40, end),
             blink-caret 1s step-end infinite;
-        -webkit-animation-delay: 32s;
-        animation-delay: 3s;
+        -webkit-animation-delay: 1.7s;
+        animation-delay: 1.7s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         border-right: .15em solid rgba(226, 226, 226, 0.7);
@@ -242,6 +254,17 @@ header#header div h2 {
         letter-spacing: .1em;
         opacity: 0;
 
+    }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 0.4s;
+        animation: fadeIn 0.4s;
+        -webkit-animation-delay: 1.4s;
+        animation-delay: 1.4s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        opacity: 0;
     }
 }
 
@@ -263,13 +286,24 @@ header#header div h2 {
             blink-caret 1s step-end infinite;
         animation: typing2 2s steps(40, end),
             blink-caret 1s step-end infinite;
-        -webkit-animation-delay: 2s;
+        -webkit-animation-delay: 1.8s;
         animation-delay: 2s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         border-right: .15em solid rgba(226, 226, 226, 0.7);
         margin: 0 auto;
         letter-spacing: .1em;
+        opacity: 0;
+    }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 0.3s;
+        animation: fadeIn 0.3s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
         opacity: 0;
     }
 }
@@ -311,6 +345,26 @@ header#header div h2 {
     40% {
         border-color: rgba(226, 226, 226, 0.7);
     }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 3.2s;
+    animation: fadeIn 3.2s;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 
@@ -791,6 +845,10 @@ section#about-me div button {
         background-image: url(../img/kazuend-1024_6.jpg);
     }
 
+    nav#main-nav #menu-button {
+        font-size: 1.7rem;
+    }
+
     nav#main-nav:hover {
         background-color: rgba(44, 73, 156, 0.98);
 
@@ -815,6 +873,10 @@ section#about-me div button {
     nav#main-nav div li div.dropdown-content a:hover {
         background-color: rgb(89, 106, 156);
 
+    }
+
+    header#header div h2#headerh2 {
+        font-size: 1.8rem;
     }
 
     div#ajax {
