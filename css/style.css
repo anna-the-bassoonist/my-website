@@ -580,7 +580,7 @@ section#about-me div button {
     }
 }
 
-.fadeInDown.activate {
+.fadeDown.activate {
     opacity: 0;
     animation-name: fadeInDown;
 }
@@ -602,7 +602,7 @@ section#about-me div button {
     }
 }
 
-.fadeInUp.activate {
+.fadeUp.activate {
     opacity: 0;
     animation-name: fadeInUp;
 }

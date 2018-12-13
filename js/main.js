@@ -59,6 +59,11 @@ $(document).ready(function () {
             scrollTop: target.offset().top
         }, 800);
     });
+    
+    $(".nav-item").click(function () {
+        $(".nav-item").removeClass('activeMenu');
+        $(this).addClass('activeMenu');
+    });
 
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
