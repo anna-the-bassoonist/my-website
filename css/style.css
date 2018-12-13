@@ -180,9 +180,10 @@ header#header div h2 {
 }
 
 header#header div h1,
-header#header div h2{
+header#header div h2 {
     display: inline-block;
 }
+
 /*
 header#header div h2 {
     animation-delay: 1.2s;
@@ -192,7 +193,7 @@ header#header div h2 {
 /*Header animation*/
 .typingHeader {
     animation: typing 4s steps(40, end),
-    blink-caret 1.2s step-end;
+        blink-caret 1.2s step-end;
     overflow: hidden;
     border-right: .15em solid orange;
     margin: 0 auto;
@@ -200,20 +201,33 @@ header#header div h2 {
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    40% { border-color: orange; }
-  }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    40% {
+        border-color: orange;
+    }
+}
 
 @keyframes typing {
-    from { max-width: 0 }
-    to { max-width: 100% }
+    from {
+        max-width: 0
+    }
+
+    to {
+        max-width: 100%
+    }
 }
 
-.typingHeader2{
+.typingHeader2 {
     animation: typing 1.3s 1s steps(19, end),
-    blink-caret 1.2s step-end infinite;
+        blink-caret 1.2s step-end infinite;
     overflow: hidden;
 }
+
 /*Header End*/
 
 
@@ -313,7 +327,7 @@ section#about-me div button {
     transition: all 0.4s ease-in-out;
     border: 1px solid transparent;
     display: flex;
-    align-items: stretch;
+    justify-content: center;
 }
 
 .hover-icons figure,
@@ -346,8 +360,8 @@ section#about-me div button {
 
 #skills .skills-icons .hover-icons p.icons-info {
     opacity: 1;
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
     text-align: center;
     position: absolute;
     margin: 0;
@@ -355,21 +369,38 @@ section#about-me div button {
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 5% 10%;
-/*    padding-bottom: 40%;*/
+    padding: 0 15px;
     transition: all 0.3s ease-in-out;
-    transform: none;
-    color: black;
-/*    display: block;*/
+    transform: translateY(100%);
+    color: transparent;
 }
 
 #skills .skills-icons .hover-icons:hover p.icons-info {
     opacity: 1;
-/*    transform: scale(1.9);*/
-/*    transform: translateY(-90%);*/
+    transform: scale(1.8);
+    transform: translateY(30%);
     color: #e2e2e2;
 }
 
+
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width:768px) {
+    #skills .skills-icons .hover-icons#ajax:hover p.ajax {
+        transform: translateY(8%);
+    }
+
+    #skills .skills-icons .hover-icons#ajax:hover p.js {
+        transform: translateY(37%);
+    }
+    #skills .skills-icons .hover-icons#ajax:hover p.gulp {
+        transform: translateY(40%);
+    }
+}
+
+@media (max-width: 767px)
 /*Animation Skills Start*/
 
 
