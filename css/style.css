@@ -18,7 +18,6 @@
 .m-btn {
     border: 1px solid #fff;
     display: inline-block;
-    /*    outline:inherit ;*/
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
@@ -31,10 +30,8 @@
 }
 
 .m-btn:hover {
-    /*    border-radius: 8%;*/
     color: rgb(44, 73, 156);
     background-color: #fff;
-
 
 }
 
@@ -63,15 +60,12 @@
     transform: rotate(360deg);
 }
 
-
-
 /*Font Styles*/
 
 body {
     font-family: 'Josefin Sans', Arial, sans-serif;
     font-size: 1rem;
     color: #3c3b3b;
-    /*    margin: 0;*/
 }
 
 h1,
@@ -107,7 +101,6 @@ nav#main-nav div li a {
     font-size: 20px;
     background-color: transparent;
     padding: 10px 22px;
-    /*    margin-right: 15px;*/
     transition: color 0.2s ease-in;
 }
 
@@ -146,7 +139,6 @@ nav#main-nav div li div.dropdown-content a:hover {
 nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
     display: block;
 }
-
 
 /*Navigation End*/
 
@@ -224,7 +216,6 @@ header#header div h2 {
         animation-timing-function: linear;
         opacity: 0;
     }
-
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
@@ -253,7 +244,6 @@ header#header div h2 {
         margin: 0 auto;
         letter-spacing: .1em;
         opacity: 0;
-
     }
 
     .fadeIn {
@@ -318,8 +308,6 @@ header#header div h2 {
     }
 }
 
-
-
 @keyframes typing2 {
     1% {
         opacity: 1;
@@ -367,7 +355,6 @@ header#header div h2 {
     opacity: 0;
 }
 
-
 /*Header End*/
 
 
@@ -386,11 +373,7 @@ section#about-me div.about-content {
     padding: 20% 3%;
     position: relative;
     height: 100%;
-    /*    transform: translateY(35%);*/
-    /*    padding-left: 30px;*/
-
 }
-
 
 section#about-me div p,
 section#about-me div h2 {
@@ -403,7 +386,6 @@ section#about-me div p {
     padding: 10px;
     font-size: 1.4rem;
     text-align: center;
-
 }
 
 section#about-me div button {
@@ -417,26 +399,21 @@ section#about-me div button {
 
 /*Section Skills Start*/
 #skills {
-    /*    padding: 60px 0;*/
     background-color: #e2e2e2;
     color: #000000;
     padding-bottom: 20px;
 }
 
 #skills h2 {
-    /*    padding: 0 0 50px;*/
     padding: 60px 0 10px;
 }
 
 #skills h3 {
-    /*    border-top-style: ridge;*/
     margin-top: 30px;
     padding: 0 0 8px;
-    /*    padding: 25px 0;*/
 }
 
 #skills .line-under {
-    /*    margin: 25px 0 75px;*/
     width: 140px;
     height: 4px;
     background: rgb(44, 73, 156);
@@ -447,10 +424,7 @@ section#about-me div button {
 #skills .skills-border {
     padding-bottom: 40px;
     border-bottom-style: ridge;
-
 }
-
-
 
 #skills .skills-icons figure img,
 #skills .skills-icons .icons-p {
@@ -490,9 +464,7 @@ section#about-me div button {
     border-radius: 0.30rem;
 }
 
-
 #skills .skills-icons p {
-    /*    transform: translateY(9%);*/
     height: 100%;
     font-size: 2.5rem;
     align-self: center;
@@ -512,7 +484,6 @@ section#about-me div button {
     transition: all 0.4s ease-in-out;
     transform: none;
     color: transparent;
-
 }
 
 #skills .skills-icons .hover-icons:hover p.icons-info {
@@ -523,7 +494,6 @@ section#about-me div button {
 }
 
 /*Animation Skills Start*/
-
 
 .animate {
     opacity: 0;
@@ -562,7 +532,6 @@ section#about-me div button {
 }
 
 #skills-subheader {
-
     animation-delay: 1s;
     animation-fill-mode: both;
 }
@@ -572,7 +541,6 @@ section#about-me div button {
     animation-fill-mode: both;
 }
 
-
 #react,
 #ajax,
 #wordpress {
@@ -581,48 +549,6 @@ section#about-me div button {
     animation-fill-mode: both;
     animation-timing-function: ease-out;
 }
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translate3d(-25%, 0, 0);
-    }
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInLeft {
-    animation-name: fadeInLeft;
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(200%, 0, 0);
-    }
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInRight {
-    animation-name: fadeInRight;
-}
-
-
 
 @keyframes fadeIn {
     from {
@@ -635,12 +561,8 @@ section#about-me div button {
 }
 
 .fadeIn {
-
     animation-name: fadeIn;
 }
-
-
-
 
 @keyframes fadeInDown {
     0% {
@@ -658,7 +580,7 @@ section#about-me div button {
     }
 }
 
-.fadeInDown {
+.fadeInDown.activate {
     opacity: 0;
     animation-name: fadeInDown;
 }
@@ -680,7 +602,7 @@ section#about-me div button {
     }
 }
 
-.fadeInUp {
+.fadeInUp.activate {
     opacity: 0;
     animation-name: fadeInUp;
 }
@@ -801,7 +723,6 @@ section#about-me div button {
     background-color: #e2e2e2;
 }
 
-
 #footer .icons-footer a {
     background-color: rgb(44, 106, 156);
     color: #fff;
@@ -813,8 +734,6 @@ section#about-me div button {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(44, 106, 156);
 }
-
-
 
 @media (min-width: 1200px) {
     header#header {
@@ -851,7 +770,6 @@ section#about-me div button {
 
     nav#main-nav:hover {
         background-color: rgba(44, 73, 156, 0.98);
-
     }
 
     nav#main-nav div li a {
@@ -867,12 +785,10 @@ section#about-me div button {
     nav#main-nav div li div.dropdown-content a {
         text-align: center;
         font-size: 16px;
-
     }
 
     nav#main-nav div li div.dropdown-content a:hover {
         background-color: rgb(89, 106, 156);
-
     }
 
     header#header div h2#headerh2 {
