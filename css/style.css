@@ -7,6 +7,14 @@
     margin-top: 10px;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
 .m-btn {
     border: 1px solid #fff;
     display: inline-block;
@@ -51,8 +59,6 @@
     border: 1px solid rgb(255, 255, 255);
     transform: rotate(360deg);
 }
-
-
 
 /*Font Styles*/
 
@@ -134,7 +140,6 @@ nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
     display: block;
 }
 
-
 /*Navigation End*/
 
 /*Header Start*/
@@ -148,6 +153,7 @@ header#header {
 }
 
 header#header div {
+    color: white;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -156,12 +162,201 @@ header#header div {
 header#header div h1,
 header#header div h2,
 header#header div p {
-    padding-bottom: 15px;
-    color: white;
+    margin-bottom: 15px;
 }
 
+header#header div h1,
+header#header div h2 {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header#header div h2 {
+    display: inline-block;
+}
+
+/*Header animation*/
+
+@media screen and (min-width:801px) {
+    .typingHeader {
+        -webkit-animation: typing 6s steps(40, end),
+            blink-caret 1s step-end;
+        animation: typing 6s steps(40, end),
+            blink-caret 1s step-end;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        margin: 0 auto;
+        letter-spacing: .1em;
+    }
+
+    .typingHeader2 {
+        -webkit-animation: typing2 6s steps(40, end),
+            blink-caret 1s step-end infinite;
+        animation: typing2 6s steps(40, end),
+            blink-caret 1s step-end infinite;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        margin: 0 auto;
+        letter-spacing: .1em;
+        opacity: 0;
+    }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 0.2s;
+        animation: fadeIn 0.2s;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .typingHeader {
+        -webkit-animation: typing 3s steps(40, end),
+            blink-caret 1s step-end;
+        animation: typing 3s steps(40, end),
+            blink-caret 1s step-end;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        margin: 0 auto;
+        letter-spacing: .1em;
+    }
+
+    .typingHeader2 {
+        -webkit-animation: typing2 3s steps(40, end),
+            blink-caret 1s step-end infinite;
+        animation: typing2 3s steps(40, end),
+            blink-caret 1s step-end infinite;
+        -webkit-animation-delay: 1.7s;
+        animation-delay: 1.7s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        margin: 0 auto;
+        letter-spacing: .1em;
+        opacity: 0;
+    }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 0.4s;
+        animation: fadeIn 0.4s;
+        -webkit-animation-delay: 1.4s;
+        animation-delay: 1.4s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .typingHeader {
+        -webkit-animation: typing 2s steps(40, end),
+            blink-caret 1s step-end;
+        animation: typing 2s steps(40, end),
+            blink-caret 1s step-end;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        margin: 0 auto;
+        letter-spacing: .1em;
+    }
+
+    .typingHeader2 {
+        -webkit-animation: typing2 2s steps(40, end),
+            blink-caret 1s step-end infinite;
+        animation: typing2 2s steps(40, end),
+            blink-caret 1s step-end infinite;
+        -webkit-animation-delay: 1.8s;
+        animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        margin: 0 auto;
+        letter-spacing: .1em;
+        opacity: 0;
+    }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 0.3s;
+        animation: fadeIn 0.3s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        max-width: 0
+    }
+
+    to {
+        max-width: 100%
+    }
+}
+
+@keyframes typing2 {
+    1% {
+        opacity: 1;
+    }
+
+    from {
+        max-width: 0
+    }
+
+    to {
+        max-width: 100%;
+        opacity: 1
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    40% {
+        border-color: rgba(226, 226, 226, 0.7);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 3.2s;
+    animation: fadeIn 3.2s;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
 /*Header End*/
+
 
 /*Section About me Start*/
 
@@ -178,11 +373,7 @@ section#about-me div.about-content {
     padding: 20% 3%;
     position: relative;
     height: 100%;
-    /*    transform: translateY(35%);*/
-    /*    padding-left: 30px;*/
-
 }
-
 
 section#about-me div p,
 section#about-me div h2 {
@@ -195,7 +386,6 @@ section#about-me div p {
     padding: 10px;
     font-size: 1.4rem;
     text-align: center;
-
 }
 
 section#about-me div button {
@@ -205,12 +395,14 @@ section#about-me div button {
 }
 
 /*Section About me End*/
+
+
 /*Section Skills Start*/
 #skills {
     background-color: #e2e2e2;
     color: #000000;
+    padding-bottom: 20px;
 }
-
 
 #skills h2 {
     padding: 60px 0 10px;
@@ -232,10 +424,10 @@ section#about-me div button {
 #skills .skills-border {
     padding-bottom: 40px;
     border-bottom-style: ridge;
-
 }
 
-#skills .skills-icons figure img {
+#skills .skills-icons figure img,
+#skills .skills-icons .icons-p {
     padding-top: 10px;
 }
 
@@ -248,20 +440,83 @@ section#about-me div button {
     width: 6rem;
 }
 
+#skills .skills-icons .hover-icons {
+    transition: all 0.4s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.hover-icons figure,
+.hover-icons icons-p {
+    transition: all 0.4s ease-in-out;
+    transform: none;
+}
+
+.hover-icons:hover figure,
+.hover-icons:hover .icons-p {
+    opacity: 0;
+    transform: scale(1.3);
+    /*    transform: rotate(180deg);*/
+}
+
+#skills .skills-icons .hover-icons:hover {
+    background: rgba(44, 73, 156, 0.89);
+    border: 1px solid rgb(67, 70, 116);
+    border-radius: 0.30rem;
+}
+
 #skills .skills-icons p {
-    transform: translateY(9%);
     height: 100%;
     font-size: 2.5rem;
     align-self: center;
 }
 
-#skills-header,
-#skills-subheader,
-.line-under {
+#skills .skills-icons .hover-icons p.icons-info {
     opacity: 0;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    transition: all 0.4s ease-in-out;
+    transform: none;
+    color: transparent;
 }
 
-.skills-about,
+#skills .skills-icons .hover-icons:hover p.icons-info {
+    opacity: 1;
+    transform: scale(1.9);
+    transform: translateY(-100%);
+    color: #e2e2e2;
+}
+
+/*Animation Skills Start*/
+
+.animate {
+    opacity: 0;
+    animation-duration: 0.8s;
+}
+
+#skills-header {
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.line-1 {
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+
+.skills-about {
+    animation-delay: 0.4s;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
 #html,
 #css,
 #js,
@@ -269,17 +524,90 @@ section#about-me div button {
 #sass,
 #gulp,
 #git,
-#rwd,
+#rwd {
+    animation-delay: 0.2s;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+#skills-subheader {
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.line-2 {
+    animation-delay: 1.1s;
+    animation-fill-mode: both;
+}
+
 #react,
 #ajax,
 #wordpress {
-    display: none;
+    animation-delay: 0.4s;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-#header-h1 {
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -60%, 0);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown.activate {
     opacity: 0;
+    animation-name: fadeInDown;
 }
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 60%, 0);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp.activate {
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+/*Animation Skills End*/
 
 /*Section Skills End*/
 
@@ -315,7 +643,6 @@ section#about-me div button {
 }
 
 #contact .contact-about form {
-    /*    border: 1px ridge #1d3f5d;*/
     background-color: transparent;
     padding: 1% 1% 5%;
     width: 75%;
@@ -353,7 +680,6 @@ section#about-me div button {
 }
 
 #contact .contact-about form .form-about textarea {
-    /*    height: calc(100% - 15px);*/
     color: #1d3f5d;
     min-height: 170px;
     margin-bottom: 5px;
@@ -372,7 +698,7 @@ section#about-me div button {
     align-self: flex-end;
     word-spacing: normal;
     letter-spacing: 1.2;
-    transition: all 0.3 linear;
+    transition: all 0.5 ease-in-out;
     margin: 5px 0 0 0;
     padding: 10px 30px;
     line-height: 1.4rem;
@@ -397,7 +723,6 @@ section#about-me div button {
     background-color: #e2e2e2;
 }
 
-
 #footer .icons-footer a {
     background-color: rgb(44, 106, 156);
     color: #fff;
@@ -409,8 +734,6 @@ section#about-me div button {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(44, 106, 156);
 }
-
-
 
 @media (min-width: 1200px) {
     header#header {
@@ -441,9 +764,12 @@ section#about-me div button {
         background-image: url(../img/kazuend-1024_6.jpg);
     }
 
+    nav#main-nav #menu-button {
+        font-size: 1.7rem;
+    }
+
     nav#main-nav:hover {
         background-color: rgba(44, 73, 156, 0.98);
-
     }
 
     nav#main-nav div li a {
@@ -459,14 +785,21 @@ section#about-me div button {
     nav#main-nav div li div.dropdown-content a {
         text-align: center;
         font-size: 16px;
-
     }
 
     nav#main-nav div li div.dropdown-content a:hover {
         background-color: rgb(89, 106, 156);
+    }
 
+    header#header div h2#headerh2 {
+        font-size: 1.8rem;
+    }
+
+    div#ajax {
+        padding-bottom: 10px;
     }
 
     #contact .contact-about form .form-about button[type='submit'] {
-        padding: 5px 15px;
+        padding: 5px;
     }
+}

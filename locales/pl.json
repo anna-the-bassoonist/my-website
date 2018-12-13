@@ -9,7 +9,9 @@
     "header": {
         "h1": "Anna Toeplitz",
         "h2": "Front end developer",
-        "p": "Tworzę responsywne strony internetowe."
+        "p": "Tworzę responsywne strony internetowe.",
+        "button": "przywitaj się"
+
     },
     "about": {
         "header": "O mnie",
@@ -18,7 +20,18 @@
     "skills": {
         "header": "Moje umiejętności",
         "text": "Do tworzenia stron internetowych używam różnych języków programowania i narzędzi:",
-        "subHeader": "Nadal się uczę"
+        "subHeader": "Nadal się uczę",
+        "html5": "Poprzez HTML definiuję strukturę stron internetowych; określam,jak dokument będzie wyglądał w przeglądarce; dodaję do strony hiperłącza, pliki graficzne lub multimedialne, formularze.",
+        "css3": "Używając CSS opisuję układ elementów na stronie; definiuję wygląd dokumentu-układ graficzny, kolory, marginesy, tło i inne.",
+        "JavaScript": "Jest to skryptowy język programowania, dzięki któremu tworzę interaktywność na stronie poprzez reagowanie na zdarzenia(np. na kliknięcia myszy).",
+        "jQuery": "Jest to biblioteka JavyScript, która upraszcza programowanie. Czasem zamiast pisać wielu linii kodu w JavieScript, możemy zastąpić kod nawet jedną linią jQuery.",
+        "sass": "Sass jest językiem skryptowym, którego kod jest przetwarzany do plików wynikowych CSS. Pomaga tworzyć i utrzymywać CSS w sposób dużo lepiej zorganizowany i czytelny.",
+        "gulp": "Gulp to narzędzie do automatyzacji pracy – używane przy pracy z SASS. Jeśli w kodzie jest błąd, Gulp zatrzymuje pracę.",
+        "git": "Git to narzędzie pozwalające na zapisywanie i śledzenie zmian w kodzie projektu. Również daje on wgląd w historię pracy oraz ułatwia pracę nad projektem w kilkuosobowych zespołach.",
+        "rwd": "Responsive Web Design - technika projektowania strony internetowej, aby wygląd i jej układ dostosowywał się do rozmiaru okna przeglądarki.",
+        "react": "React to biblioteka JavyScript, która jest tworzona do budowania interfejsu użytkownika aplikacji internetowych używana np. w facebooku",
+        "ajax": "Jest to kombinacja użycia technologii, która pozwala pobrać za pomocą JavyScript z serwera dane i umieścić je na stronie, bez ponownego przeładowania tej strony(czyli w tle) tymsamym bez ingerencji w wygląd i funkcjonalność strony",
+        "wordpress": "CMS (Content menagement system) - system do zarzadzania treścią - stosowany do projektowania i budowy stron internetowych."
     },
     "contact": {
         "main": "Skontaktuj się",

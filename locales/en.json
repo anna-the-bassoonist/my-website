@@ -6,10 +6,12 @@
         "contact": "contact",
         "language": "language"
     },
-    "header":{
+    "header": {
         "h1": "Hi, I'm Anna,",
         "h2": "a Front end developer,",
-        "p": "building responsive websites."
+        "p": "building responsive websites.",
+        "button": "say hello"
+
     },
     "about": {
         "header": "About me",
@@ -18,7 +20,18 @@
     "skills": {
         "header": "My skills",
         "text": "I am working with these programming languages and tools:",
-        "subHeader": "Still learning"
+        "subHeader": "Still learning",
+        "html5": "Lorem ipsum dolor sit amet, consectetur adipisicingjajajajajjaj.",
+        "css3":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "JavaScript":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "jQuery":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "sass":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "gulp":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "git":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "rwd":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo.",
+        "react":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis omnis sequi, asperiores, officia a aliquid obcaecati consectetur, tempore illum veniam odio architecto maiores minima magni voluptas similique vel eius soluta?",
+        "ajax":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quia voluptas? Hic ut quae, ex enim quo, porro eum itaque earum, non commodi odio praesentium quos vel iste nihil nemo.",
+        "wordpress":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat animi voluptatum aut commodi excepturi ut nihil illo, aspernatur nesciunt numquam iste quae eaque ipsam in velit repellendus pariatur quam quo."
     },
     "contact": {
         "main": "Contact me",
