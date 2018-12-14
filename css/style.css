@@ -385,22 +385,29 @@ section#about-me div button {
 
 
 @media (min-width: 1200px) {}
-
-
-@media (min-width:768px) {
-    #skills .skills-icons .hover-icons#ajax:hover p.ajax {
-        transform: translateY(8%);
-    }
-
-    #skills .skills-icons .hover-icons#ajax:hover p.js {
-        transform: translateY(37%);
-    }
-    #skills .skills-icons .hover-icons#ajax:hover p.gulp {
-        transform: translateY(40%);
+@media (min-width:768px){
+    #skills .skills-icons .hover-icons:hover p.icons-info{
+        transform: translateY(21%);
     }
 }
 
-@media (max-width: 767px)
+@media (min-width:768px) {
+    #skills .skills-icons .hover-icons#js:hover p.js {
+        transform: translateY(37%);
+    }
+
+    #skills .skills-icons .hover-icons#gulp:hover p.gulp {
+        transform: translateY(40%);
+    }
+
+    #skills .skills-icons .hover-icons#ajax:hover p.ajax {
+        transform: translateY(8%);
+    }
+     #skills .skills-icons .hover-icons#wordpress:hover p.wp {
+        transform: translateY(16%);
+}
+
+/*@media (max-width: 767px)*/
 /*Animation Skills Start*/
 
 
@@ -757,7 +764,8 @@ section#about-me div button {
     #contact .contact-about form .form-about button[type='submit'] {
         padding: 5px;
     }
-    @media (max-width:350px){
+
+    @media (max-width:350px) {
         .social-icons a {
             height: 40px;
             width: 40px;
