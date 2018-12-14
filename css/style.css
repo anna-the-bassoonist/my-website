@@ -757,3 +757,10 @@ section#about-me div button {
     #contact .contact-about form .form-about button[type='submit'] {
         padding: 5px;
     }
+    @media (max-width:350px){
+        .social-icons a {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+        }
+    }
