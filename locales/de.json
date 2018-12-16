@@ -23,14 +23,14 @@
         "html5": "Durch HTML beschreibe ich und definiere die Inhalte und Struktur der Websiten, dazu noch Grundlagen von Layout; ich füge Hyperlinks, Multimedia, Formulare ein.",
         "css3":"Durch CSS mache ich eine visuelle Darstellung der Website, definiere Layout, Farben, Typografie und mache einfache Animationen.",
         "JavaScript":"Es ist eine Programmiersprache mit welcher  ich die Website interaktiviere, sie reagiert auf  Events(z.B. durch Mouseclick), sie gesteltet  Veränderungen, Animationen und Effekte.",
-        "jQuery":"Es ist eine Bibliothek von JavaScript welche vereinfacht das Programmieren. Manchmal anstatt viele Linien von Code in JavaScript zu schreiben, brauchen wir nur eine Linie in jQuery.",
+        "jQuery":"Eine Bibliothek von JavaScript welche vereinfacht das Programmieren. Manchmal anstatt viele Linien von Code in JS zu schreiben, brauchen wir nur eine Linie in jQuery.",
         "sass":"Eine Skriptsprache, deren Code in Ergebnisdateien verarbeitet wird CSS. Dies hilft, CSS viel besser organisiert zu sein, ist leicht zu erstellen; außerdem ist Code besser lesbar.",
-        "gulp":"Ein spezielles Werkzeug zur Arbeitsautomatisierung - wird bei der Arbeit mit SASS verwendet.",
-        "git":"es ist ein Werkzeug, mit dem die Änderungen im Code des Projekts wir speichern und nachverfolgen können, und auch einen Einblick in Ihren Arbeitsverlauf erhalten; dies erleichtert die Arbeit in einem Team von mehreren Personen.",
+        "gulp":"Eine Software zur Arbeitsautomatisierung - wird bei der Arbeit mit z.B. SASS, HTML, JavaScript,CSS verwendet.",
+        "git":"Versionskontrollsystem, mit dem die Änderungen im Code des Projekts wir speichern und nachverfolgen können, auch einen Einblick in Ihren Arbeitsverlauf erhalten.",
         "rwd":"Responsive Web Design - ist eine Website-Design-Technik, bei der das Aussehen und Layout der Website an die Größe des Browserfensters angepasst werden.",
         "react":"Eine JavaScript - Bibliothek, die zum Erstellen grafischer Oberflächen von Webanwendungen erstellt wird, z.B. in Facebook verwendet.",
-        "ajax":"Eine Kombination mit der Verwendung einer Technologie erlaubt, mit der Mithilfe von JavaScript,  Daten vom Server herunterladen und auf die Seite zu stellen, ohne diese Seite erneut zu laden, auch ohne das Erscheinungsbild und die Funktionalität der Website zu beeinträchtigen.",
-        "wordpress":"CMS - Content Management System – dient zur Gestaltung von Websites, Online-Shops und Blogs und erfordert keine Kenntnisse der Codierung in HTML, CSS, JS."
+        "ajax":"Daten sind vom Server heruntergeladen und auf die Seite gestallten, ohne diese Seite erneut zu laden, auch ohne das Erscheinungsbild und die Funktionalität der Website zu beeinträchtigen.",
+        "wordpress":"CMS - Content Management System – dient zur Gestaltung von Websites, Online-Shops, Mediengalerien, Blogs und erfordert keine Kenntnisse der Codierung in HTML, CSS, JavaScript."
     },
     "contact": {
         "main": "Kontaktiere mich",

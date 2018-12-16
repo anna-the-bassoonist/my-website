@@ -362,52 +362,113 @@ section#about-me div button {
     opacity: 1;
     font-size: 0.8rem;
     line-height: 1.1rem;
-    text-align: center;
+    text-align: inherit;
     position: absolute;
     margin: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 0 15px;
+    bottom: 0;
     transition: all 0.3s ease-in-out;
-    transform: translateY(100%);
+    transform: translateY(80%);
     color: transparent;
 }
 
 #skills .skills-icons .hover-icons:hover p.icons-info {
-    opacity: 1;
-    transform: scale(1.8);
-    transform: translateY(30%);
+    transform: none;
     color: #e2e2e2;
+    opacity: 1;
+
+}
+
+/*
+#skills .skills-icons #sass > p {
+    padding: 28px 10px;
+}
+*/
+#skills .skills-icons #html > p {
+    top: 20%;
+}
+
+#skills .skills-icons #css > p,
+#skills .skills-icons #gulp > p,
+#skills .skills-icons #wordpress > p {
+    top: 25%;
+}
+
+#skills .skills-icons #js > p,
+#skills .skills-icons #jquery > p,
+#skills .skills-icons #sass > p,
+#skills .skills-icons #git > p,
+#skills .skills-icons #rwd > p.rwd {
+    top: 20%;
+}
+
+#skills .skills-icons #react > p {
+    top: 30%;
+}
+
+#skills .skills-icons #ajax > p.ajax {
+    top: 25%;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    #skills .skills-icons #js > p,
+    #skills .skills-icons #css > p,
+    #skills .skills-icons #jquery > p,
+    #skills .skills-icons #sass > p,
+    #skills .skills-icons #git > p,
+    #skills .skills-icons #rwd > p.rwd,
+    #skills .skills-icons #react > p {
+        top: 30%;
+    }
+
+    #skills .skills-icons #html > p {
+        top: 27%;
+    }
+
+    #skills .skills-icons #gulp > p {
+        top: 35%;
+    }
+
+    #skills .skills-icons #ajax > p.ajax {
+        top: 10%;
+    }
+
+    #skills .skills-icons #wordpress > p {
+        top: 20%;
+    }
+}
+
+@media (max-width:768px) {
+    #skills .skills-icons .hover-icons p.icons-info{
+/*        text-align: center;*/
+    }
+    #skills .skills-icons #ajax > p.ajax {
+        top: 20%;
+    }
+
+    #skills .skills-icons #react > p {
+        top: 35%;
+    }
+
+    #skills .skills-icons #wordpress > p {
+        top: 30%;
+    }
 }
 
 
 
-@media (min-width: 1200px) {}
-@media (min-width:768px){
-    #skills .skills-icons .hover-icons:hover p.icons-info{
-        transform: translateY(21%);
+/*
+@media (max-width:767px) {
+    #skills .skills-icons #sass > p {
+        padding: 12px;
     }
 }
 
-@media (min-width:768px) {
-    #skills .skills-icons .hover-icons#js:hover p.js {
-        transform: translateY(37%);
-    }
 
-    #skills .skills-icons .hover-icons#gulp:hover p.gulp {
-        transform: translateY(40%);
-    }
-
-    #skills .skills-icons .hover-icons#ajax:hover p.ajax {
-        transform: translateY(8%);
-    }
-     #skills .skills-icons .hover-icons#wordpress:hover p.wp {
-        transform: translateY(16%);
-}
-
-/*@media (max-width: 767px)*/
 /*Animation Skills Start*/
 
 
@@ -755,10 +816,6 @@ section#about-me div button {
     nav#main-nav div li div.dropdown-content a:hover {
         background-color: rgb(89, 106, 156);
 
-    }
-
-    div#ajax {
-        padding-bottom: 10px;
     }
 
     #contact .contact-about form .form-about button[type='submit'] {
