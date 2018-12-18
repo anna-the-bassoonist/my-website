@@ -172,12 +172,11 @@ header#header div h2 {
     overflow: hidden;
 }
 
-hover-skills-proposal header#header div h2 {
+header#header div h2 {
     display: inline-block;
 }
 
 /*Header animation*/
-
 
 @media screen and (min-width:801px) {
     .typingHeader {
@@ -436,28 +435,27 @@ section#about-me div button {
 #skills .skills-icons p {
     line-height: 6rem;
     font-size: 4rem;
+    font-weight: bold;
     height: 6rem;
     width: 6rem;
 }
 
-#skills div.skills-icons div.hover-icons {
+#skills .skills-icons .hover-icons {
     transition: all 0.4s ease-in-out;
     border: 1px solid transparent;
-    display: flex;
-    justify-content: center;
 }
 
 .hover-icons figure,
 .hover-icons icons-p {
     transition: all 0.4s ease-in-out;
     transform: none;
-    position: relative;
 }
 
 .hover-icons:hover figure,
 .hover-icons:hover .icons-p {
     opacity: 0;
     transform: scale(1.3);
+    /*    transform: rotate(180deg);*/
 }
 
 #skills .skills-icons .hover-icons:hover {
@@ -469,32 +467,31 @@ section#about-me div button {
 #skills .skills-icons p {
     height: 100%;
     font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
 }
 
 #skills .skills-icons .hover-icons p.icons-info {
     opacity: 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1rem;
     position: absolute;
     margin: 0;
     left: 0;
     right: 0;
     width: 100%;
-    padding: 20px;
+    height: 100%;
+    padding: 10%;
     transition: all 0.4s ease-in-out;
-    transform: translateY(50%);
+    transform: none;
     color: transparent;
 }
 
 #skills .skills-icons .hover-icons:hover p.icons-info {
-    transform: none;
-    color: #e2e2e2;
     opacity: 1;
+    transform: scale(1.9);
+    transform: translateY(-100%);
+    color: #e2e2e2;
 }
-
 
 /*Animation Skills Start*/
 
@@ -798,19 +795,11 @@ section#about-me div button {
         font-size: 1.8rem;
     }
 
+    div#ajax {
+        padding-bottom: 10px;
+    }
+
     #contact .contact-about form .form-about button[type='submit'] {
         padding: 5px;
     }
-
-    <<<<<<< HEAD @media (max-width:350px) {
-        .social-icons a {
-            height: 40px;
-            width: 40px;
-            line-height: 40px;
-        }
-
-        =======#contact .contact-about form .form-about button[type='submit'] {
-            padding: 5px;
-            > > > > > > > hover-skills-proposal
-        }
-    }
+}
