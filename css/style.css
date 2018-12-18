@@ -485,7 +485,7 @@ section#about-me div button {
     width: 100%;
     padding: 20px;
     transition: all 0.4s ease-in-out;
-    transform: none;
+    transform: translateY(50%);
     color: transparent;
 }
 
@@ -493,96 +493,6 @@ section#about-me div button {
     transform: none;
     color: #e2e2e2;
     opacity: 1;
-
-}
-
-/*
-#skills .skills-icons #sass > p {
-    padding: 28px 10px;
-}
-*/
-/*
-#skills .skills-icons #html > p {
-    top: 20%;
-}
-
-#skills .skills-icons #css > p,
-#skills .skills-icons #gulp > p,
-#skills .skills-icons #wordpress > p {
-    top: 25%;
-}
-
-#skills .skills-icons #js > p,
-#skills .skills-icons #jquery > p,
-#skills .skills-icons #sass > p,
-#skills .skills-icons #git > p,
-#skills .skills-icons #rwd > p.rwd {
-    top: 20%;
-}
-
-#skills .skills-icons #react > p {
-    top: 30%;
-}
-
-#skills .skills-icons #ajax > p.ajax {
-    top: 25%;
-}
-
-@media (min-width:768px) and (max-width:991px) {
-
-    #skills .skills-icons #js > p,
-    #skills .skills-icons #css > p,
-    #skills .skills-icons #jquery > p,
-    #skills .skills-icons #sass > p,
-    #skills .skills-icons #git > p,
-    #skills .skills-icons #rwd > p.rwd,
-    #skills .skills-icons #react > p {
-        top: 30%;
-    }
-
-    #skills .skills-icons #html > p {
-        top: 27%;
-    }
-
-    #skills .skills-icons #gulp > p {
-        top: 35%;
-    }
-
-    #skills .skills-icons #ajax > p.ajax {
-        top: 10%;
-    }
-
-    #skills .skills-icons #wordpress > p {
-        top: 20%;
-    }
-}
-
-@media (max-width:768px) {
-    #skills .skills-icons .hover-icons p.icons-info {
-                text-align: center;
-    }
-
-    #skills .skills-icons #ajax > p.ajax {
-        top: 20%;
-    }
-
-    #skills .skills-icons #react > p {
-        top: 35%;
-    }
-
-    #skills .skills-icons #wordpress > p {
-        top: 30%;
-    }
-}
-*/
-
-
-
-/*
-@media (max-width:767px) {
-    #skills .skills-icons #sass > p {
-        padding: 12px;
-    }
 }
 
 
