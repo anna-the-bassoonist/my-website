@@ -172,12 +172,11 @@ header#header div h2 {
     overflow: hidden;
 }
 
-hover-skills-proposal header#header div h2 {
+header#header div h2 {
     display: inline-block;
 }
 
 /*Header animation*/
-
 
 @media screen and (min-width:801px) {
     .typingHeader {
@@ -802,15 +801,10 @@ section#about-me div button {
         padding: 5px;
     }
 
-    <<<<<<< HEAD @media (max-width:350px) {
+    @media (max-width:350px) {
         .social-icons a {
             height: 40px;
             width: 40px;
             line-height: 40px;
-        }
-
-        =======#contact .contact-about form .form-about button[type='submit'] {
-            padding: 5px;
-            > > > > > > > hover-skills-proposal
         }
     }
