@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!--Style CSS-->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -28,12 +27,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end max-height-100" id="navbarNavAltMarkup">
             <ul class="navbar-nav ul-height main-navbar">
-
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header" data-i18n="menu.home"><span class="sr-only active">(current)</span></a></li>
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me" data-i18n="menu.aboutMe"></a></li>
                 <li><a class="nav-item nav-link" id="skills-click" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
                 <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact" data-i18n="menu.contact"></a></li>
-
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
                     <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="menu.language"></a>
                     <div class="dropdown-menu dropdown-content border-0" aria-labelledby="navbarDropdown">
@@ -45,14 +42,13 @@
             </ul>
         </div>
     </nav>
-
     <!--   Navigation End-->
     <!--    Header Start-->
     <header id="header" class="text-center header-lng page-section">
         <div>
-            <h1 id="headerh1" class="typingHeader" data-i18n="header.h1"></h1>
+            <h1 class="typingHeader" data-i18n="header.h1"></h1>
             <h2 id="headerh2" data-i18n="header.h2" class="typingHeader2"></h2>
-            <p data-i18n="header.p"></p>
+            <p data-i18n="header.p" class="fadeIn"></p>
             <button class="btn btn-primary btn-lg button-custom m-btn btn-viewmore btn-header" type="submit" data-i18n="header.button"></button>
         </div>
     </header>
@@ -76,69 +72,68 @@
     <!--Section About me End-->
     <!--    /*Section Skills Start*/-->
     <section id="skills" class="text-center skills page-section">
-        <h2 data-i18n="skills.header" id="skills-header" class=""></h2>
+        <h2 data-i18n="skills.header" id="skills-header"></h2>
         <p class="skills-about " data-i18n="skills.text"></p>
         <div class="line-under  line-1 "></div>
-        <!--<button id="click">click</button>-->
         <div class="container skills-border">
-            <div class="row skills-icons ">
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="html">
+            <div class="row skills-icons">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="html">
                     <figure>
                         <img src="icons/html5.png" alt="html5">
                         <figcaption class="mt-10">HTML5</figcaption>
                     </figure>
                     <p class="icons-info html" data-i18n="skills.html5"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="css">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="css">
                     <figure>
                         <img src="icons/css3.png" alt="CSS3">
                         <figcaption class="mt-10">CSS3</figcaption>
                     </figure>
                     <p class="icons-info css" data-i18n="skills.css3"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="js">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="js">
                     <figure>
                         <img src="icons/js.png" alt="JavaScript">
                         <figcaption class="mt-10">JavaScript</figcaption>
                     </figure>
                     <p class="icons-info js" data-i18n="skills.JavaScript"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="jquery">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="jquery">
                     <figure>
                         <img src="icons/jquery.png" alt="jQuery">
                         <figcaption class="mt-10">jQuery</figcaption>
                     </figure>
                     <p class="icons-info jquery" data-i18n="skills.jQuery"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="sass">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="sass">
                     <figure>
                         <i class="fab fa-sass"></i>
                         <figcaption>SASS</figcaption>
                     </figure>
                     <p class="icons-info sass" data-i18n="skills.sass"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="gulp">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="gulp">
                     <figure>
                         <i class="fab fa-gulp"></i>
                         <figcaption>Gulp</figcaption>
                     </figure>
                     <p class="icons-info gulp" data-i18n="skills.gulp"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="git">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="git">
                     <figure>
                         <i class="fab fa-git-square"></i>
                         <figcaption>Git</figcaption>
                     </figure>
                     <p class="icons-info git" data-i18n="skills.git"></p>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-6 fadeDown opacity-0 hover-icons" id="rwd">
+                <div class="col-lg-3 col-sm-6 col-12 fadeDown opacity-0 hover-icons" id="rwd">
                     <p class="m-auto icons-p">Rwd</p>
                     <p class="icons-info rwd" data-i18n="skills.rwd"></p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h3 data-i18n="skills.subHeader" id="skills-subheader" class=""></h3>
+            <h3 data-i18n="skills.subHeader" id="skills-subheader"></h3>
             <div class="line-under line-2"></div>
             <div class="row skills-icons">
                 <div class="col-lg-4 col-sm-4 col-12 fadeUp opacity-0 hover-icons" id="react">
@@ -147,7 +142,6 @@
                         <figcaption>React</figcaption>
                     </figure>
                     <p class="icons-info react" data-i18n="skills.react"></p>
-
                 </div>
                 <div class="col-lg-4 col-sm-4 col-12 fadeUp opacity-0 hover-icons" id="ajax">
                     <p class="m-auto icons-p">Ajax</p>
@@ -159,7 +153,6 @@
                         <figcaption>Wordpress</figcaption>
                     </figure>
                     <p class="icons-info wp" data-i18n="skills.wordpress"></p>
-
                 </div>
             </div>
         </div>
@@ -168,12 +161,8 @@
     <!--Section Contact Start-->
     <div id="contact" class="contact page-section">
         <div class="container text-center">
-
             <h3 data-i18n="contact.main"></h3>
-            
-
             <p>Have a question or want to work together?</p>
-
             <div class="form-row contact-about">
                 <form action="https://formspree.io/anna.toeplitz@gmail.com" method="POST">
                     <div class="form-group col-12 form-about">
@@ -181,7 +170,6 @@
                         <label for="email"><input data-i18n="[placeholder]contact.email" id="email" class="form-control" type="email" name="email" required></label>
                         <label for="textarea"><textarea data-i18n="[placeholder]contact.textarea" class="form-control" name="message" id="textarea" rows="4" required></textarea></label>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.send"></button>
-
                     </div>
                 </form>
             </div>
@@ -223,7 +211,6 @@
     <script src="js/i18next.min.js"></script>
     <script src="js/jquery-i18next.min.js"></script>
     <script src="js/i18nextXHRBackend.min.js"></script>
-
 
     <script>
         i18next.use(window.i18nextXHRBackend).init({
