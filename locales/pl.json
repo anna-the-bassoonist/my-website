@@ -35,6 +35,7 @@
     },
     "contact": {
         "main": "Skontaktuj się",
+        "angebot": "Potrzebujesz strony lub chcesz razem pracować?",
         "name": "Imię*",
         "email": "Email*",
         "textarea": "wpisz wiadomość*",
