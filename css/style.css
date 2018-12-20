@@ -634,9 +634,10 @@ section#about-me div button {
 }
 
 #contact .container p {
-    color: rgb(226, 226, 226);
+    color: #fff;
     margin: 0;
-    text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
+    text-shadow:2px 4px 7px #040817, 0 0 1em #032e51, 0 0 0.2em #060000;
+    font-size: 1.3em;
 }
 
 #contact .contact-about {
