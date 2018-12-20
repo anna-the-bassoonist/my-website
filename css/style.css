@@ -460,7 +460,9 @@ section#about-me div button {
     transform: scale(1.3);
 }
 
-#skills .skills-icons .hover-icons:hover {
+#skills .skills-icons .hover-icons:hover,
+#skills .skills-icons .hover-icons:active,
+#skills .skills-icons .hover-icons:focus {
     background: rgba(44, 73, 156, 0.89);
     border: 1px solid rgb(67, 70, 116);
     border-radius: 0.30rem;
@@ -489,7 +491,9 @@ section#about-me div button {
     color: transparent;
 }
 
-#skills .skills-icons .hover-icons:hover p.icons-info {
+#skills .skills-icons .hover-icons:hover p.icons-info,
+#skills .skills-icons .hover-icons:active p.icons-info,
+#skills .skills-icons .hover-icons:focus p.icons-info {
     transform: none;
     color: #e2e2e2;
     opacity: 1;
