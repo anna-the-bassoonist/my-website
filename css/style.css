@@ -125,15 +125,17 @@ nav#main-nav div li div.dropdown-content {
     min-width: 160px;
     box-shadow: -11px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-bottom-left-radius: 0.25em;
 }
 
 nav#main-nav div li div.dropdown-content a {
     padding: 8px 12px;
     text-align: left;
+    background-color: rgb(44, 73, 156);
 }
 
 nav#main-nav div li div.dropdown-content a:hover {
-    background-color: rgb(44, 73, 156);
+    background-color: rgb(89, 106, 156);
 }
 
 nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
@@ -636,7 +638,7 @@ section#about-me div button {
 #contact .container p {
     color: #fff;
     margin: 0;
-    text-shadow:2px 4px 7px #040817, 0 0 1em #032e51, 0 0 0.2em #060000;
+    text-shadow: 2px 4px 7px #040817, 0 0 1em #032e51, 0 0 0.2em #060000;
     font-size: 1.3em;
 }
 
