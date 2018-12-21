@@ -112,7 +112,7 @@ nav#main-nav div li a.activeMenu {
 nav#main-nav div ul li.dropdown-main {
     margin: 0;
     padding: 0;
-/*    background-color: transparent;*/
+    /*    background-color: transparent;*/
     /*    transition: all 0.2 ease-in;*/
 }
 
@@ -639,6 +639,12 @@ section#about-me div button {
     padding: 15% 0 0;
     text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
     color: #e2e2e2;
+}
+
+#contact #contact-p {
+    background-color: #7b7f9933;
+    display: inline-block;
+    border-radius: 25%;
 }
 
 #contact .container p {
