@@ -1,4 +1,14 @@
 /*helpers*/
+:root {
+    --nav-bg-color: rgba(44, 73, 156, 0.98);
+    --nav-ah-color:  rgb(89, 106, 156);
+    --main-color: #e2e2e2;
+    --main-blue-color:  rgb(44, 73, 156);
+    --h-border-color: rgba(226, 226, 226, 0.7);
+    --contact-b-color:#1d3f5d;
+    --footer-color:rgb(44,106,156);
+}
+
 .mb-15 {
     margin-bottom: 15px;
 }
@@ -30,7 +40,7 @@
 }
 
 .m-btn:hover {
-    color: rgb(44, 73, 156);
+    color: var(--main-blue-color);
     background-color: #fff;
 
 }
@@ -41,7 +51,7 @@
 }
 
 .social-icons a {
-    color: rgb(44, 73, 156);
+    color: var(--main-blue-color);
     background-color: rgb(255, 255, 255);
     height: 50px;
     width: 50px;
@@ -91,7 +101,7 @@ nav#main-nav {
 }
 
 nav#main-nav.changeColor {
-    background-color: rgba(44, 73, 156, 0.98);
+    background-color: var(--nav-bg-color);
 }
 
 nav#main-nav div li a {
@@ -132,11 +142,11 @@ nav#main-nav div li div.dropdown-content {
 nav#main-nav div li div.dropdown-content a {
     padding: 8px 12px;
     text-align: left;
-    background-color: rgb(44, 73, 156);
+    background-color: var(--main-blue-color);
 }
 
 nav#main-nav div li div.dropdown-content a:hover {
-    background-color: rgb(89, 106, 156);
+    background-color: var(--nav-ah-color);
 }
 
 nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
@@ -144,7 +154,7 @@ nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
 }
 
 nav#main-nav div li div.dropdown-content a:hover nav#main-nav div ul li.dropdown-main {
-    background-color: rgb(89, 106, 156);
+    background-color:var(--nav-ah-color);
 
 }
 
@@ -161,7 +171,7 @@ header#header {
 }
 
 header#header div {
-    color: white;
+    color: #fff;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -209,7 +219,7 @@ header#header div h2 {
         animation-delay: 1.5s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        border-right: .15em solid var(--h-border-color);
         margin: 0 auto;
         letter-spacing: .1em;
         opacity: 0;
@@ -235,7 +245,7 @@ header#header div h2 {
             blink-caret 1s step-end;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
-        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        border-right: .15em solid var(--h-border-color);
         margin: 0 auto;
         letter-spacing: .1em;
     }
@@ -249,7 +259,7 @@ header#header div h2 {
         animation-delay: 1.7s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        border-right: .15em solid var(--h-border-color);
         margin: 0 auto;
         letter-spacing: .1em;
         opacity: 0;
@@ -275,7 +285,7 @@ header#header div h2 {
             blink-caret 1s step-end;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
-        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        border-right: .15em solid var(--h-border-color);
         margin: 0 auto;
         letter-spacing: .1em;
     }
@@ -289,7 +299,7 @@ header#header div h2 {
         animation-delay: 2s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        border-right: .15em solid rgba(226, 226, 226, 0.7);
+        border-right: .15em solid var(--h-border-color);
         margin: 0 auto;
         letter-spacing: .1em;
         opacity: 0;
@@ -340,7 +350,7 @@ header#header div h2 {
     }
 
     40% {
-        border-color: rgba(226, 226, 226, 0.7);
+        border-color: var(--h-border-color);
     }
 }
 
@@ -408,7 +418,7 @@ section#about-me div button {
 
 /*Section Skills Start*/
 #skills {
-    background-color: #e2e2e2;
+    background-color: var(--main-color);
     color: #000000;
     padding-bottom: 20px;
 }
@@ -425,7 +435,7 @@ section#about-me div button {
 #skills .line-under {
     width: 140px;
     height: 4px;
-    background: rgb(44, 73, 156);
+    background:var(--main-blue-color);
     text-align: center;
     margin: 0 auto 25px;
 }
@@ -503,7 +513,7 @@ section#about-me div button {
 #skills .skills-icons .hover-icons:active p.icons-info,
 #skills .skills-icons .hover-icons:focus p.icons-info {
     transform: none;
-    color: #e2e2e2;
+    color: var(--main-color);
     opacity: 1;
 }
 
@@ -638,7 +648,7 @@ section#about-me div button {
 #contact .container h3 {
     padding: 15% 0 0;
     text-shadow: 2px 4px 7px black, 0 0 1em #336590, 0 0 0.2em #0a150a;
-    color: #e2e2e2;
+    color: var(--main-color);
 }
 
 #contact #contact-p {
@@ -686,22 +696,22 @@ section#about-me div button {
     text-transform: inherit;
     font-size: 0.95rem;
     font-weight: 600;
-    background-color: #e2e2e2;
-    border: 1px solid #1d3f5d;
+    background-color: var(--main-color);
+    border: 1px solid var(--contact-b-color);
 }
 
 #contact .contact-about form .form-about label {
     text-align: left;
-    color: #1d3f5d;
+    color: var(--contact-b-color);
     margin: 15px 0 0;
-    text-shadow: -1px -1px 0 #e2e2e2,
-        1px -1px 0 #e2e2e2,
-        -1px 1px 0 #e2e2e2,
-        1px 1px 0 #e2e2e2;
+    text-shadow: -1px -1px 0 var(--main-color),
+        1px -1px 0 var(--main-color),
+        -1px 1px 0 var(--main-color),
+        1px 1px 0 var(--main-color);
 }
 
 #contact .contact-about form .form-about textarea {
-    color: #1d3f5d;
+    color: var(--contact-b-color);
     min-height: 170px;
     margin-bottom: 5px;
 }
@@ -713,9 +723,9 @@ section#about-me div button {
 }
 
 #contact .contact-about form .form-about button[type='submit'] {
-    background-color: #1d3f5d;
-    border: 1px solid #e2e2e2;
-    color: #e2e2e2;
+    background-color: var(--contact-b-color);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
     align-self: flex-end;
     word-spacing: normal;
     letter-spacing: 1.2;
@@ -728,9 +738,9 @@ section#about-me div button {
 }
 
 #contact .contact-about form .form-about button[type='submit']:hover {
-    background-color: #e2e2e2;
-    color: #1d3f5d;
-    border: 1px solid #1d3f5d;
+    background-color: var(--main-color);
+    color: var(--contact-b-color);
+    border: 1px solid var(--contact-b-color);
 }
 
 ::placeholder {
@@ -741,19 +751,19 @@ section#about-me div button {
 
 /*Section Footer Start*/
 #footer {
-    background-color: #e2e2e2;
+    background-color:var(--main-color);
 }
 
 #footer .icons-footer a {
-    background-color: rgb(44, 106, 156);
+    background-color: var(--footer-color);
     color: #fff;
-    border: 1px solid #e2e2e2;
+    border: 1px solid var(--main-color);
 }
 
 #footer .icons-footer a:hover {
-    color: rgb(44, 106, 156);
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(44, 106, 156);
+    color: var(--footer-color);
+    background-color: #fff;
+    border: 1px solid var(--footer-color);
 }
 
 @media (min-width: 1200px) {
@@ -790,11 +800,11 @@ section#about-me div button {
     }
 
     nav#main-nav:hover {
-        background-color: rgba(44, 73, 156, 0.98);
+        background-color: var(--nav-bg-color);
     }
 
     nav#main-nav div li a {
-        background-color: rgba(44, 73, 156, 0.98);
+        background-color: var(--nav-bg-color);
         text-align: center;
         font-size: 18px;
     }
@@ -809,7 +819,7 @@ section#about-me div button {
     }
 
     nav#main-nav div li div.dropdown-content a:hover {
-        background-color: rgb(89, 106, 156);
+        background-color:var(--nav-ah-color);
     }
 
     header#header div h2#headerh2 {
