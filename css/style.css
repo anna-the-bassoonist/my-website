@@ -295,8 +295,8 @@ header#header div h2 {
             blink-caret 1s step-end infinite;
         animation: typing2 2s steps(40, end),
             blink-caret 1s step-end infinite;
-        -webkit-animation-delay: 1.8s;
-        animation-delay: 2s;
+        -webkit-animation-delay: 2.2s;
+        animation-delay: 2.2s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         border-right: .15em solid var(--h-border-color);
@@ -503,7 +503,7 @@ section#about-me div button {
     left: 0;
     right: 0;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     transition: all 0.4s ease-in-out;
     transform: translateY(50%);
     color: transparent;
