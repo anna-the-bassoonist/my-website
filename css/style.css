@@ -145,15 +145,9 @@ nav#main-nav div li div.dropdown-content a:hover {
     background-color: var(--nav-ah-color);
 }
 
-nav#main-nav div ul li.dropdown-main:hover div.dropdown-content {
+nav#main-nav div ul li.dropdown-main:hover > div.dropdown-content {
     display: block;
 }
-
-nav#main-nav div li div.dropdown-content a:hover nav#main-nav div ul li.dropdown-main {
-    background-color:var(--nav-ah-color);
-
-}
-
 /*Navigation End*/
 
 /*Header Start*/
