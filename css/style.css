@@ -458,7 +458,9 @@ section#about-me div button {
     /*    transform: rotate(180deg);*/
 }
 
-#skills .skills-icons .hover-icons:hover {
+#skills .skills-icons .hover-icons:hover,
+#skills .skills-icons .hover-icons:active,
+#skills .skills-icons .hover-icons:focus {
     background: rgba(44, 73, 156, 0.89);
     border: 1px solid rgb(67, 70, 116);
     border-radius: 0.30rem;
