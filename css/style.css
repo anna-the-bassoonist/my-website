@@ -142,7 +142,8 @@ nav#main-nav div li div.dropdown-content a {
     background-color: var(--main-blue-color);
 }
 
-nav#main-nav div li div.dropdown-content a:hover {
+nav#main-nav div li div.dropdown-content a:hover,
+nav#main-nav div li div.dropdown-content a:focus-within {
     background-color: var(--nav-ah-color);
 }
 
