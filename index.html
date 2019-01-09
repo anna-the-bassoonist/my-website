@@ -23,22 +23,28 @@
     <!--   Navigation Start-->
     <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top menu-lng">
         <a class="navbar-brand" href="#"></a>
-        <button id="menu-button" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="menu-button" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end max-height-100" id="navbarNavAltMarkup">
             <ul class="navbar-nav ul-height main-navbar">
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header" data-i18n="menu.home"><span class="sr-only active">(current)</span></a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me" data-i18n="menu.aboutMe"></a></li>
-                <li><a class="nav-item nav-link" id="skills-click" data-toggle="collapse" data-target=".navbar-collapse" href="#skills" data-i18n="menu.skills"></a></li>
-                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact" data-i18n="menu.contact"></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#header"
+                        data-i18n="menu.home"><span class="sr-only active">(current)</span></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about-me"
+                        data-i18n="menu.aboutMe"></a></li>
+                <li><a class="nav-item nav-link" id="skills-click" data-toggle="collapse" data-target=".navbar-collapse"
+                        href="#skills" data-i18n="menu.skills"></a></li>
+                <li><a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#contact"
+                        data-i18n="menu.contact"></a></li>
                 <li class="dropdown nav-item dropdown-main" data-toggle="collapse" data-target=".navbar-collapse">
-                    <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="menu.language"></a>
-                    <div class="dropdown-menu dropdown-content border-0" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item language-select english" id="en" href="#language">en</a>
-                        <a class="dropdown-item language-select deutsch" id="de" href="#language">de</a>
-                        <a class="dropdown-item language-select polski" id="pl" href="#language">pl</a>
-                    </div>
+                    <a class="dropdown-toogle nav-link dropbtn" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" data-i18n="menu.language"></a>
+                    <ul class="dropdown-menu dropdown-content border-0" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item language-select english" id="en" href="#language">en</a></li>
+                        <li><a class="dropdown-item language-select deutsch" id="de" href="#language">de</a></li>
+                        <li><a class="dropdown-item language-select polski" id="pl" href="#language">pl</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -169,9 +175,12 @@
             <div class="form-row contact-about">
                 <form action="https://formspree.io/anna.toeplitz@gmail.com" method="POST">
                     <div class="form-group col-12 form-about">
-                        <label for="text"><input data-i18n="[placeholder]contact.name" id="text" class="form-control" type="text" name="name" required></label>
-                        <label for="email"><input data-i18n="[placeholder]contact.email" id="email" class="form-control" type="email" name="email" required></label>
-                        <label for="textarea"><textarea data-i18n="[placeholder]contact.textarea" class="form-control" name="message" id="textarea" rows="4" required></textarea></label>
+                        <label for="text"><input data-i18n="[placeholder]contact.name" id="text" class="form-control"
+                                type="text" name="name" required></label>
+                        <label for="email"><input data-i18n="[placeholder]contact.email" id="email" class="form-control"
+                                type="email" name="email" required></label>
+                        <label for="textarea"><textarea data-i18n="[placeholder]contact.textarea" class="form-control"
+                                name="message" id="textarea" rows="4" required></textarea></label>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.send"></button>
                     </div>
                 </form>
@@ -223,7 +232,7 @@
                 loadPath: 'locales/{{lng}}.json'
             }
 
-        }, function(err, t) {
+        }, function (err, t) {
             jqueryI18next.init(i18next, $);
             $('.menu-lng').localize();
             $('.header-lng').localize();
