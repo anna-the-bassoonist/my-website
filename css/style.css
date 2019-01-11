@@ -111,24 +111,23 @@ nav#main-nav div li a {
     transition: color 0.2s ease-in;
 }
 
-nav#main-nav div li a:hover,
-nav#main-nav div li a.activeMenu {
+nav#main-nav div ul li:hover,
+nav#main-nav div ul li:focus-within {
     background-color: var(--nav-ah-color);
 }
 
 nav#main-nav div ul li.dropdown-main {
     margin: 0;
     padding: 0;
-    /*    background-color: transparent;*/
-    /*    transition: all 0.2 ease-in;*/
 }
 
-nav#main-nav div li div.dropdown-content {
+nav#main-nav div li ul.dropdown-content {
     display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     margin: 0;
     padding: 0;
-    /*    background-color: transparent;*/
     min-width: 160px;
     box-shadow: -11px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -136,18 +135,24 @@ nav#main-nav div li div.dropdown-content {
 }
 
 
-nav#main-nav div li div.dropdown-content a {
+nav#main-nav div li ul.dropdown-content a {
     padding: 8px 12px;
     text-align: left;
     background-color: var(--main-blue-color);
 }
 
-nav#main-nav div li div.dropdown-content a:hover,
-nav#main-nav div li div.dropdown-content a:focus-within {
+nav#main-nav div li ul.dropdown-content a:hover,
+nav#main-nav div li ul.dropdown-content a:focus-within {
     background-color: var(--nav-ah-color);
 }
 
-nav#main-nav div ul li.dropdown-main:hover > div.dropdown-content {
+nav#main-nav div ul li.dropdown-main:hover > ul.dropdown-content,
+nav#main-nav div ul li.dropdown-main:focus-within > ul.dropdown-content,
+nav#main-nav div ul li ul.dropdown-content:hover,
+nav#main-nav div ul li ul.dropdown-content:focus
+ {
+    visibility: visible;
+    opacity: 1;
     display: block;
 }
 
