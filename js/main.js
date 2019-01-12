@@ -59,12 +59,18 @@ $(document).ready(function () {
             scrollTop: target.offset().top
         }, 800);
     });
-    
+
     $(".nav-item").click(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
 
+    $(function () {
+        var navMobile = $('.mobileHide');
+        $(document.body).on('click', function () {
+            navMobile.collapse('hide');
+        });
+    });
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
             $('.menu-lng').localize();
@@ -79,11 +85,11 @@ $(document).ready(function () {
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
 });
-document.addEventListener('DOMContentLoaded', function(){
-    document.body.addEventListener('click',function(){
-        document.getElementById('main-nav').style.top='0px';
-    });
-//    document.getElementById('main-nav').addEventListener('click',function(e){
-//                e.stopPropagation();
-//            })
-})
+//document.addEventListener('DOMContentLoaded', function () {
+//    document.body.addEventListener('click', function () {
+//        document.getElementById('main-nav').style.top = '0px';
+//    });
+//    //    document.getElementById('main-nav').addEventListener('click',function(e){
+//    //                e.stopPropagation();
+//    //            })
+//})
