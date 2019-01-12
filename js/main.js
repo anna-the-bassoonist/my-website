@@ -85,11 +85,3 @@ $(document).ready(function () {
     $(".deutsch").html("deutsch");
     $(".polski").html("polski");
 });
-//document.addEventListener('DOMContentLoaded', function () {
-//    document.body.addEventListener('click', function () {
-//        document.getElementById('main-nav').style.top = '0px';
-//    });
-//    //    document.getElementById('main-nav').addEventListener('click',function(e){
-//    //                e.stopPropagation();
-//    //            })
-//})
