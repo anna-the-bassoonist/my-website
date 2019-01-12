@@ -450,7 +450,7 @@ section#about-me div button {
 
 .hover-icons figure,
 .hover-icons icons-p {
-/*    cursor: pointer;*/
+    cursor: pointer;
     transition: all 0.4s ease-in-out;
     transform: none;
     position: relative;
@@ -491,6 +491,7 @@ section#about-me div button {
     transition: all 0.4s ease-in-out;
     transform: translateY(50%);
     color: transparent;
+    cursor: pointer;
 }
 
 #skills .skills-icons .hover-icons:hover p.icons-info {
