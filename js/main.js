@@ -65,6 +65,13 @@ $(document).ready(function () {
         $(this).addClass('activeMenu');
     });
 
+    $(function () {
+        var navMobile = $('.mobileHide');
+        $(document.body).on('click', function () {
+            navMobile.collapse('hide');
+        });
+    });
+    
     if (/iP(hone|od|ad)/.test(navigator.platform)) {
         $("*").css({
             "cursor": "pointer"
