@@ -379,7 +379,7 @@ header#header div h2 {
 
 section#about-me {
     height: 100%;
-    background-image: linear-gradient(rgba(44, 73, 156, 0.4), rgba(44, 73, 156, 0.4)),
+    background-image: linear-gradient(rgba(5, 25, 81, 0.82), rgba(31, 50, 102, 0.82)),
         url('../img/Optimized-b&w.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -394,7 +394,7 @@ section#about-me div.about-content {
 
 section#about-me div p,
 section#about-me div h2 {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
 }
 
 section#about-me div p {
@@ -742,7 +742,7 @@ section#about-me div p {
     }
 
     nav#main-nav #menu-button {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     nav#main-nav:hover {
