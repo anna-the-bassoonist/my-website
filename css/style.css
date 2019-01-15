@@ -640,7 +640,7 @@ section#about-me div p {
 #contact .contact-about .form-about textarea[name='message'],
 #contact .contact-about .form-about button[type='submit'] {
     text-transform: inherit;
-    font-size: 0.95rem;
+    font-size: 0.97rem;
     font-weight: 600;
     background-color: var(--main-color);
     border: 1px solid var(--contact-b-color);
