@@ -487,8 +487,8 @@ section#about-me div p {
 
 #skills .skills-icons .hover-icons p.icons-info {
     opacity: 0;
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 0.75em;
+    line-height: 0.94em;
     position: absolute;
     margin: 0;
     left: 0;
@@ -640,7 +640,7 @@ section#about-me div p {
 #contact .contact-about .form-about textarea[name='message'],
 #contact .contact-about .form-about button[type='submit'] {
     text-transform: inherit;
-    font-size: 0.97rem;
+    font-size: 1rem;
     font-weight: 600;
     background-color: var(--main-color);
     border: 1px solid var(--contact-b-color);
@@ -771,6 +771,12 @@ section#about-me div p {
     header#header div h2#headerh2 {
         font-size: 1.8rem;
     }
+    
+    #skills .skills-icons .hover-icons p.icons-info {
+    font-size: 0.625em;
+    line-height: 0.75em;
+   
+}
 
     #contact .contact-about form .form-about button[type='submit'] {
         padding: 5px;
