@@ -149,8 +149,7 @@ nav#main-nav div li ul.dropdown-content a:focus-within {
 nav#main-nav div ul li.dropdown-main:hover > ul.dropdown-content,
 nav#main-nav div ul li.dropdown-main:focus-within > ul.dropdown-content,
 nav#main-nav div ul li ul.dropdown-content:hover,
-nav#main-nav div ul li ul.dropdown-content:focus
- {
+nav#main-nav div ul li ul.dropdown-content:focus {
     visibility: visible;
     opacity: 1;
     display: block;
@@ -716,6 +715,12 @@ section#about-me div p {
     header#header {
         background-image: url(../img/kazuend-1920_6.jpg);
     }
+
+    section#about-me {
+        background-image: linear-gradient(rgba(5, 25, 81, 0.82), rgba(31, 50, 102, 0.82)),
+            url('../img/Optimized-b&w.jpg');
+    }
+
 }
 
 @media (min-width:768px) {
@@ -730,15 +735,16 @@ section#about-me div p {
     nav#main-nav div ul.ul-height {
         max-height: 50px;
     }
+
+    section#about-me {
+        background-image: linear-gradient(rgba(5, 25, 81, 0.82), rgba(31, 50, 102, 0.82)),
+            url('../img/Optimized-b&w_small.jpg');
+    }
 }
 
 @media (max-width: 767px) {
     html {
         font-size: 12px;
-    }
-
-    header#header {
-        background-image: url(../img/kazuend-1024_6.jpg);
     }
 
     nav#main-nav #menu-button {
@@ -768,15 +774,27 @@ section#about-me div p {
         background-color: var(--nav-ah-color);
     }
 
+    header#header {
+        background-image: url(../img/kazuend-1024_6.jpg);
+    }
+
     header#header div h2#headerh2 {
         font-size: 1.8rem;
     }
-    
+
+    section#about-me {
+        background-image: linear-gradient(rgba(5, 25, 81, 0.82), rgba(31, 50, 102, 0.82)),
+            url('../img/Optimized-b&w_small.jpg');
+    }
+
     #skills .skills-icons .hover-icons p.icons-info {
-    font-size: 10px;
-    line-height: 12px;
-   
-}
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    #contact {
+        background-image: url(../img/map-of-the-world-2401458_1200_small.jpg);
+    }
 
     #contact .contact-about form .form-about button[type='submit'] {
         padding: 5px;
