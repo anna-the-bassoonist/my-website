@@ -146,8 +146,8 @@ nav#main-nav div li ul.dropdown-content a:focus-within {
     background-color: var(--nav-ah-color);
 }
 
-nav#main-nav div ul li.dropdown-main:hover > ul.dropdown-content,
-nav#main-nav div ul li.dropdown-main:focus-within > ul.dropdown-content,
+nav#main-nav div ul li.dropdown-main:hover>ul.dropdown-content,
+nav#main-nav div ul li.dropdown-main:focus-within>ul.dropdown-content,
 nav#main-nav div ul li ul.dropdown-content:hover,
 nav#main-nav div ul li ul.dropdown-content:focus {
     visibility: visible;
@@ -486,8 +486,8 @@ section#about-me div p {
 
 #skills .skills-icons .hover-icons p.icons-info {
     opacity: 0;
-    font-size: 0.75em;
-    line-height: 0.94em;
+    font-size: 0.8em;
+    line-height: 1.2em;
     position: absolute;
     margin: 0;
     left: 0;
