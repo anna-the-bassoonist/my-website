@@ -71,7 +71,7 @@ $(document).ready(function () {
             navMobile.collapse('hide');
         });
     });
-    
+
     if (/iP(hone|od|ad)/.test(navigator.platform)) {
         $("*").css({
             "cursor": "pointer"
