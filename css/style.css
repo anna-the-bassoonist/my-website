@@ -213,7 +213,8 @@
     }
 
     nav#main-nav div ul li:hover,
-    nav#main-nav div ul li:focus-within {
+    nav#main-nav div ul li:focus-within,
+    nav#main-nav div ul li a.activeMenu {
         background-color: var(--nav-ah-color);
     }
 
