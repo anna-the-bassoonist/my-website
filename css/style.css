@@ -212,9 +212,9 @@
         transition: color 0.2s ease-in;
     }
 
-    nav#main-nav div ul li:hover,
-    nav#main-nav div ul li:focus-within,
-    nav#main-nav div ul li a.activeMenu {
+    nav#main-nav ul.navbar-nav li a:hover,
+/*    nav#main-nav div ul li:focus-within,*/
+    nav#main-nav div ul li activeMenu {
         background-color: var(--nav-ah-color);
     }
 
