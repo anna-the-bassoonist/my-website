@@ -217,10 +217,6 @@
         background-color: var(--nav-ah-color);
     }
 
-    nav#main-nav div ul li:focus-within {
-        background-color: var(--nav-ah-color);
-    }
-
     nav#main-nav div ul li.dropdown-main {
         margin: 0;
         padding: 0;
@@ -258,14 +254,6 @@
     nav#main-nav div li ul.dropdown-content a:hover {
         background-color: var(--nav-ah-color);
     }
-
-    
-
-    nav#main-nav div li ul.dropdown-content a:focus-within {
-        background-color: var(--nav-ah-color);
-    }
-
-
     
     nav#main-nav div ul li.dropdown-main:hover > ul.dropdown-content,
     nav#main-nav div ul li ul.dropdown-content:hover,
@@ -274,16 +262,6 @@
         opacity: 1;
         display: block;
     }
-
-
-    
-    nav#main-nav div ul li.dropdown-main:focus-within > ul.dropdown-content {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-    }
-
-
 
     /*Navigation End*/
 
