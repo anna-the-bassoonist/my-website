@@ -64,6 +64,14 @@ $(document).ready(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
+    $(".dropdown-li").on('click', function () {
+        $(".dropdown-content").css("display", "none");
+        console.log('dziala');
+    });
+    $(".dropdown-main").on('mouseover', function () {
+        $(".dropdown-content").css("display", "block");
+        console.log('works');
+    });
 
     $(function () {
         var navMobile = $('.mobileHide');
