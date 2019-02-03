@@ -64,29 +64,12 @@ $(document).ready(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
-    
+
     $(".dropdown-li").on('click', function () {
         $(".dropdown-content").css("display", "none");
         console.log('dziala');
     });
-    $(".dropdown-main").hover(
-        function () {
-            $(".dropdown-content").css("display", "block");
-        }
-
-    )
-
-    //    $(".dropdown-main").on('mouseover', function () {
-    //        $(".dropdown-content").css("display", "block");
-    //        console.log('works');
-    //    });
-
-    //    $(".dropdown-li").on('click', function (event) {
-    //        event.stopPropagation();
-    //        $(".dropdown-content").toggle();
-    //    });
-
-
+    
     $(function () {
         var navMobile = $('.mobileHide');
         $(document.body).on('click', function () {
