@@ -65,6 +65,11 @@ $(document).ready(function () {
         $(this).addClass('activeMenu');
     });
 
+    $(".dropdown-li").on('click', function () {
+        $(".dropdown-content").css("display", "none");
+        console.log('dziala');
+    });
+    
     $(function () {
         var navMobile = $('.mobileHide');
         $(document.body).on('click', function () {
