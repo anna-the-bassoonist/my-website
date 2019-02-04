@@ -855,6 +855,15 @@
             font-size: 12px;
         }
 
+        /* nav#main-nav{
+            /* white-space: nowrap; */
+            /* overflow-x: auto; */
+            /* -webkit-overflow-scrolling: touch; */
+            /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+        }
+        /* nav#main-nav::-webkit-scrollbar{
+            display: none;
+        } */ 
         nav#main-nav #menu-button {
             font-size: 1.8rem;
         }
@@ -871,6 +880,7 @@
 
         nav#main-nav div li div.dropdown-content {
             width: 100%;
+            overflow: auto;
         }
 
         nav#main-nav div li div.dropdown-content a {
