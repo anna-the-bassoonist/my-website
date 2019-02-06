@@ -67,9 +67,8 @@ $(document).ready(function () {
 
     $(".dropdown-li").on('click', function () {
         $(".dropdown-content").css("display", "none");
-        console.log('dziala');
     });
-    
+
     $(function () {
         var navMobile = $('.mobileHide');
         $(document.body).on('click', function () {
@@ -92,6 +91,13 @@ $(document).ready(function () {
             $('.contact').localize();
         });
     });
+    $(".resume-select a[href='img/AnnaToeplitz_Resume.pdf']").click(function () {
+        if ($(".language-select").is("#en")) {
+            $("a[href='img/AnnaToeplitz_Resume.pdf']");
+        } if ($(".language-select").is("#de")) {
+            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr("a[href='img/AnnaToeplitz_Lebenslauf.pdf']");
+        }
+    })
 
     $(".english").html("english");
     $(".deutsch").html("deutsch");
