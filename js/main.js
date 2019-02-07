@@ -91,11 +91,15 @@ $(document).ready(function () {
             $('.contact').localize();
         });
     });
-$(".language-select").each(function(){
+    $(".language-select").each(function () {
         if ($(this).is("#en")) {
-            $("a[href='img/AnnaToeplitz_Resume.pdf']");
-        } if ($("this").is("#de")) {
-            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr("a[href='img/AnnaToeplitz_Lebenslauf.pdf']");
+            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr('href','img/AnnaToeplitz_Resume.pdf');
+        }
+        else if ($(this).is("#de")) {
+            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr('href', 'img/AnnaToeplitz_Lebenslauf.pdf');
+        }
+        else if ($(this).is("#pl")) {
+            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr('href', 'img/AnnaToeplitz_CV.pdf');
         }
     })
 
