@@ -92,10 +92,10 @@ $(document).ready(function () {
         });
     });
     $(".language-select").each(function () {
-        if ($(this).is("#de")) {
+        if ($(this).hasClass("deutsch")) {
             $("a.resume-select").attr('href', 'img/AnnaToeplitz_Lebenslauf.pdf');
         }
-        else if ($(this).is("#en")) {
+        else if ($(this).hasClass("english")) {
             $("a.resume-select").attr('href', 'img/AnnaToeplitz_Resume.pdf');
         }
         else {
