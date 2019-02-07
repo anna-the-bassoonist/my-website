@@ -64,9 +64,7 @@ $(document).ready(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
-    $(".dropdown-main").on('touchstart', function(){
-        $(".dropdown-content").css("display","block");
-    })
+
     $(".dropdown-li").on('click', function () {
         $(".dropdown-content").css("display", "none");
         console.log('dziala');
