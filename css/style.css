@@ -869,7 +869,7 @@
             font-size: 18px;
         }
 
-        nav#main-nav div li ul.dropdown-content {
+        nav#main-nav div li div.dropdown-content {
             width: 100%;
         }
 
@@ -878,7 +878,7 @@
             font-size: 16px;
         }
 
-        nav#main-nav div li ul.dropdown-content a:hover {
+        nav#main-nav div li div.dropdown-content a:hover {
             background-color: var(--nav-ah-color);
         }
 
