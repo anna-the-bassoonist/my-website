@@ -92,14 +92,14 @@ $(document).ready(function () {
         });
     });
     $(".language-select").each(function () {
-        if ($(this).is("#en")) {
-            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr('href','img/AnnaToeplitz_Resume.pdf');
+        if ($(this).is("#de")) {
+            $("a.resume-select").attr('href', 'img/AnnaToeplitz_Lebenslauf.pdf');
         }
-        else if ($(this).is("#de")) {
-            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr('href', 'img/AnnaToeplitz_Lebenslauf.pdf');
+        else if ($(this).is("#en")) {
+            $("a.resume-select").attr('href', 'img/AnnaToeplitz_Resume.pdf');
         }
-        else if ($(this).is("#pl")) {
-            $("a[href='img/AnnaToeplitz_Resume.pdf']").attr('href', 'img/AnnaToeplitz_CV.pdf');
+        else {
+            $("a.resume-select").attr('href', 'img/AnnaToeplitz_CV.pdf');
         }
     })
 
