@@ -52,6 +52,11 @@ $(document).ready(function () {
             $(this).slideDown("slow");
         });
     });
+     if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        $("*").css({
+            "cursor": "pointer"
+        });
+    }
     $('.btn-header').click(function (event) {
         var target = $('#contact');
         event.preventDefault();
@@ -76,12 +81,6 @@ $(document).ready(function () {
             navMobile.collapse('hide');
         });
     });
-
-    if (/iP(hone|od|ad)/.test(navigator.platform)) {
-        $("*").css({
-            "cursor": "pointer"
-        });
-    }
 
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
