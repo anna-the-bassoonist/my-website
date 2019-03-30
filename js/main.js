@@ -60,7 +60,7 @@ $(document).ready(function () {
         }, 800);
     });
 
-    $(".nav-item").click(function () {
+    $(".nav-item").on('click touchstart',function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
     });
