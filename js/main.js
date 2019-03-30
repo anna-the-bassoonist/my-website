@@ -21,7 +21,7 @@ $(document).ready(function () {
                 $('#main-nav li a').eq(i).addClass('activeMenu');
 
             } else {
-                $('main-nav li a').removeClass('activeMenu');
+                $('#main-nav li a').removeClass('activeMenu');
             }
         });
 
@@ -59,11 +59,7 @@ $(document).ready(function () {
             scrollTop: target.offset().top
         }, 800);
     });
-    if (/iP(hone|od|ad)/.test(navigator.platform)) {
-        $("*").css({
-            "cursor": "pointer"
-        });
-    }
+
     $(".nav-item").click(function () {
         $(".nav-item").removeClass('activeMenu');
         $(this).addClass('activeMenu');
@@ -73,7 +69,7 @@ $(document).ready(function () {
         $(".dropdown-content").css("display", "none");
         console.log('dziala');
     });
-
+    
     $(function () {
         var navMobile = $('.mobileHide');
         $(document.body).on('click', function () {
@@ -81,6 +77,11 @@ $(document).ready(function () {
         });
     });
 
+    if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        $("*").css({
+            "cursor": "pointer"
+        });
+    }
 
     $(".language-select").click(function () {
         i18next.changeLanguage($(this).attr('id'), function () {
