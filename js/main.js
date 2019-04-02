@@ -20,9 +20,10 @@ $(document).ready(function () {
                 $('#main-nav li a').removeClass('activeMenu');
                 $('#main-nav li a').eq(i).addClass('activeMenu');
 
-            } else {
-                $('main-nav li a').removeClass('activeMenu');
-            }
+            } 
+//            else {
+//                $('main-nav li a').removeClass('activeMenu');
+//            }
         });
 
         $.each(['.fadeDown', '.fadeUp'], function (i) {
